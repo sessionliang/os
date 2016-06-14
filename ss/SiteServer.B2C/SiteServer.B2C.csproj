@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61A793E1-3E99-4BDC-BC20-7298CA3E3788}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteServer.B2C</RootNamespace>
+    <AssemblyName>SiteServer.B2C</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/BaiRongZhiDao/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LitJson">
+      <HintPath>..\..\.settings\ref\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WordPlugin, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\.settings\ref\WordPlugin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundPages\Background\BackgroundAjaxUpload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\BackgroundConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\BackgroundConfigurationShipment.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\BackgroundConfigurationOrder.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\BackgroundConfigurationPhoto.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Promotion\BackgroundPromotion.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundServiceB2C.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Consultation\BackgroundConsultation.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Consultation\BackgroundConsultationAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Consultation\BackgroundConsultationAnswer.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Channel\BackgroundChannel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Channel\BackgroundChannelFilter.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentAddGoods.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentTranslate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Order\BackgroundOrderDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Order\BackgroundOrderListAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Order\BackgroundOrderList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Order\BackgroundOrderReturnList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Order\BackgroundOrderReturnList1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Order\BackgroundOrderReturnList2.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Spec\BackgroundSpec.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Spec\BackgroundSpecContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Spec\BackgroundSpecItem.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\ConsoleService.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\PaymentShipment\BackgroundLocation.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\PaymentShipment\BackgroundPayment.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\PaymentShipment\BackgroundPaymentConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\PaymentShipment\BackgroundShipment.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\PaymentShipment\BackgroundShipmentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Request\BackgroundRequest.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Request\BackgroundRequestAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Request\BackgroundRequestAnswer.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserConsignee.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserInvoice.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ConsultationSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\GoodsContentAttributes.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\GoodsPhotoSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\UploadOrUrlImage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Filter\FilterAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Filter\FilterValues.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Order\OrderSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Order\OrderGoods.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Order\OrderUser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Promotion\BackgroundPromotionAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PaymentShipment\LocationAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\RequestConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\RequestSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Spec\SpecAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Spec\SpecDefault.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Spec\SpecItemAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Spec\SpecSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\UserRole\UserConsigneeAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Configration\B2CConfigurationManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Core\ChannelLoadingB2C.cs" />
+    <Compile Include="Core\Core\ContentUtilityB2C.cs" />
+    <Compile Include="Core\Core\FilterManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Core\SpecItemManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Core\SpecManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Consultation\IConsultationDAO.cs" />
+    <Compile Include="Core\Data\IBrandContentDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\IGoodsContentDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\DataProviderB2C.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\IB2CConfigurationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\IFilterDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\IFilterItemDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\OrderReturn\IOrderItemReturnDAO.cs" />
+    <Compile Include="Core\Data\Order\IHistoryDAO.cs" />
+    <Compile Include="Core\Data\Order\IOrderItemCommentDAO.cs" />
+    <Compile Include="Core\Data\Order\IUserSettingDAO.cs" />
+    <Compile Include="Core\Data\Order\IFollowDAO.cs" />
+    <Compile Include="Core\Data\Order\ICartDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Order\IConsigneeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Order\IInvoiceDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Order\ILocationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Order\IOrderDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Order\IOrderItemDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Order\IPromotionDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Order\IRequestAnswerDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Order\IRequestDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\PaymentShipment\IPaymentDAO.cs" />
+    <Compile Include="Core\Data\PaymentShipment\IShipmentDAO.cs" />
+    <Compile Include="Core\Data\Spec\IGoodsDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Spec\ISpecComboDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Spec\ISpecDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Spec\ISpecItemDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Goods\GoodsManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Goods\OrderManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Goods\PaymentManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Goods\PriceManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Goods\SessionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\IO\PageUtilityB2C.cs" />
+    <Compile Include="Core\PaymentShipment\LocationManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\PaymentShipment\LocationTreeItem.cs" />
+    <Compile Include="Core\Payment\AlipayMobile\AlipayConfig.cs" />
+    <Compile Include="Core\Payment\AlipayMobile\AlipayCore.cs" />
+    <Compile Include="Core\Payment\AlipayMobile\AlipayNotify.cs" />
+    <Compile Include="Core\Payment\AlipayMobile\AlipaySubmit.cs" />
+    <Compile Include="Core\Payment\AlipayMobile\MD5.cs" />
+    <Compile Include="Core\Payment\AlipayMobile\RSA.cs" />
+    <Compile Include="Core\Payment\Alipay\AlipayConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Payment\Alipay\AlipayCore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Payment\Alipay\AlipayNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Payment\Alipay\AlipaySubmit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Payment\Alipay\MD5.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Payment\Unionpay\BigNum.cs" />
+    <Compile Include="Core\Payment\Unionpay\CertUtil.cs" />
+    <Compile Include="Core\Payment\Unionpay\HttpClient.cs" />
+    <Compile Include="Core\Payment\Unionpay\SDKConfig.cs" />
+    <Compile Include="Core\Payment\Unionpay\SDKUtil.cs" />
+    <Compile Include="Core\Payment\Unionpay\SecurityUtil.cs" />
+    <Compile Include="Core\Payment\WeiXin\Config.cs" />
+    <Compile Include="Core\Payment\WeiXin\Data.cs" />
+    <Compile Include="Core\Payment\WeiXin\Exception.cs" />
+    <Compile Include="Core\Payment\WeiXin\HttpService.cs" />
+    <Compile Include="Core\Payment\WeiXin\JsApiPay.cs" />
+    <Compile Include="Core\Payment\WeiXin\Log.cs" />
+    <Compile Include="Core\Payment\WeiXin\NativeNotify.cs" />
+    <Compile Include="Core\Payment\WeiXin\NativePay.cs" />
+    <Compile Include="Core\Payment\WeiXin\Notify.cs" />
+    <Compile Include="Core\Payment\WeiXin\WxPayApi.cs" />
+    <Compile Include="Model\AttributesInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\BrandInfo.cs" />
+    <Compile Include="Model\Configuration\B2CConfigurationInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Configuration\B2CConfigurationInfoExtend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Consultation\ConsultationInfo.cs" />
+    <Compile Include="Model\Enumerations\Consultation\EConsultationType.cs" />
+    <Compile Include="Model\Enumerations\EOrderStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\EPromotionTarget.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\PaymentShipment\EShipmentStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\Order\ERequestEstimate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\Order\ERequestStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\PaymentShipment\EPaymentAlipay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\PaymentShipment\EShipmentPeriod.cs" />
+    <Compile Include="Model\Enumerations\PaymentShipment\EPaymentStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\PaymentShipment\EPaymentType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\ReturnOrder\EAuditStatus.cs" />
+    <Compile Include="Model\Enumerations\ReturnOrder\EOrderReturnType.cs" />
+    <Compile Include="Model\Enumerations\ReturnOrder\EReturnMoneyStatus.cs" />
+    <Compile Include="Model\Enumerations\ReturnOrder\EReturnOrderStatus.cs" />
+    <Compile Include="Model\Enumerations\ReturnOrder\EStatus.cs" />
+    <Compile Include="Model\Json\CartItemTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Json\CartTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Json\ConsigneeItemTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Json\ConsigneeTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Json\InvoiceItemTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Json\InvoiceTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Json\JSONObjectInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Json\OrderTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Json\PaymentItemTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Json\ShipmentItemTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Filter\FilterInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Filter\FilterItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\OrderItemReturn\OrderItemReturnInfo.cs" />
+    <Compile Include="Model\OrderItemReturn\OrderItemReturnInfoExtend.cs" />
+    <Compile Include="Model\OrderItemReturn\OrderItemReturnStatus.cs" />
+    <Compile Include="Model\Order\AmountInfo.cs" />
+    <Compile Include="Model\Order\CartInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Order\ConsigneeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Order\FavoriteInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Order\HistoryInfo.cs" />
+    <Compile Include="Model\Order\OrderItemCommentInfo.cs" />
+    <Compile Include="Model\Order\UserSettingInfo.cs" />
+    <Compile Include="Model\Order\InvoiceInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Order\LocationInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Order\OrderInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Order\OrderItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Order\PromotionInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Order\RequestAnswerInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Order\FollowInfo.cs" />
+    <Compile Include="Model\Order\RequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\PaymentShipment\PaymentUnionInfo.cs" />
+    <Compile Include="Model\PaymentShipment\PaymentAlipayInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\PaymentShipment\PaymentInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\PaymentShipment\ShipmentInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Spec\GoodsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Spec\SpecComboInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Spec\SpecInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Spec\SpecItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\BrandContentDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\B2CConfigurationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Consultation\ConsultationDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\FilterDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\FilterItemDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\GoodsContentDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\OrderReturn\OrderItemReturnDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Order\CartDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Order\ConsigneeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Order\HistoryDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Order\OrderItemCommentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Order\UserSettingDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Order\InvoiceDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Order\LocationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Order\OrderDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Order\OrderItemDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Order\PromotionDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Order\RequestAnswerDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Order\FollowDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Order\RequestDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\PaymentShipment\PaymentDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\PaymentShipment\ShipmentDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Spec\GoodsDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Spec\SpecComboDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Spec\SpecDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Spec\SpecItemDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service1.Designer.cs">
+      <DependentUpon>Service1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.BackgroundPages\BaiRong.BackgroundPages.csproj">
+      <Project>{64529dc0-3c8b-4d10-a921-ead9f03fdf21}</Project>
+      <Name>BaiRong.BackgroundPages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Controls\BaiRong.Controls.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b4465}</Project>
+      <Name>BaiRong.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Core\BaiRong.Core.csproj">
+      <Project>{3d8cb06b-1791-4685-ab56-965b9f41666e}</Project>
+      <Name>BaiRong.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Provider\BaiRong.Provider.csproj">
+      <Project>{f5094daf-85e0-4754-a8c4-c236b9f9dba6}</Project>
+      <Name>BaiRong.Provider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Service\BaiRong.Service.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b8899}</Project>
+      <Name>BaiRong.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiteServer.CMS\SiteServer.CMS.csproj">
+      <Project>{61a793e1-3e99-4bdc-bc20-7298ca3e0000}</Project>
+      <Name>SiteServer.CMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>注册</title>
+    <link rel="stylesheet" href="../components/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../components/lib/fontawesome/css/font-awesome.min.css" />
+    <script type="text/javascript" src="../components/lib/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../components/lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="common_login_style login_box">
+            <script type="text/html" class="registerController">
+
+                <form class="form-horizontal" role="form" onsubmit="registerController.submit();return false;">
+                    <div class="form-group">
+                        <p class="p_title">无需注册，直接使用社交账号登录</p>
+                    </div>
+                    <% if(thirdLoginList.length>0){%>
+                    <div class="form-group other_login clearfix">
+                        <% for (var i = 0; i < thirdLoginList.length; i++){%>
+
+                        <% if(thirdLoginList[i].thirdLoginType == 0){ %>
+                        <a href=""<% if(thirdLoginList.length==1){%> style="width:98%;" <%}%> <% if(thirdLoginList.length==3 && thirdLoginList[2].thirdLoginType==0){%> style="width:98%;" <%}%> class="btn btn-primary" onclick="sdkController.login(1); return false;"><i class="fa fa-qq"></i>QQ</a>
+                        <% }%>
+
+                        <% if(thirdLoginList[i].thirdLoginType == 1){ %>
+                        <a href=""<% if(thirdLoginList.length==1){%> style="width:98%;" <%}%> <% if(thirdLoginList.length==3 && thirdLoginList[2].thirdLoginType==1){%> style="width:98%;" <%}%> class="btn btn-warning" onclick="sdkController.login(2); return false;"><i class="fa fa-weibo"></i>微博</a>
+                        <% }%>
+
+                        <% if(thirdLoginList[i].thirdLoginType == 2){ %>
+                        <a href=""<% if(thirdLoginList.length==1){%> style="width:98%;" <%}%> <% if(thirdLoginList.length==3 && thirdLoginList[2].thirdLoginType==2){%> style="width:98%;" <%}%> class="btn btn-success" onclick="sdkController.login(3); return false;"><i class="fa fa-weixin"></i>微信</a>
+                        <% }%>
+
+                        <%}%>
+                    </div>
+                    <% } %>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                            <input class="form-control input_text" type="text" placeholder="用户名" id="loginName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                            <input class="form-control input_text" type="text" placeholder="邮箱" id="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-mobile"></i></div>
+                            <input class="form-control input_text" type="text" placeholder="手机" id="mobile">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                            <input class="form-control input_text" placeholder="密码" id="password" type="password">
+                        </div>
+                    </div>
+                    <div class="form-group btn_box clearfix">
+                        <span class="fl forget_btn">
+                            已有帐号？
+                            <a class="reg_link" href="javascript:;" onclick="registerController.redirectToLogin();return false;">登录</a>
+                        </span>
+                        <button type="submit" class="fr btn btn-primary">注册</button>
+                    </div>
+                </form>
+
+            </script>
+        </div>
+    </div>
+</body>
+</html>
+
+<link href="../components/lib/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+<script src="../components/lib/jquery-1.11.0.min.js" language="javascript"></script>
+<script src="../components/lib/json2.js" language="javascript"></script>
+<script src="../components/lib/toastr/toastr.min.js" language="javascript"></script>
+<script src="../components/lib/artTemplate/template.js" language="javascript"></script>
+<link href="../components/lib/iCheck/flat/red.css" rel="stylesheet" type="text/css" />
+<script src="../components/lib/iCheck/icheck.min.js" language="javascript"></script>
+
+<script src="../components/js/services/notifyService.js" language="javascript"></script>
+<script src="../components/js/services/utilService.js" language="javascript"></script>
+<script src="../components/js/services/userService.js" language="javascript"></script>
+
+<script src="../components/js/controllers/sdkController.js" language="javascript"></script>
+<script src="../components/js/controllers/registerController.js" language="javascript"></script>

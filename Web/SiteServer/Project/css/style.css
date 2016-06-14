@@ -1,0 +1,144 @@
+﻿@charset "utf-8";
+/* 全局样式 */
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none}
+h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
+body>div, form>div {margin:0 auto}
+div {text-align:left}
+a img {border:0}
+table{border-collapse:collapse; border-spacing:0}
+select,input,textarea{ font: 12px "宋体"; outline: none}
+body { color:#333; text-align:center; font: 12px "宋体"}
+ul, ol, li {list-style-type:none;vertical-align:0}
+a {outline-style:none;color:#333;text-decoration:none}
+a:hover { color: #CC0000; text-decoration: underline}
+a, area {blr:expression(this.onFocus=this.blur())}
+img {max-width: 100%}
+input.ng-invalid.ng-dirty {
+  background-color: #FA787E;
+}
+input.ng-valid.ng-dirty {
+  background-color: #78FA89;
+}
+:focus {-moz-outline-style: none}
+.clear {clear:both;height:0; overflow:hidden; visibility:hidden}
+.hidden,.hide {display:none}
+.block,.show {display:block}
+.fl{float:left}
+.fr{float:right}
+.fline{float:left; display:inline}
+.clearfix:after{clear:both;content:".";height:0;display:block;visibility:hidden}
+.chgBtn{cursor:pointer}
+.f12{font-size:12px}
+.f12{font-size:13px}
+.f14{font-size:14px}
+.f12{font-size:15px}
+.f16{font-size:16px}
+.fwr{font-family:"微软雅黑"}
+.far{font-family:Arial}
+.fb{font-weight:bold}
+.auto{margin-left:auto; margin-right:auto}
+.cor_red{color:#C00}
+.cor_bs,.cor_bs:hover{color:#fff}
+.pr{position:relative}
+.pa{position:absolute}
+.mt10{margin-top:10px;}
+.mb10{margin-bottom:10px;}
+.aliTop { background: url(../img/aliTop.jpg) repeat-x; height: 100px; }
+.aliTopCon { width: 990px; margin: 0px auto; }
+.aliTopCon img { padding: 30px 0px 0px 47px; }
+.aliBody { background: #FAFAFA; }
+.aliMain { margin: 10px auto 0px; width: 990px; }
+.ali_con1 { line-height: 18px; background: #FFFBE6; padding: 20px 30px; border: 1px solid #F8C8A7; }
+.ali_blue { color: #5788CC; }
+.ali_org { color: #FF6600; }
+.ali_pos { font-size: 14px; line-height: 33px; background: url(../img/ali_pos.jpg) no-repeat; height: 33px; margin-top: 10px; }
+.ali_pos ul li { text-align: center; float: left; width: 247px; }
+.ali_posCut { color: #FFF; }
+.ali_box { background: #FFF; margin-top: 10px; border: 1px solid #E6E5E4; padding-top: 28px; }
+.ali_set1 { font-size: 14px; line-height: 60px; font-weight: bold; background: url(../img/alihome.jpg) no-repeat left center; height: 60px; margin-left: 60px; padding-left: 80px; }
+.ali_box ul li { margin-bottom: 23px; min-height:23px; _height:23px; }
+.ali_span { font-size: 14px; line-height: 30px; text-align: right; float: left; height: 30px; width: 280px; padding-right: 16px; }
+.ali_squer { color: #FF6600; }
+.ali_info { float: left; width: 686px; }
+.ali_int { background: url(../img/ali_int1.jpg) no-repeat; padding: 0px 5px; float: left; height: 30px; width: 384px; line-height: 30px; border-width: 0px; border-style: none; margin-right: 5px; }
+.input_text { 
+-webkit-appearance: none;
+-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+-webkit-rtl-ordering: logical;
+-webkit-transition-delay: 0s, 0s;
+-webkit-transition-duration: 0.2s, 0.2s;
+-webkit-transition-property: border, box-shadow;
+-webkit-transition-timing-function: linear, linear;
+-webkit-user-select: text;
+-webkit-writing-mode: horizontal-tb;
+background-color: rgb(255, 255, 255);
+border-bottom-color: rgb(204, 204, 204);
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(204, 204, 204);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(204, 204, 204);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(204, 204, 204);
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-top-style: solid;
+border-top-width: 1px;
+box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+color: rgb(85, 85, 85);
+cursor: auto;
+display: inline-block;
+font-family: Tahoma, Arial, 宋体, sans-serif;
+font-size: 14px;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+height: 20px;
+letter-spacing: normal;
+line-height: 20px;
+margin-bottom: 10px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+padding-bottom: 4px;
+padding-left: 6px;
+padding-right: 6px;
+padding-top: 4px;
+text-align: start;
+text-indent: 0px;
+text-shadow: none;
+text-transform: none;
+transition-delay: 0s, 0s;
+transition-duration: 0.2s, 0.2s;
+transition-property: border, box-shadow;
+transition-timing-function: linear, linear;
+vertical-align: middle;
+width: 380px;
+word-spacing: 0px;
+writing-mode: lr-tb;
+ }
+.ali_alert { line-height: 30px; color: #999; }
+.ali_file { float: left; padding-top: 3px; margin-right:5px; }
+.aliImgBox { clear: both; padding: 5px 0px 23px; }
+.aliArea { line-height: 20px; padding: 5px; height: 72px; width: 650px; background: url(../img/aliareaBg.jpg) no-repeat; border-width: 0px; border-style: none; }
+.ali_lineBox { height: 5px; border-bottom: 1px solid #E6E5E4; clear: both; overflow: hidden; margin-bottom: 28px; }
+.ali_btnBox { text-align: center; height: 62px; padding-top: 30px; background: #F7F7F7; border-top: 1px solid #E6E5E4; border-right: 1px solid #E6E5E4; border-left: 1px solid #E6E5E4; clear: both; }
+.alifooter { line-height: 24px; color: #999; text-align: center; padding: 24px 0px 48px; }
+.ali_ok { color: #FF6F0C; }
+.ali_pos1 { background: url(../img/ali_pos.jpg) no-repeat; }
+.ali_pos2 { background: url(../img/ali_pos2.jpg) no-repeat; }
+.ali_pos3 { background: url(../img/ali_pos3.jpg) no-repeat; }
+.ali_pos4 { background: url(../img/ali_pos4.jpg) no-repeat; }
+.ali_susBox { padding: 35px 0px; background: #E5F5FF; border: 1px solid #A5DCFF; margin-top: 10px; }
+.ali_susT { font-size: 14px; line-height: 32px; font-weight: bold; background: url(../img/ali_ok.jpg) no-repeat left center; display: block; height: 32px; margin: 0px 0px 15px; padding-left: 42px; }
+.ali_svr { line-height: 20px; color: #666; text-align: center; }
+.ali_susTbox { padding-left: 180px; }

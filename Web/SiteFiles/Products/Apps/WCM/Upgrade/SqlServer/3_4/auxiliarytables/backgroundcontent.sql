@@ -1,0 +1,5 @@
+ALTER TABLE {0} ADD [SourceID] [int] NOT NULL DEFAULT (0)
+
+GO
+
+UPDATE {0} SET [SourceID] = 0 WHERE [SourceID] IS NULL

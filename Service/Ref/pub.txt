@@ -1,0 +1,4 @@
+http://soft.download.siteserver.cn/latest/service/
+http://laixx:99/
+
+发布之前对解决方案进行编译

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网站标题</title>
+    <meta name="description" content="网站描述" />
+    <meta name="keywords" content="网站关键字" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header">
+        <a class="logo" href="#"><img src="images/mnlogo.png" width="208" height="26" /></a>
+        <div class="headR">
+            <a class="cor_blue" href="#">15300242622</a> &nbsp;&nbsp; <a href="#" class="cor_blue">退出</a> | <a href="#">网站首页>></a>
+        </div>
+    </div>
+    <div class="navBg">
+        <div class="nav">
+            <ul>
+                <li><a class="nav_a" href="#">首页</a></li>
+                <li><a class="nav_a nav_cuta" href="#">帐号安全</a></li>
+                <li><a class="nav_a" href="#">帐号信息</a></li>
+                <li><a class="nav_a" href="#">消息中心</a></li>
+                <li><a class="nav_a" href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mcon">
+        <div class="mcL mcLx1">
+            <ul>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico12.png" width="35" height="35" /><img class="hidden" src="images/ml_ico12a.png" width="35" height="35" />系统公告</a></li>
+                <li><a href="#" class="m2menu_a m2menu_cuta"><img class="block" src="images/ml_ico13.png" width="35" height="35" /><img class="hidden" src="images/ml_ico13a.png" width="35" height="35" />系统通知</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico7.png" width="35" height="35" /><img class="hidden" src="images/ml_ico7a.png" width="35" height="35" />站内信</a></li>
+            </ul>
+        </div>
+        <div class="mcR mcRx2">
+            <div class="mc4_top">
+
+                <a class="mc4_a1" href="#">系统公告</a>
+                <a class="mc4_a1 mc4_cuta1" href="#">系统通知</a>
+                <a class="mc4_a1" href="#">站内信</a>
+            </div>
+            <div class="mc4List">
+                <ul id="ulMessageNotice"></ul>
+                <div class="clear"></div>
+            </div>
+            <!--<div class="mpage">
+                <span class="mpage_Nonum">共118条</span>
+                <a href="#" class="mpage_num">上一页</a>
+                <a href="#" class="mpage_num mpage_cutnum">1</a>
+                <a href="#" class="mpage_num">2</a>
+                <a href="#" class="mpage_num">3</a>
+                <a href="#" class="mpage_num">4</a>
+                ...
+                <a href="#" class="mpage_num">12</a>
+                <a href="#" class="mpage_num">下一页</a>
+            </div>-->
+            <div class="mpage" id="divPageLink">
+                <span class="mpage_Nonum" id="spanTotal">共0条</span>
+                <a href="#" class="mpage_num">上一页</a>
+                <a href="#" class="mpage_num mpage_cutnum">1</a>
+                <a href="#" class="mpage_num">下一页</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="mfm_footer">
+        北京百容千域软件技术开发有限公司 &nbsp; 版权所有 Copyright © 2003-2015<br />
+        Powered by SiteServer CMS &nbsp; 京ICP备10013847号
+    </div>
+</body>
+</html>
+<script src="assets/js/lib.js"></script>
+<script src="assets/js/app.js" id="controllerName" data-controller-name="userMessageNotice"></script>

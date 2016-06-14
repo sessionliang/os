@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网站标题</title>
+    <meta name="description" content="网站描述" />
+    <meta name="keywords" content="网站关键字" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header">
+        <a class="logo" href="#"><img src="images/mnlogo.png" width="208" height="26" /></a>
+        <div class="headR">
+            <a class="cor_blue" href="#">15300242622</a> &nbsp;&nbsp; <a href="#" class="cor_blue">退出</a> | <a href="#">网站首页>></a>
+        </div>
+    </div>
+    <div class="navBg">
+        <div class="nav">
+            <ul>
+                <li><a class="nav_a" href="#">首页</a></li>
+                <li><a class="nav_a nav_cuta" href="#">帐号安全</a></li>
+                <li><a class="nav_a" href="#">帐号信息</a></li>
+                <li><a class="nav_a" href="#">消息中心</a></li>
+                <li><a class="nav_a" href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mcon">
+        <div class="mcL mcLx1">
+            <ul>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico5.png" width="35" height="35" /><img class="hidden" src="images/ml_ico5a.png" width="35" height="35" />修改密码</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico6.png" width="35" height="35" /><img class="hidden" src="images/ml_ico6a.png" width="35" height="35" />绑定手机</a></li>
+                <li><a href="#" class="m2menu_a m2menu_cuta"><img class="block" src="images/ml_ico7.png" width="35" height="35" /><img class="hidden" src="images/ml_ico7a.png" width="35" height="35" />登录邮箱</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico8.png" width="35" height="35" /><img class="hidden" src="images/ml_ico8a.png" width="35" height="35" />帐号安全</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico9.png" width="35" height="35" /><img class="hidden" src="images/ml_ico9a.png" width="35" height="35" />登录记录</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico10.png" width="35" height="35" /><img class="hidden" src="images/ml_ico10a.png" width="35" height="35" />密保问题</a></li>
+            </ul>
+        </div>
+        <div class="mcR mcRx2">
+            <div class="m3bd_top">
+                <div class="m3bd_st1">登录邮箱</div>
+                <div class="m3hd_ss1" id="divNoBindEmail">您还没有设置登录邮箱 &nbsp; <a class="m3hd_a1" href="javascript:;" id="btnSetEmail">现在设置</a></div>
+                <div class="m3hd_ss1" id="divBindEmail"><span class="m3hd_tel" id="spanUserBindEmail"></span> &nbsp; <a class="m3hd_a1" href="javascript:;" id="btnUpdateEmail">修改</a></div>
+                登录邮箱可以用来登录您的帐号与找回密码
+            </div>
+            <div class="m3hd_bom">
+                <strong class="f14">登录邮箱常见问题</strong>
+                <stl:dynamic>
+                    <stl:pagecontents channelindex="登录邮箱常见问题" pagenum="10">
+                        <dd>
+                            <stl:a>
+                                <p><strong>·</strong> <stl:a>{Content.Title}</stl:a></p>
+                            </stl:a>
+                        </dd>
+                    </stl:pagecontents>
+                </stl:dynamic>
+                <!--<p><strong>·</strong> <a href="#">我有一个邮箱已经注册了其他帐号，怎样能通过邮箱找回本帐号的密码？</a></p>
+                <p><strong>·</strong> <a href="#">我有一个邮箱已经注册了其他帐号，怎样能通过邮箱找回本帐号的密码？</a></p>
+                <p><strong>·</strong> <a href="#">我有一个邮箱已经注册了其他帐号，怎样能通过邮箱找回本帐号的密码？</a></p>-->
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="mfm_footer">
+        北京百容千域软件技术开发有限公司 &nbsp; 版权所有 Copyright © 2003-2015<br />
+        Powered by SiteServer CMS &nbsp; 京ICP备10013847号
+    </div>
+</body>
+</html>
+<!--修改密码弹出层 开始-->
+<div class="mlayBg hide"></div>
+<div class="mlay hide">
+    <div class="mlay_t"><span class="fl">绑定邮箱</span><img class="mrclose" src="images/m2close.jpg" width="31" height="26" /></div>
+    <div class="mlay_ul">
+        <div class="nmlay_alr2">我们会向您的邮箱发送一封验证码，请注意查收。</div>
+        <ul>
+            <li><span class="mlay_s1">邮箱</span><input class="mlay_int" placeholder="请输入新邮箱" id="txtSendEmail" name="txtSendEmail" type="text" /><a href="#" style="margin-right:30px;" id="btnSendEmail" class="mLayOk_btn2">发送</a></li>
+            <li><span class="mlay_s1">校验码</span><input class="mlay_int mlay_int2" placeholder="请输入6位校验码" id="txtValidateCode" name="txtValidateCode" type="text" /></li>
+            <li><span class="mlay_s1">&nbsp;</span><button type="button" id="btnSubmitEmail" class="pubBtn mlay_btn"><span>提交</span></button></li>
+        </ul>
+    </div>
+</div>
+<!--修改密码弹出层 结束-->
+<script src="assets/js/lib.js"></script>
+<script src="assets/js/app.js" id="controllerName" data-controller-name="loginEmail"></script>
+
+

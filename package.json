@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "aws-sdk": "^2.1.32",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-cssmin": "*",
+    "gulp-ftp": "^1.0.1",
+    "gulp-less": "*",
+    "gulp-msbuild": "^0.2.11",
+    "gulp-react": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "^0.5.0",
+    "gulp-tsc": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*",
+    "gulp-zip": "^3.0.2",
+    "less": "^2.1.2",
+    "mime": "^1.3.4",
+    "require-dir": "*",
+    "rimraf": "^2.2.8",
+    "run-sequence": "^1.0.2",
+    "stream-combiner2": "^1.0.2",
+    "unzip": "^0.1.11",
+    "vinyl-source-stream": "*",
+    "xmlpoke": "^0.1.9",
+    "yargs": "^3.10.0"
+  }
+}

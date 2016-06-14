@@ -1,0 +1,170 @@
+﻿body {
+	font:"宋体,Verdana,Arial";
+	font-size:12px;
+	background:transparent;
+	margin:0;
+}
+.inputstyle {
+	border:1px solid #7F9DB9;
+	width:170px;
+	height:16px;
+	padding:2px;
+	margin:0;
+}
+h1, h2, h3, h4 {
+	padding:0;
+	margin:0;
+}
+a {
+	color:#097fd1;
+}
+a:link, a:visited, a:active {
+	color:#097fd1;
+	text-decoration:none;
+}
+a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+a.b: {
+color:#666;
+text-decoration:none;
+}
+a.b:link, a.b:visited, a.b:active {
+	color:#666;
+	text-decoration:none;
+}
+a.b:hover {
+	color:#097fd1;
+	text-decoration:none;
+}
+#login {
+	margin:0 auto;
+	float:none;
+	width:371px;
+	padding:0 0 10px 0;
+	border:1px solid #99c2ee;
+}
+#login h4 {
+	background:url(frame/login_bg.gif) no-repeat left;
+	height:22px;
+	font-weight:bold;
+	font-size:12px;
+	padding:7px 0 0 10px;
+	border-bottom:0px solid #438ece;
+}
+#login h4 span {
+	float:right;
+	padding-right:5px;
+	cursor:pointer;
+}
+#login ul {
+	padding:8px 0;
+	margin:0;
+}
+#login ul li {
+	list-style-type:none;
+	padding:5px 0;
+}
+#login ul li span {
+	width:110px;
+	float:left;
+	text-align:right;
+	padding-right:5px;
+	padding-top:5px;
+}
+#login .about {
+	margin-left:110px;
+	_margin-left:115px;
+	padding-top:3px;
+	clear:both;
+}
+#login #verifytip {
+	color:#808080;
+}
+#login select {
+	border:1px solid #CCC;
+	font-size:12px;
+}
+#login em {
+	color:#F00;
+	padding:0 3px;
+	font-style:normal;
+}
+#login p {
+	padding:15px;
+	margin:0;
+}
+#login label {
+	padding:0 0 0 5px;
+}
+#login .error {
+	margin:15px 30px;
+	background:url(frame/wrong.gif) no-repeat 10px 25px;
+	padding:31px 0 30px 65px;
+	line-height:20px;
+}
+.login_button {
+	margin:0 auto;
+	padding:0;
+	float:none;
+	text-align:center;
+}
+.loginbtn {
+	border:0;
+	background:url(frame/btn_gray.gif);
+	color:#204497;
+	width:68px;
+	height:27px;
+	cursor:pointer;
+}
+.btn {
+	border:0;
+	background:url(frame/login_btn.gif);
+	color:#2473A2;
+	width:100px;
+	height:33px;
+	cursor:pointer;
+	font-weight:bold;
+}
+.loginbtn_g {
+	border:0;
+	background:url(frame/login_btn2.gif);
+	color:#2473A2;
+	width:126px;
+	height:33px;
+	cursor:pointer;
+	font-weight:bold;
+}
+.qlogin_button {
+	margin:0 auto;
+	padding:0;
+	float:none;
+	text-align:center;
+}
+.btnlong {
+	border:0;
+	background:url(frame/butlong.gif);
+	color:#2473A2;
+	width:125px;
+	height:31px;
+	cursor:pointer;
+	font-weight:bold;
+}
+.lineright {
+	text-align:right;
+	padding:10px 5px 0 0;
+}
+.linecenter {
+	text-align:center;
+	padding:10px 5px 0 0;
+}
+.hi_style {
+	height:200px;
+}
+u {
+	text-decoration:none;
+}
+.main {
+	background-color:#ffffff;
+}

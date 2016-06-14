@@ -1,0 +1,7 @@
+修改editor_all.js & editor_all_min.js
+
+01
+	editor.options.initialFrameWidth + "%";
+	
+02
+	修改insertvideo与music

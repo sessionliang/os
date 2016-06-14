@@ -1,0 +1,73 @@
+<script type="text/javascript">!window.jQuery&&document.write('<script src="/sitefiles/bairong/jquery/jquery-1.9.1.min.js" language="javascript"></'+'script>');</script><script>var $pageInfo = { publishmentSystemID : 82, channelID : 82, contentID : 0, siteUrl : "/usercenter", homeUrl : "/usercenter/center", currentUrl : "http://siteserver.cn/usercenter/LoginEmail.html", rootUrl : "http://siteserver.cn", apiUrl : "http://siteserver.cn" }</script>
+  
+   
+  <div class="mcon"> 
+    
+   <div class="mcR mcRx2"> 
+    <div class="m3bd_top">
+                <div class="m3bd_st1">登录邮箱</div>
+                <div class="m3hd_ss1" id="divNoBindEmail">您还没有设置登录邮箱 &nbsp; <a class="m3hd_a1" href="javascript:;" id="btnSetEmail">现在设置</a></div>
+                <div class="m3hd_ss1" id="divBindEmail"><span class="m3hd_tel" id="spanUserBindEmail"></span> &nbsp; <a class="m3hd_a1" href="javascript:;" id="btnUpdateEmail">修改</a></div>
+                登录邮箱可以用来登录您的360帐号与找回密码
+            </div>
+            <div class="m3hd_bom">
+                <strong class="f14">登录邮箱常见问题</strong>
+                   <span id="ajaxElement_1_441"></span>
+<script type="text/javascript" language="javascript">
+function getQueryString()
+{
+  var i, len, params = '', hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+  if(hashes.length == 0) return params;
+  for(i = 0, len = hashes.length, len; i < len; i+=1) {
+    hash = hashes[i].split('=');
+    if (hash && hash.length == 2){
+      value = encodeURIComponent(decodeURIComponent(decodeURIComponent(hash[1])));
+      params += (hash[0] + '=' + value + '&');
+    }
+  }
+  if (params && params.length > 0) params = params.substring(0, params.length - 1);
+  return params;
+}
+function stlDynamic_ajaxElement_1_441(pageNum)
+{
+    try
+    {
+        var url = "/sitefiles/services/cms/dynamic/output.aspx?publishmentSystemID=82&" + getQueryString();
+        var pars = "pageNodeID=82&pageContentID=0&pageTemplateID=1313&isPageRefresh=False&pageUrl=3bhcvaB5CTTEqT8GzpJo5tJ2BaS5dtseoBWaks3bKRRAABxXSekhIPnjJaZY47V4uN8K8fT2D4g0equals0&ajaxDivID=ajaxElement_1_441&templateContent=Rrh7QPL0add0a9DERsoQP8uRBRJV7mnvaDzP5YrGYxAd5fyON0add0AHVGezkb75WG03rxP7UAtZd0add0AdM1zMXyCSfwhK31xYB10YAfPwmPhjuhGgYTQjwwHeW5Rzu2ag27MgM0add0vpiPn60add0Hh0add0qnCRmmQth5OgbQlVD0add0Mj7Myc1Sv7TkchIWMUVRB0add0e3efaYkxjdR0slash0zxiWmJF1M6nTekz9fRaVe9L3mu6BvX7wdSkfLLoGlmXACYsCQLmtQIOu1Rj2IZb0slash0H90dRUAgzTFfM2CI7IBILONGJpUbbwmxu3ENJ8Y4RfUltXXjAt5kXBJ3rKufJV2JB6sOzz1bYdix0E9LwUezPf3kSwVnxNPJybZ9F0add03WBJSdIpZWTkWj9YaRbXlkgyhGK0GLiSs7A0add0Z30niqVcGIhDBm3TwELeBuy9aItV4NHanjiaNZXuaa3n7u0add0uIKTRd38Ne57BC0qVnkMYKW5xDi6fICyx1rciDiB3Xt0qk57IzrJqTv6wrcqC5TRSBzglAWYEVNTUhnVm4QW4SgCxA11lJKo1MHkaxiH3dR5vkMgpZ7TOVizbskMdWnnUSP5vpS0add0Z4X6TBk4cGTxV4RAD0ccMz80add00slash04gKC20add0Sfpt";
+        if (pageNum && pageNum > 0)
+        {
+            pars += "&pageNum=" + pageNum;
+        }
+        jQuery.post(url, pars, function(data,textStatus){
+            jQuery("#ajaxElement_1_441").html(data);
+        });
+
+    }catch(e){}
+}
+stlDynamic_ajaxElement_1_441(0);
+</script>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+  </div>
+<!--修改密码弹出层 开始-->
+<div class="mlayBg hide"></div>
+<div class="mlay hide">
+    <div class="mlay_t"><span class="fl">绑定邮箱</span><img class="mrclose" src="images/m2close.jpg" width="31" height="26" /></div>
+    <div class="mlay_ul">
+        <div class="nmlay_alr2">我们会向您的邮箱发送一封验证码，请注意查收。</div>
+        <ul>
+            <li><span class="mlay_s1">邮箱</span><input class="mlay_int" placeholder="请输入新邮箱" id="txtSendEmail" name="txtSendEmail" type="text" /><a href="#" style="margin-right:30px;" id="btnSendEmail" class="mLayOk_btn2">发送</a></li>
+            <li><span class="mlay_s1">校验码</span><input class="mlay_int mlay_int2" placeholder="请输入6位校验码" id="txtValidateCode" name="txtValidateCode" type="text" /></li>
+            <li><span class="mlay_s1">&nbsp;</span><button type="button" id="btnSubmitEmail" class="pubBtn mlay_btn"><span>提交</span></button></li>
+        </ul>
+    </div>
+</div>
+<div class="mLayOk hide">
+    <span class="mLayOk_s1"><img src="images/nm_ico1.jpg" /><span style="top:0px;" id="spanTipsMessage"></span></span>
+    <span class="mLayOk_s2"></span>
+    <span class="mLayOk_s3"><a href="javascript:;" id="btnCloseTips" class="mLayOk_btn2">关闭</a></span>
+</div>
+   
+<script src="js/app.js" id="controllerName" data-controller-name="loginEmail"></script> 

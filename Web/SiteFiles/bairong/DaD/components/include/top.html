@@ -1,0 +1,51 @@
+<div class="spec_topBg stl-top" ng-controller="stlTopCtrl">
+  <div class="spec_logo"></div>
+  <div class="spec_top_sel">
+    <div class="spec_top_html">
+    <a href="javascript:;" ng-click="top.modalSelect()" title="点击选择其他模板及页面进行编辑" ng-bind="top.textSelect"></a>
+    </div>
+  </div>
+  <div class="spec_top_link">
+    <div class="btn-group" data-toggle="buttons-radio">
+      <button type="button" left="spec_left_module" class="btn btn-info active"><i class="icon-briefcase icon-white"></i> 构建</button>
+      <button type="button" left="spec_left_layout" class="btn btn-info"><i class="icon-th-large icon-white"></i> 布局</button>
+      <button type="button" left="spec_left_advanced" ng-show="top.isAdvanced" class="btn btn-info"><i class="icon-tasks icon-white"></i> 高级</button>
+    </div>
+  </div>
+  <div class="spec_top_rmenu spec_top_subMenu">
+    <div class="spec_fs1" aria-hidden="true" data-icon="&#xf127;" title="应用选项"></div>
+    <div class="spec_hover-toolbar spec_hover-toolbar-below spec_top_slideMneu">
+      <div class="spec_hover-toolbar-arrow, spec_hover-toolbar-arrow,-border"></div>
+      <div class="spec_hover-toolbar-arrow,"></div>
+      <div class="spec_hover-toolbar-inner">
+        <div class="spec_hover-toolbar-inner2">
+          <div class="spec_hover-toolbar-inner3 w-ui">
+            <ul class="spec_dropdown-content">
+              <li> <a href="http://stl.siteserver.cn" target="_blank"> <span class="spec_fs1" aria-hidden="true" data-icon="&#xe00f;"></span> STL 参考手册 </a> </li>
+              <li> <a href="http://www.siteserver.cn" target="_blank"> <span class="spec_fs1" aria-hidden="true" data-icon="&#xe00e;"></span> SiteServer 官网 </a> </li>
+              <li> <a href="http://bbs.siteserver.cn" target="_blank"> <span class="spec_fs1" aria-hidden="true" data-icon="&#xe024;"></span> SiteServer 论坛 </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="javascript:;" id="stl-save" class="spec_top_text pull-right btn {{top.cssSave}}"><i class="icon-download-alt icon-white"></i> 保存</a>
+  <a href="{{top.urlPreview}}" class="spec_top_text btn pull-right btn-info"><i class="icon-eye-open icon-white"></i> 预览</a>
+
+  <a href="javascript:;" class="spec_top_nbtn spec_webModel" device-width="568px"><div class="spec_imgBg1"></div></a>
+  <a href="javascript:;" class="spec_top_nbtn spec_webModel" device-width="320px"><div class="spec_imgBg2"></div></a>
+  <a href="javascript:;" class="spec_top_nbtn spec_webModel" device-width="768px"><div class="spec_imgBg3"></div></a>
+  <a href="javascript:;" class="spec_top_nbtn spec_webModel spec_top_cutnbtn" device-width="100%"><div class="spec_imgBg4"></div></a>
+  <div class="spec_top_seprate"></div>
+  <a href="javascript:;" class="spec_top_nbtn" ng-click="top.modalRestore()" rel="stl-help" data-content="点击按钮选择并查看历史版本。" data-original-title="历史版本"><div class="spec_imgBg6"></div></a>
+  <a href="javascript:;" class="spec_top_nbtn" ng-click="top.modalEdit()" rel="stl-help" data-content="点击按钮弹出代码编辑页面，编辑后保存。" data-original-title="手工编辑"><div class="spec_imgBg7"></div></a>
+  <a href="javascript:;" class="spec_top_nbtn"><div class="spec_imgBg8"></div></a>
+  <a href="javascript:;" class="spec_top_nbtn {{top.cssGuideline}}" id="stl-guideline" rel="stl-help" data-content="参考线用于指示可拖拽区域，点击按钮显示或关闭参考线。" data-original-title="参考线"><div class="spec_imgBg9"></div></a>
+  <a href="javascript:;" ng-click="top.modalCreate()" class="spec_top_nbtn" rel="stl-help" data-content="点击按钮将生成对应模板的页面。" data-original-title="生成页面"><div class="spec_imgBg10"></div></a>
+  <div class="spec_top_seprate"></div>
+  <a href="javascript:;" id="stl-redo" class="spec_top_nbtn {{top.cssRedo}}" rel="stl-help" data-content="点击按钮将生成对应模板的页面。" data-original-title="恢复"><div class="spec_imgBg11"></div></a>
+  <a href="javascript:;" id="stl-undo" class="spec_top_nbtn {{top.cssUndo}}" rel="stl-help" data-content="点击按钮将生成对应模板的页面。" data-original-title="撤销"><div class="spec_imgBg12"></div></a>
+
+</div>

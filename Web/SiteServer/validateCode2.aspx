@@ -1,0 +1,1 @@
+﻿<%@ Page language="c#" trace="false" Inherits="BaiRong.BackgroundPages.FrameworkValidateCode2" %>

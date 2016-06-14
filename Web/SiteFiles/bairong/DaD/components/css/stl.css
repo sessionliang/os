@@ -1,0 +1,230 @@
+.stl-wrapper {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  min-height: 30px;
+  height: auto;
+  clear: both;
+  padding: 39px 5px 14px;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.stl-wrapper:after {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  line-height: 20px;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+     -moz-border-radius: 4px 0 4px 0;
+          border-radius: 4px 0 4px 0;
+}
+
+.stl-element-a:after {content: "stl:a 获取链接";}
+.stl-element-action:after {content: "stl:action 执行动作";}
+.stl-element-ad:after {content: "stl:ad 固定广告";}
+.stl-element-analysis:after {content: "stl:analysis 显示浏览量";}
+.stl-element-audio:after {content: "stl:audio 播放音频";}
+
+.stl-element-channel:after {content: "stl:channel 栏目值";}
+.stl-element-channels:after {content: "stl:channels 栏目列表";}
+.stl-element-comment:after {content: "stl:comment 评论值";}
+.stl-element-commentinput:after {content: "stl:commentInput 提交评论";}
+.stl-element-comments:after {content: "stl:comments 评论列表";}
+.stl-element-container:after {content: "stl:container 容器";}
+.stl-element-content:after {content: "stl:content 内容值";}
+.stl-element-contents:after {content: "stl:contents 内容列表";}
+.stl-element-contentinput:after {content: "stl:contentInput 提交内容";}
+.stl-element-count:after {content: "stl:count 显示数值";}
+
+.stl-element-digg:after {content: "stl:digg 掘客";}
+.stl-element-dynamic:after {content: "stl:dynamic 动态加载";}
+
+.stl-element-file:after {content: "stl:file 附件";}
+.stl-element-flash:after {content: "stl:flash 显示Flash";}
+.stl-element-focusviewer:after {content: "stl:focusViewer 滚动焦点图";}
+
+.stl-element-govinteractapply:after {content: "stl:govInteractApply 互动交流提交";}
+.stl-element-govinteractquery:after {content: "stl:govInteractQuery 互动交流查询";}
+.stl-element-govpublicapply:after {content: "stl:govPublicApply 依申请公开提交";}
+.stl-element-govpublicquery:after {content: "stl:govPublicQuery 依申请公开查询";}
+
+.stl-element-if:after {content: "stl:if 条件判断";}
+.stl-element-image:after {content: "stl:image 显示图片";}
+.stl-element-include:after {content: "stl:include 包含文件";}
+.stl-element-input:after {content: "stl:input 提交表单";}
+.stl-element-inputcontent:after {content: "stl:inputContent 提交表单值";}
+.stl-element-inputcontents:after {content: "stl:inputContents 提交表单列表";}
+.stl-element-itemtemplate:after {content: "stl:itemTemplate 列表项";}
+
+.stl-element-layout:after {content: "stl:layout 布局";}
+.stl-element-location:after {content: "stl:location 当前位置";}
+.stl-element-login:after {content: "stl:login 用户登录及状态显示";}
+
+.stl-element-marquee:after {content: "stl:marquee 无间隔滚动";}
+.stl-element-menu:after {content: "stl:menu 下拉菜单";}
+
+.stl-element-navigation:after {content: "stl:navigation 显示导航";}
+
+.stl-element-pagechannels:after {content: "stl:pageChannels 翻页栏目列表";}
+.stl-element-pagecomments:after {content: "stl:pageComments 翻页评论列表";}
+.stl-element-pagecontents:after {content: "stl:pageContents 翻页内容列表";}
+.stl-element-pageinputcontents:after {content: "stl:pageInputContents 翻页提交表单列表";}
+.stl-element-pageitem:after {content: "stl:pageItem 翻页项";}
+.stl-element-pageitems:after {content: "stl:pageItems 翻页项容器";}
+.stl-element-pagesqlcontents:after {content: "stl:pageSqlContents 翻页数据库数据列表";}
+.stl-element-photocontent:after {content: "stl:photoContent 内容图片";}
+.stl-element-photocontents:after {content: "stl:photoContents 内容图片列表";}
+.stl-element-player:after {content: "stl:player 播放视频";}
+.stl-element-printer:after {content: "stl:printer 打印";}
+
+.stl-element-querystring:after {content: "stl:queryString 数据库查询语句";}
+
+.stl-element-register:after {content: "stl:register 用户注册";}
+.stl-element-resume:after {content: "stl:resume 提交简历";}
+.stl-element-rss:after {content: "stl:rss Rss订阅";}
+
+.stl-element-searchinput:after {content: "stl:searchInput 搜索框";}
+.stl-element-searchoutput:after {content: "stl:searchOutput 搜索结果";}
+.stl-element-select:after {content: "stl:select 下拉列表";}
+.stl-element-site:after {content: "stl:site 站点值";}
+.stl-element-sites:after {content: "stl:sites 站点列表";}
+.stl-element-slide:after {content: "stl:slide 图片幻灯片";}
+.stl-element-sqlcontent:after {content: "stl:sqlContent 数据库数据值";}
+.stl-element-sqlcontents:after {content: "stl:sqlContents 数据库数据列表";}
+.stl-element-star:after {content: "stl:star 评分";}
+
+.stl-element-tabs:after {content: "stl:tabs 页签切换";}
+.stl-element-tags:after {content: "stl:tags 标签";}
+.stl-element-tree:after {content: "stl:tree 树状导航";}
+
+.stl-element-value:after {content: "stl:value 获取值";}
+.stl-element-video:after {content: "stl:video 播放视频";}
+.stl-element-visible:after {content: "stl:visible 区域是否可视";}
+.stl-element-vote:after {content: "stl:vote 投票";}
+
+.stl-element-zoom:after {content: "stl:zoom 文字缩放";}
+
+.stl-wrapper .stl-command{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+  filter: alpha(opacity=20); opacity: 0.2;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.stl-wrapper:hover > .stl-command { filter: alpha(opacity=100); opacity: 1; }
+.stl-wrapper .stl-command .stl-drag {
+cursor: move !important;
+}
+
+.stl-wrapper .stl-command .dropdown-toggle {
+ height: 22px; width: 18px;
+}
+.stl-wrapper .stl-command .dropdown-toggle .caret{
+  top:3px; left: 4px; position: absolute;
+}
+.stl-wrapper .stl-command .dropdown-menu ul{
+  list-style-type: none;
+  margin: 2px 0 0 0; padding: 5px 0;
+}
+.stl-wrapper .stl-command .dropdown-menu li{
+  background: none;
+  padding: 0;margin: 0;
+  line-height: 20px;
+}
+
+.stl-wrapper .stl-command .dropdown-menu li a{
+display: block;
+text-decoration: none;
+padding: 3px 20px;
+clear: both;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+color: #333333;
+white-space: nowrap;
+font-family: Microsoft Yahei;
+height:20px;
+text-align: left;
+}
+
+.stl-wrapper .stl-command .dropdown-menu li a:hover{
+color: #ffffff;
+}
+
+.stl-wrapper .stl-command .dropdown-menu .divider{
+ margin: 9px 1px;border-bottom: 1px solid #ffffff;background-color: #e5e5e5;
+}
+
+.modal-header h3{
+  font-family: Microsoft Yahei;
+}
+
+.stl-highlight {
+  border: 2px dashed #006DCC;
+  height: 50px;
+  margin:2px;
+}
+
+.stl-guideline {
+  border: 1px solid #DA4F49; margin:2px;
+}
+
+/*start*/
+
+.sidebar-nav {
+  position:fixed;
+  width:200px;
+  left:0px;
+  bottom:0;
+  top:39px;
+  background:#ccc;
+  padding: 9px 0; z-index:10;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.sidebar-nav .nav-header { cursor:pointer; font-size:14px; color:#fff; text-shadow:0 1px 0 rgba(0, 0, 0, 0.3);}
+.sidebar-nav .nav-header span.label { font-size:10px; /*padding-bottom:0;*/ position:relative; top:-1px;}
+.sidebar-nav .nav-header i.icon-plus {}
+.sidebar-nav .nav-header .popover {color:#999; text-shadow:none;}
+
+.popover-info {position:relative;}
+.popover-info .popover {display:none; top: -12.5px; left:15px; }
+.popover-info:hover .popover {display:block; opacity:1; width:400px;}
+.popover-info:hover .popover .arrow {top:23px;}
+
+.sidebar-nav .accordion-group { border:none; }
+.sidebar-nav li { line-height:25px; }
+.sidebar-nav .box { line-height:25px; width:170px; height:25px; }
+.sidebar-nav .drag { cursor: move; display: block; color:#666; font-size:12px; line-height:22px;}
+.sidebar-nav .view { display: none; }
+.sidebar-nav .boxes { display:none;}
+
+.ui-draggable-dragging .view { display:block;}
+.ui-sortable-placeholder { outline: 1px dashed #ddd;visibility: visible!Important; border-radius: 4px;}
+
+.outline-element {
+  outline: 1px solid #c00;
+}
+ 
+.outline-element-clicked {
+  outline: 1px solid #0c0;
+}

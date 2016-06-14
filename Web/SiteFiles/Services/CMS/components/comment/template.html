@@ -1,0 +1,501 @@
+<div class="order-box order_form">
+
+  <!-- 收货人信息 -->
+  <!-- 判断是否收货人区域查看状态 -->
+  <stl:if type="isCurrent" value="ConsigneeView">
+    <stl:yes>
+
+      <div class="pep-info-item">
+        <div class="hd">
+          <strong>收货人信息</strong>
+          <!-- 判断修改按钮能否显示 -->
+          <stl:if type="isCurrent" value="isSelectMode">
+              <stl:yes>
+                <span>如有修改，请先保存</span>
+              </stl:yes>
+              <stl:no>
+                  <a href="javascript:;" onclick="{b2c.clickSelectConsignee}" class="edit">[修改]</a>
+              </stl:no>
+          </stl:if>
+        </div>
+
+        <div class="bd">
+          {b2c.consignee.summary}
+        </div>
+      </div>
+
+    </stl:yes>
+    <stl:no>
+
+      <div class="invoice-item bdlight">
+        <div class="bdlight-hd">
+          <strong>收货人信息</strong>
+        </div>
+        <div class="invoice-kind">
+          <div>
+            <ul>
+                <stl:each type="order" value="Consignees">
+                  <!-- 判断是否选中 -->
+                  <stl:if type="isCurrent" value="Consignee">
+                    <stl:yes>
+                      <li class="pb5">
+                        <label>
+                          <input type="radio" onclick="{b2c.clickChangeConsignee}" name="consigneeID" value="{b2c.consignee.id}" checked>
+                          {b2c.consignee.title}
+                          &nbsp;
+                          {b2c.consignee.summary}
+                        </label>
+                        <a href="javascript:;" onclick="{b2c.clickEditConsignee}">编辑</a>
+                        <a href="javascript:;" onclick="{b2c.clickRemoveConsignee}">删除</a>
+                      </li>
+                    </stl:yes>
+                    <stl:no>
+                      <li class="pb5">
+                        <label>
+                          <input type="radio" onclick="{b2c.clickChangeConsignee}" name="consigneeID" value="{b2c.consignee.id}">
+                          {b2c.consignee.title}
+                          &nbsp;
+                          {b2c.consignee.summary}
+                        </label>
+                        <a href="javascript:;" onclick="{b2c.clickEditConsignee}">编辑</a>
+                        <a href="javascript:;" onclick="{b2c.clickRemoveConsignee}">删除</a>
+                      </li>
+                    </stl:no>
+                  </stl:if>
+                </stl:each>
+                <!-- 判断是否选中新增按钮 -->
+                <stl:if type="isCurrent" value="ConsigneeAdd">
+                <stl:yes>
+                  <li class="pb5">
+                    <label>
+                      <input type="radio" onclick="{b2c.clickAddConsignee}" name="consigneeID" checked> 使用新地址
+                    </label>
+                  </li>
+                </stl:yes>
+                <stl:no>
+                  <li class="pb5">
+                    <label>
+                      <input type="radio" onclick="{b2c.clickAddConsignee}" name="consigneeID"> 使用新地址
+                    </label>
+                  </li>
+                </stl:no>
+              </stl:if>
+
+            </ul>
+
+            <!-- 判断是否编辑状态 -->
+            <stl:if type="isCurrent" value="ConsigneeEdit">
+              <div class="input-text-box padding0">
+                <ul>
+                  <li>
+                    <label>
+                      <span>*</span>收货人：
+                    </label>
+                    <input id="consignee" class="text" type="text" value="{b2c.consignee.consignee}" required />
+                  </li>
+                  <li class="clearfix">
+                    <label class="fl">
+                      <span>*</span>所在地区：
+                    </label>
+                    <div class="fl">
+                      <div id="location"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <label>
+                      <span>*</span>详细地址：
+                    </label>
+                    <input id="address" class="text" type="text" value="{b2c.consignee.address}" required />
+                  </li>
+                  <li>
+                    <label>
+                      <span>*</span>手机号码：
+                    </label>
+                    <input id="mobile" class="text" type="text" value="{b2c.consignee.mobile}" required />
+                  </li>
+                  <li>
+                    <label>
+                      固定电话：
+                    </label>
+                    <input id="tel" class="text" type="text" value="{b2c.consignee.tel}" />
+                  </li>
+                  <li>
+                    <label>
+                      邮箱：
+                    </label>
+                    <input id="email" class="text" type="text" value="{b2c.consignee.email}" />
+                  </li>
+                </ul>
+              </div>
+            </stl:if>
+
+          </div>
+        </div>
+        <ul>
+          <li>
+            <button class="submit-btn" onclick="{b2c.clickSaveConsignee}">确认收货地址</button>
+          </li>
+        </ul>
+      </div>
+
+    </stl:no>
+  </stl:if>
+
+
+  <!-- 支付及配送方式 -->
+  <!-- 判断是否支付及配送方式区域查看状态 -->
+  <stl:if type="isCurrent" value="PaymentShipmentView">
+    <stl:yes>
+      <div class="pay-item">
+        <div class="hd">
+          <strong>支付及配送方式</strong>
+          <!-- 判断修改按钮能否显示 -->
+          <stl:if type="isCurrent" value="isSelectMode">
+              <stl:yes>
+                <span>如有修改，请先保存</span>
+              </stl:yes>
+              <stl:no>
+                  <a href="javascript:;" onclick="{b2c.clickSelectPaymentShipment}" class="edit">[修改]</a>
+              </stl:no>
+          </stl:if>
+        </div>
+        <div class="bd">
+          <p>{b2c.paymentName}</p>
+          <p>{b2c.shipmentName}</p>
+        </div>
+      </div>
+    </stl:yes>
+    <stl:no>
+      <div class="invoice-item bdlight">
+        <div class="bdlight-hd">
+          <strong>支付及配送方式</strong>
+        </div>
+        <div class="invoice-kind">
+          <div class="h">
+            <strong>支付方式</strong>
+          </div>
+          <div class="b">
+            <ul>
+              <stl:each type="order" value="Payments">
+                <stl:if type="isCurrent" value="Payment">
+                  <stl:yes>
+                    <li>
+                      <label class="fl w100">
+                        <input type="radio" onclick="{b2c.clickChangePayment}" value="{b2c.payment.id}" name="paymentID" checked>
+                        {b2c.payment.paymentName} 
+                      </label>
+                      <span class="fl info-s">
+                        {b2c.payment.description}
+                      </span>
+                    </li>
+                  </stl:yes>
+                  <stl:no>
+                    <li>
+                      <label class="fl w100">
+                        <input type="radio" onclick="{b2c.clickChangePayment}" value="{b2c.payment.id}" name="paymentID">
+                        {b2c.payment.paymentName} 
+                      </label>
+                      <span class="fl info-s">
+                        {b2c.payment.description}
+                      </span>
+                    </li>
+                  </stl:no>
+                </stl:if>
+              </stl:each>
+            </ul>
+          </div>
+          <div class="h">
+            <strong>配送方式</strong>
+          </div>
+          <div class="b">
+            <ul>
+              <stl:each type="order" value="Shipments">
+                <stl:if type="isCurrent" value="Shipment">
+                  <stl:yes>
+                    <li>
+                      <label class="fl w100">
+                        <input type="radio" onclick="{b2c.clickChangeShipment}" value="{b2c.shipment.id}" name="shipmentID" checked>
+                        {b2c.shipment.shipmentName} 
+                      </label>
+                      <span class="fl info-s">
+                        {b2c.shipment.description}
+                      </span>
+                    </li>
+                  </stl:yes>
+                  <stl:no>
+                    <li>
+                      <label class="fl w100">
+                        <input type="radio" onclick="{b2c.clickChangeShipment}" value="{b2c.shipment.id}" name="shipmentID">
+                        {b2c.shipment.shipmentName} 
+                      </label>
+                      <span class="fl info-s">
+                        {b2c.shipment.description}
+                      </span>
+                    </li>
+                  </stl:no>
+                </stl:if>
+              </stl:each>
+            </ul>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <button class="submit-btn" onclick="{b2c.clickSavePaymentShipment}">保存支付及配送方式</button>
+          </li>
+        </ul>
+      </div>
+    </stl:no>
+  </stl:if>
+
+  <!-- 发票信息 -->
+  <!-- 判断是否发票区域查看状态 -->
+  <stl:if type="isCurrent" value="InvoiceView">
+    <stl:yes>
+      <div class="pay-item">
+        <div class="hd">
+          <strong>发票信息</strong>
+          <!-- 判断修改按钮能否显示 -->
+          <stl:if type="isCurrent" value="isSelectMode">
+              <stl:yes>
+                <span>如有修改，请先保存</span>
+              </stl:yes>
+              <stl:no>
+                  <a href="javascript:;" onclick="{b2c.clickSelectInvoice}" class="edit">[修改]</a>
+              </stl:no>
+          </stl:if>
+        </div>
+        <div class="bd">
+          <p>{b2c.invoice.summary}</p>
+        </div>
+      </div>
+    </stl:yes>
+    <stl:no>
+      <div class="invoice-item bdlight">
+        <div class="bdlight-hd">
+          <strong>发票信息</strong>
+        </div>
+        <div class="bdlight-bd">
+          <ul>
+            <stl:if type="isCurrent" value="isInvoice">
+                <stl:yes>
+                    <li>
+                      <label>
+                        <input type="radio" onclick="orderController.changeIsInvoice(false)" name="isInvoice" value="false"> 不需要发票
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" onclick="orderController.changeIsInvoice(true)" name="isInvoice" checked value="true"> 需要发票
+                      </label>
+                    </li>
+                </stl:yes>
+                <stl:no>
+                    <li>
+                      <label>
+                        <input type="radio" onclick="orderController.changeIsInvoice(false)" name="isInvoice" checked value="false"> 不需要发票
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" onclick="orderController.changeIsInvoice(true)" name="isInvoice" value="true"> 需要发票
+                      </label>
+                    </li>
+                </stl:no>
+              </stl:if>
+          </ul>
+        </div>
+
+        <stl:if type="isCurrent" value="isInvoice">
+          <div class="invoice-kind">
+            <div class="h">
+              <strong>类型和抬头</strong>
+            </div>
+            <div class="b">
+              <ul>
+                <stl:each type="order" value="Invoices">
+                  <stl:if type="isCurrent" value="Invoice">
+                    <stl:yes>
+                      <li>
+                        <label>
+                          <input type="radio" onclick="{b2c.clickChangeInvoice}" name="invoiceID" value="{b2c.invoice.id}" checked>
+                          {b2c.invoice.itemSummary} 
+                        </label>
+                        <a href="javascript:;" onclick="{b2c.clickEditInvoice}">编辑</a>
+                        <a href="javascript:;" onclick="{b2c.clickRemoveInvoice}">删除</a>
+                      </li>
+                    </stl:yes>
+                    <stl:no>
+                      <li>
+                        <label>
+                          <input type="radio" onclick="{b2c.clickChangeInvoice}" name="invoiceID" value="{b2c.invoice.id}">
+                          {b2c.invoice.itemSummary} 
+                        </label>
+                        <a href="javascript:;" onclick="{b2c.clickEditInvoice}">编辑</a>
+                        <a href="javascript:;" onclick="{b2c.clickRemoveInvoice}">删除</a>
+                      </li>
+                    </stl:no>
+                  </stl:if>
+                </stl:each>
+
+                <stl:if type="isCurrent" value="InvoiceAdd">
+                  <stl:yes>
+                    <li>
+                      <label>
+                        <input type="radio" onclick="{b2c.clickAddInvoice}" name="invoiceID" checked>
+                        使用新的发票信息
+                      </label>
+                    </li>
+                  </stl:yes>
+                  <stl:no>
+                    <li>
+                      <label>
+                        <input type="radio" onclick="{b2c.clickAddInvoice}" name="invoiceID">
+                        使用新的发票信息
+                      </label>
+                    </li>
+                  </stl:no>
+                </stl:if>
+              </ul>
+              <stl:if type="isCurrent" value="InvoiceEdit">
+                
+                <stl:if type="isCurrent" value="InvoiceIsVat">
+                  <stl:yes>
+                    <div class="i-h">
+                      <p>
+                        <span>发票类型：</span>
+                        <label>
+                          <input type="radio" name="isVat" onclick="{b2c.clickNotVatInvoice}" /> 普通发票 
+                        </label>
+                        <label>
+                          <input type="radio" name="isVat" onclick="{b2c.clickVatInvoice}" checked /> 增值税发票
+                        </label>
+                      </p>
+                    </div>
+                    <div class="invoice-kind-info input-text-box">
+                      <ul>
+                        <li>
+                          <label>
+                            <span>*</span>单位名称：
+                          </label>
+                          <input type="text" id="vatCompanyName" value="{b2c.invoice.vatCompanyName}" class="text">
+                        </li>
+                        <li>
+                          <label>
+                            <span>*</span>税人识别号：
+                          </label>
+                          <input type="text" id="vatCode" value="{b2c.invoice.vatCode}" class="text">
+                        </li>
+                        <li>
+                          <label>
+                            <span>*</span>注册地址：
+                          </label>
+                          <input type="text" id="vatAddress" value="{b2c.invoice.vatAddress}" class="text">
+                        </li>
+                        <li>
+                          <label>
+                            <span>*</span>注册电话：
+                          </label>
+                          <input type="text" id="vatPhone" value="{b2c.invoice.vatPhone}" class="text">
+                        </li>
+                        <li>
+                          <label>
+                            <span>*</span>开户银行：
+                          </label>
+                          <input type="text" id="vatBankName" value="{b2c.invoice.vatBankName}" class="text">
+                        </li>
+                        <li>
+                          <label>
+                            <span>*</span>银行帐户：
+                          </label>
+                          <input type="text" id="vatBankAccount" value="{b2c.invoice.vatBankAccount}" class="text">
+                        </li>
+                      </ul>
+                    </div>
+                  </stl:yes>
+                  <stl:no>
+                    <div class="i-h">
+                      <p>
+                        <span>发票类型：</span>
+                        <label>
+                          <input type="radio" name="isVat" onclick="{b2c.clickNotVatInvoice}" checked /> 普通发票 
+                        </label>
+                        <label>
+                          <input type="radio" name="isVat" onclick="{b2c.clickVatInvoice}" /> 增值税发票
+                        </label>
+                      </p>
+                    </div>
+                    <div class="invoice-kind-info input-text-box">
+                      <ul>
+                        <li class="taitou">
+                          <label>
+                            <span>*</span>发票抬头：
+                          </label>
+                          <stl:if type="isCurrent" value="InvoiceIsCompany">
+                              <stl:yes>
+                                <label class="w60">
+                                  <input type="radio" name="isCompany" onclick="{b2c.clickNotCompanyInvoice}" /> 个人 
+                                </label>
+                                <label class="w60">
+                                  <input type="radio" name="isCompany" onclick="{b2c.clickCompanyInvoice}" checked />
+                                  单位
+                                </label>
+                                <input class="text" id="companyName" value="{b2c.invoice.companyName}" type="text" />
+                              </stl:yes>
+                              <stl:no>
+                                <label class="w60">
+                                  <input type="radio" name="isCompany" onclick="{b2c.clickNotCompanyInvoice}" checked />
+                                  个人
+                                </label>
+                                <label class="w60">
+                                  <input type="radio" name="isCompany" onclick="{b2c.clickCompanyInvoice}" />
+                                  单位
+                                </label>
+                              </stl:no>
+                          </stl:if>
+                        </li>
+                      </ul>
+                    </div>
+                  </stl:no>
+                </stl:if>
+                
+                <div class="h">
+                  <strong>收票人地址</strong>
+                </div>
+                <div class="invoice-kind-infoo input-text-box">
+                  <ul>
+                    <li>
+                      <label>
+                        <span>*</span>收票人姓名：
+                      </label>
+                      <input type="text" id="consigneeName" value="{b2c.invoice.consigneeName}" class="text">
+                    </li>
+                    <li>
+                      <label>
+                        <span>*</span>收票人手机号：
+                      </label>
+                      <input type="text" id="consigneeMobile" value="{b2c.invoice.consigneeMobile}" class="text">
+                    </li>
+                    <li>
+                      <label>
+                        <span>*</span>送票地址：
+                      </label>
+                      <input type="text" id="consigneeAddress" value="{b2c.invoice.consigneeAddress}" class="text">
+                    </li>
+                  </ul>
+                </div>
+              </stl:if>
+            </div>
+          </div>
+        </stl:if>
+
+        <ul>
+          <li>
+            <button class="submit-btn" onclick="{b2c.clickSaveInvoice}">确认发票信息</button>
+          </li>
+        </ul>
+        
+      </div>
+    </stl:no>
+  </stl:if>
+
+</div>

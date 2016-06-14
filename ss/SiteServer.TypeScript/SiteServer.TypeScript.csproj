@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{BE445473-3482-4EEE-88D7-A000D7C6EC53}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>GeXia.TypeScript.Home</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3983</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://siteserver.cn/usercenter</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties homejs_2test_2comment_1json__JSONSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="corejs\enum\eInputType.ts" />
+    <TypeScriptCompile Include="corejs\enum\eOrderItemReturnType.ts" />
+    <TypeScriptCompile Include="corejs\services\consultationService.ts" />
+    <TypeScriptCompile Include="corejs\services\trialService.ts" />
+    <TypeScriptCompile Include="corejs\services\evaluationService.ts" />
+    <TypeScriptCompile Include="corejs\services\mlibService.ts" />
+    <TypeScriptCompile Include="corejs\services\orderItemReturnService.ts" />
+    <TypeScriptCompile Include="corejs\services\orderService.ts" />
+    <TypeScriptCompile Include="corejs\services\serviceBase.ts" />
+    <TypeScriptCompile Include="corejs\services\userService.ts" />
+    <TypeScriptCompile Include="corejs\siteserver\siteserver.extendjs.ts" />
+    <TypeScriptCompile Include="corejs\utils\stringUtils.ts" />
+    <TypeScriptCompile Include="corejs\utils\urlUtils.ts" />
+    <TypeScriptCompile Include="corejs\utils\utils.ts" />
+    <TypeScriptCompile Include="defs\jquery.cookie.d.ts" />
+    <TypeScriptCompile Include="defs\jquery.d.ts" />
+    <TypeScriptCompile Include="defs\jquery.fileupload.d.ts" />
+    <TypeScriptCompile Include="corejs\siteserver\siteserver.cms.ts" />
+    <TypeScriptCompile Include="corejs\siteserver\siteserver.ts" />
+    <TypeScriptCompile Include="defs\tmodjs.d.ts" />
+    <TypeScriptCompile Include="home\js\controllers\accountBindController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\accountSafeController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\baseController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcAccountSafeController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcBindEmailController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcBindPhoneController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcChangePwdController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcConsultationListController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcFollowController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcHistoryController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcInvoiceController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcLoginRecordController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcOrderListController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcOrderReturnListController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcOrderReturnRecordListController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcPersonalprofileController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcReturnApplyController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcSecretPwdController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcSuggestionController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\trialReportAddController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\trialReportMessageController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\trialApplyMessageController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\helpCenterController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcIndexController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcOrderCommentController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\siteMessageController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bindPhoneController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\changePwdController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\findPwdcontroller.ts" />
+    <TypeScriptCompile Include="home\js\controllers\homeController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\loginEmailController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\loginRecordController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\userDetailController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\bcOrderItemListController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\evaluationMessageController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapAddressController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapBaseController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapChangePwdController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapEditAddressController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapFollowController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapHistoryController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapIndexController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapOrderItemListController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapOrderListController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\wap\wapUserMessageController.ts" />
+    <TypeScriptCompile Include="home\js\main.ts" />
+    <TypeScriptCompile Include="home\js\controllers\mypicController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\messageDetailController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\waitController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\secretPwdController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\userCenterController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\registerController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\userMessageController.ts" />
+    <TypeScriptCompile Include="home\js\controllers\userMessageNoticeController.ts" />
+    <TypeScriptCompile Include="home\js\utils\homeUrlUtils.ts" />
+    <TypeScriptCompile Include="home\js\utils\pageDataUtils.ts" />
+    <TypeScriptCompile Include="corejs\siteserver\core\tableStyleUtils.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\lib\jquery\1.11.3\jquery.js" />
+    <Content Include="assets\lib\siteserver\siteserver.extend.js" />
+    <Content Include="assets\lib\siteserver\siteserver.validate.js" />
+    <Content Include="home\b2c\accountBind.html" />
+    <Content Include="home\b2c\address.html" />
+    <Content Include="home\b2c\bindPhone.html" />
+    <Content Include="home\b2c\css\style.css" />
+    <Content Include="home\b2c\detail.html" />
+    <Content Include="home\b2c\help.html" />
+    <Content Include="home\b2c\helpContent.html" />
+    <Content Include="home\b2c\images\bmr_logo.png" />
+    <Content Include="home\b2c\images\coder.jpg" />
+    <Content Include="home\b2c\images\commstar.jpg" />
+    <Content Include="home\b2c\images\hz1.jpg" />
+    <Content Include="home\b2c\images\hz2.jpg" />
+    <Content Include="home\b2c\images\hz3.jpg" />
+    <Content Include="home\b2c\images\imgIco.jpg" />
+    <Content Include="home\b2c\images\m2bg1.jpg" />
+    <Content Include="home\b2c\images\m2btnB.jpg" />
+    <Content Include="home\b2c\images\m2btnL.jpg" />
+    <Content Include="home\b2c\images\m2btnR.jpg" />
+    <Content Include="home\b2c\images\m2btnT.jpg" />
+    <Content Include="home\b2c\images\m2h1.jpg" />
+    <Content Include="home\b2c\images\m2ico2.jpg" />
+    <Content Include="home\b2c\images\m2img1.jpg" />
+    <Content Include="home\b2c\images\m2img2.jpg" />
+    <Content Include="home\b2c\images\m2p_cke1.jpg" />
+    <Content Include="home\b2c\images\m2p_cke2.jpg" />
+    <Content Include="home\b2c\images\m2p_cke3.jpg" />
+    <Content Include="home\b2c\images\m2p_ico1.jpg" />
+    <Content Include="home\b2c\images\m2r_ad1.jpg" />
+    <Content Include="home\b2c\images\m2r_ad2.jpg" />
+    <Content Include="home\b2c\images\m2r_ad3.jpg" />
+    <Content Include="home\b2c\images\mc1_ico1.jpg" />
+    <Content Include="home\b2c\images\mc1_ico2.jpg" />
+    <Content Include="home\b2c\images\mcm_ico1.jpg" />
+    <Content Include="home\b2c\images\mcm_ico2.jpg" />
+    <Content Include="home\b2c\images\mcm_ico3.jpg" />
+    <Content Include="home\b2c\images\mcm_ico4.jpg" />
+    <Content Include="home\b2c\images\mico1.jpg" />
+    <Content Include="home\b2c\images\mico2.jpg" />
+    <Content Include="home\b2c\images\mico3.jpg" />
+    <Content Include="home\b2c\images\mlv1.jpg" />
+    <Content Include="home\b2c\images\mrimg.jpg" />
+    <Content Include="home\b2c\images\msimg1.jpg" />
+    <Content Include="home\b2c\images\msimg2.jpg" />
+    <Content Include="home\b2c\images\msimg3.jpg" />
+    <Content Include="home\b2c\images\mwh.jpg" />
+    <Content Include="home\b2c\images\pimg1.jpg" />
+    <Content Include="home\b2c\images\pimg2.jpg" />
+    <Content Include="home\b2c\images\pimg3.jpg" />
+    <Content Include="home\b2c\images\sc3_ico1.png" />
+    <Content Include="home\b2c\images\sc_btn02.jpg" />
+    <Content Include="home\b2c\images\sc_img6.png" />
+    <Content Include="home\b2c\images\sc_img6a.png" />
+    <Content Include="home\b2c\images\sc_squer1.png" />
+    <Content Include="home\b2c\images\sc_squer2.png" />
+    <Content Include="home\b2c\images\sc_squer4.jpg" />
+    <Content Include="home\b2c\images\sc_squer4a.jpg" />
+    <Content Include="home\b2c\images\sc_squer5.jpg" />
+    <Content Include="home\b2c\images\sc_squer5a.jpg" />
+    <Content Include="home\b2c\images\sx1.jpg" />
+    <Content Include="home\b2c\images\sx2.jpg" />
+    <Content Include="home\b2c\images\telIco.jpg" />
+    <Content Include="home\b2c\info.html" />
+    <Content Include="home\b2c\invoince.html" />
+    <Content Include="home\b2c\js\html5.js" />
+    <Content Include="home\b2c\js\ie6PNG.js" />
+    <Content Include="home\b2c\js\jquery.js" />
+    <Content Include="home\b2c\js\public.js" />
+    <Content Include="home\b2c\js\ss.js" />
+    <Content Include="home\b2c\loginEmail.html" />
+    <Content Include="home\b2c\loginRecord.html" />
+    <Content Include="home\b2c\myPic.html" />
+    <Content Include="home\b2c\myComment.html" />
+    <Content Include="home\b2c\myOrder.html" />
+    <Content Include="home\b2c\Consultation.html" />
+    <Content Include="home\b2c\index.html" />
+    <Content Include="home\b2c\myReturn.html" />
+    <Content Include="home\b2c\myReturnRecord.html" />
+    <Content Include="home\b2c\returnApply.html" />
+    <Content Include="home\cms\bindPhone.html" />
+    <Content Include="home\cms\css\style.css" />
+    <Content Include="home\cms\images\icon-2.png" />
+    <Content Include="home\cms\images\mbtn0.jpg" />
+    <Content Include="home\cms\messageDetail.html" />
+    <Content Include="home\cms\accountBind.html" />
+    <Content Include="home\cms\accountSafe.html" />
+    <Content Include="home\cms\agreement.html" />
+    <Content Include="assets\lib\ajaxupload\ajaxUpload.js" />
+    <Content Include="assets\lib\jquery.cookie\1.4.1\jquery.cookie.js" />
+    <Content Include="assets\lib\jquery.fileupload\5.42.0\jquery.fileupload.css" />
+    <Content Include="assets\lib\jquery.fileupload\5.42.0\jquery.fileupload.js" />
+    <Content Include="assets\lib\jquery.fileupload\5.42.0\jquery.iframe-transport.js" />
+    <Content Include="assets\lib\jquery.fileupload\5.42.0\jquery.ui.widget.js" />
+    <Content Include="assets\lib\jquery\1.11.1\jquery.js" />
+    <Content Include="assets\lib\jquery\2.1.1\jquery.js" />
+    <Content Include="assets\lib\xdomain\0.6.17\xdomain.min.js" />
+    <Content Include="home\cms\changePwd.html" />
+    <Content Include="css\style.css" />
+    <Content Include="home\cms\detail.html" />
+    <Content Include="home\cms\findPwd1.html" />
+    <Content Include="gulpfile.js" />
+    <TypeScriptCompile Include="home\js\controllers\sdkController.ts" />
+    <Content Include="home\cms\images\bdImg.jpg" />
+    <Content Include="home\cms\images\bd_logo.jpg" />
+    <Content Include="home\cms\images\fm_bg1.png" />
+    <Content Include="home\cms\images\fm_bg2.png" />
+    <Content Include="home\cms\images\fm_yzm.jpg" />
+    <Content Include="home\cms\images\icon-3.png" />
+    <Content Include="home\cms\images\linebg.jpg" />
+    <Content Include="home\cms\images\logo-2.png" />
+    <Content Include="home\cms\images\m2close.jpg" />
+    <Content Include="home\cms\images\m2img1.jpg" />
+    <Content Include="home\cms\images\m2img1bg.jpg" />
+    <Content Include="home\cms\images\m2lg_bg.jpg" />
+    <Content Include="home\cms\images\m2line.jpg" />
+    <Content Include="home\cms\images\m2l_bico1.jpg" />
+    <Content Include="home\cms\images\m2l_bico2.jpg" />
+    <Content Include="home\cms\images\m2l_bico3.jpg" />
+    <Content Include="home\cms\images\m2l_bico4.jpg" />
+    <Content Include="home\cms\images\m2l_ico1.jpg" />
+    <Content Include="home\cms\images\m2l_ico1a.jpg" />
+    <Content Include="home\cms\images\m2l_ico2.jpg" />
+    <Content Include="home\cms\images\m2l_ico2a.jpg" />
+    <Content Include="home\cms\images\m2r_del1.jpg" />
+    <Content Include="home\cms\images\m2r_del2.jpg" />
+    <Content Include="home\cms\images\m2r_del3.jpg" />
+    <Content Include="home\cms\images\m2r_ico1.jpg" />
+    <Content Include="home\cms\images\m2r_ico2.jpg" />
+    <Content Include="home\cms\images\m2r_ico3.jpg" />
+    <Content Include="home\cms\images\m2r_ico3a.jpg" />
+    <Content Include="home\cms\images\m2r_ico6.jpg" />
+    <Content Include="home\cms\images\m3r_serBg.jpg" />
+    <Content Include="home\cms\images\m4line.jpg" />
+    <Content Include="home\cms\images\mbody.jpg" />
+    <Content Include="home\cms\images\mbtn1.jpg" />
+    <Content Include="home\cms\images\mbtn2.jpg" />
+    <Content Include="home\cms\images\mc4_cut.jpg" />
+    <Content Include="home\cms\images\mc4_ico.jpg" />
+    <Content Include="home\cms\images\mcut1.jpg" />
+    <Content Include="home\cms\images\mcut1a.jpg" />
+    <Content Include="home\cms\images\mico1.jpg" />
+    <Content Include="home\cms\images\ml_ico1.png" />
+    <Content Include="home\cms\images\ml_ico10.png" />
+    <Content Include="home\cms\images\ml_ico10a.png" />
+    <Content Include="home\cms\images\ml_ico11.png" />
+    <Content Include="home\cms\images\ml_ico11a.png" />
+    <Content Include="home\cms\images\ml_ico12.png" />
+    <Content Include="home\cms\images\ml_ico12a.png" />
+    <Content Include="home\cms\images\ml_ico13.png" />
+    <Content Include="home\cms\images\ml_ico13a.png" />
+    <Content Include="home\cms\images\ml_ico14.png" />
+    <Content Include="home\cms\images\ml_ico14a.png" />
+    <Content Include="home\cms\images\ml_ico15.png" />
+    <Content Include="home\cms\images\ml_ico15a.png" />
+    <Content Include="home\cms\images\ml_ico1a.png" />
+    <Content Include="home\cms\images\ml_ico2.png" />
+    <Content Include="home\cms\images\ml_ico2a.png" />
+    <Content Include="home\cms\images\ml_ico3.png" />
+    <Content Include="home\cms\images\ml_ico3a.png" />
+    <Content Include="home\cms\images\ml_ico4.png" />
+    <Content Include="home\cms\images\ml_ico4a.png" />
+    <Content Include="home\cms\images\ml_ico5.png" />
+    <Content Include="home\cms\images\ml_ico5a.png" />
+    <Content Include="home\cms\images\ml_ico6.png" />
+    <Content Include="home\cms\images\ml_ico6a.png" />
+    <Content Include="home\cms\images\ml_ico7.png" />
+    <Content Include="home\cms\images\ml_ico7a.png" />
+    <Content Include="home\cms\images\ml_ico8.png" />
+    <Content Include="home\cms\images\ml_ico8a.png" />
+    <Content Include="home\cms\images\ml_ico9.png" />
+    <Content Include="home\cms\images\ml_ico9a.png" />
+    <Content Include="home\cms\images\mnlogo.png" />
+    <Content Include="home\cms\images\mn_ico1.png" />
+    <Content Include="home\cms\images\mn_ico2.png" />
+    <Content Include="home\cms\images\mn_ico3.png" />
+    <Content Include="home\cms\images\mn_ico4.png" />
+    <Content Include="home\cms\images\mpwd_1.jpg" />
+    <Content Include="home\cms\images\mpwd_2.jpg" />
+    <Content Include="home\cms\images\mpwd_3.jpg" />
+    <Content Include="home\cms\images\mpwd_4.jpg" />
+    <Content Include="home\cms\images\mtop_btn.jpg" />
+    <Content Include="home\cms\images\nav_line.jpg" />
+    <Content Include="home\cms\images\nbg1.png" />
+    <Content Include="home\cms\images\nbg2.png" />
+    <Content Include="home\cms\images\nbodyBg.jpg" />
+    <Content Include="home\cms\images\nico1.png" />
+    <Content Include="home\cms\images\nico2.png" />
+    <Content Include="home\cms\images\nico3.png" />
+    <Content Include="home\cms\images\nico4.png" />
+    <Content Include="home\cms\images\nlogo.png" />
+    <Content Include="home\cms\images\nm_ico1.jpg" />
+    <Content Include="home\cms\images\nm_ico2.jpg" />
+    <Content Include="home\cms\images\nm_ico8.jpg" />
+    <Content Include="home\cms\images\xian-2.png" />
+    <Content Include="home\cms\images\yzm.jpg" />
+    <Content Include="home\cms\images\zh_ico1.jpg" />
+    <Content Include="home\cms\images\zh_ico2.jpg" />
+    <Content Include="home\cms\images\zh_ico3.jpg" />
+    <Content Include="home\cms\index.html" />
+    <Content Include="home\cms\info.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gulp\default.js" />
+    <Content Include="gulp\libjs.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home\cms\login.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\js\" />
+    <Folder Include="home\wap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home\cms\loginEmail.html" />
+    <Content Include="home\cms\loginRecord.html" />
+    <Content Include="home\cms\myPic.html" />
+    <Content Include="home\cms\secretPwd1.html" />
+    <Content Include="home\cms\secretpwd2.html" />
+    <Content Include="home\cms\siteMessage.html" />
+    <Content Include="home\cms\userMessage.html" />
+    <Content Include="home\cms\userMessageNotice.html" />
+    <Content Include="home\include\footer.html" />
+    <Content Include="home\include\footer_parsed.html" />
+    <Content Include="home\include\header.html" />
+    <Content Include="home\include\header_parsed.html" />
+    <Content Include="home\include\left.html" />
+    <Content Include="home\include\left_parsed.html" />
+    <Content Include="home\include\searchbox.html" />
+    <Content Include="home\include\searchbox_parsed.html" />
+    <Content Include="package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home\cms\register.html" />
+    <Content Include="home\cms\wait.html" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TypeScriptOutFile>assets\js\app.js</TypeScriptOutFile>
+    <TypeScriptOutDir>D:\programe\github\siteserver\Web\Home\js</TypeScriptOutDir>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>

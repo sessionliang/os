@@ -1,0 +1,20 @@
+a, a:link, a:visited, a:hover, a:active { font-weight: normal; font-size: 12px; line-height: 18px; text-decoration: none }
+.reverse a:link, .reverse a:visited, .reverse a:active { text-decoration: none; }
+.windowcontent { padding: 0 10px; margin: 0px; text-align: left; }
+
+/*bootstrap*/
+.modal-footer{padding:14px 15px 15px; position:relative; top:-5px;}
+.modal-header h3 {font-weight: normal;}
+label {display:inline; padding:0 5px;}
+.nav {margin-bottom: 5px; height: 24px;}
+.table, .progress{margin-bottom: 0;}
+.table-noborder tr, .table-noborder td{border: none; padding:4px 4px; height:30px; line-height: 30px;}
+
+/* css */
+.hidden {display:none}
+.control-label {width:40px;}
+.center, .align-center { text-align:center !important }
+.align-right { text-align:right !important }
+.noborder, .noborder td {border-width: 0;}
+table.checkboxlist input, table.radiobuttonlist input { margin-bottom:0; margin-top:0;}
+table.checkboxlist label, table.radiobuttonlist label { display:inline; margin-bottom:0; margin-left:5px; margin-top:10px; margin-right:5px;}

@@ -1,0 +1,37 @@
+<div class="spec_topBg stl-top">
+
+  <script type="text/html" class="topController">
+    <div class="spec_logo"></div>
+    <div class="spec_top_sel">
+      <div class="spec_top_html">
+      <a href="javascript:;" class="stl-tips" onclick="topController.top.modalSelect()" tip-content="选择其他模板及页面进行编辑" tip-guide="2">{{top.textSelect}}</a>
+      </div>
+    </div>
+    <div class="spec_top_link">
+      <a left="spec_left_module" href="javascript:;" class="spec_active">构建</a>
+      <a left="spec_left_layout" href="javascript:;">布局</a>
+      {{if top.isAdvanced}}
+      <a left="spec_left_advanced" href="javascript:;">高级</a>
+      {{/if}}
+    </div>
+    <a href="http://stl.siteserver.cn" class="spec_top_nbtn stl-tips" target="_blank" tip-content="进入STL语言参考网站" tip-guide="3"><div class="spec_imgBg5"></div></a>
+
+    <a href="javascript:;" id="stl-save" class="spec_top_text spec_top_save {{top.cssSave}}">保存</a>
+    <a href="{{top.urlPreview}}" class="spec_top_text spec_top_preview">预览</a>
+
+    <a href="javascript:;" class="spec_top_nbtn spec_webModel" device-width="568px"><div class="spec_imgBg1"></div></a>
+    <a href="javascript:;" class="spec_top_nbtn spec_webModel" device-width="320px"><div class="spec_imgBg2"></div></a>
+    <a href="javascript:;" class="spec_top_nbtn spec_webModel" device-width="768px"><div class="spec_imgBg3"></div></a>
+    <a href="javascript:;" class="spec_top_nbtn spec_webModel spec_top_cutnbtn" device-width="100%"><div class="spec_imgBg4"></div></a>
+    <div class="spec_top_seprate"></div>
+    <a href="javascript:;" class="spec_top_nbtn stl-tips" onclick="topController.top.modalRestore()" tip-content="点击按钮选择并查看历史版本" tip-guide="2"><div class="spec_imgBg6"></div></a>
+    <a href="javascript:;" class="spec_top_nbtn" style="display:none"><div class="spec_imgBg8"></div></a>
+    <a href="javascript:;" class="spec_top_nbtn stl-tips {{top.cssGuideline}}" id="stl-guideline" tip-content="参考线用于指示可拖拽区域，点击按钮显示或关闭参考线" tip-guide="2"><div class="spec_imgBg9"></div></a>
+    <a href="javascript:;" onclick="topController.top.modalCreate()" class="spec_top_nbtn stl-tips" tip-content="生成对应模板的页面" tip-guide="2"><div class="spec_imgBg10"></div></a>
+    <a href="javascript:;" class="spec_top_nbtn stl-tips" onclick="topController.top.modalEdit()" tip-content="手工编辑页面代码" tip-guide="2"><div class="spec_imgBg7"></div></a>
+    <div class="spec_top_seprate"></div>
+    <a href="javascript:;" id="stl-redo" class="spec_top_nbtn stl-tips {{top.cssRedo}}" tip-content="重做上次操作" tip-guide="2"><div class="spec_imgBg11"></div></a>
+    <a href="javascript:;" id="stl-undo" class="spec_top_nbtn stl-tips {{top.cssUndo}}" tip-content="撤销上次操作" tip-guide="2"><div class="spec_imgBg12"></div></a>
+    </script>
+
+</div>

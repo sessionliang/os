@@ -1,0 +1,273 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Votes",
+        "description": "http://127.0.0.1:3001/votes"
+    },
+    "host": "127.0.0.1:3001",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/votes": {
+            "post": {
+                "description": "creates a new vote.",
+                "operationId": "",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "X-GX-Access-Token",
+                        "in": "header",
+                        "description": "access token",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "vote",
+                        "in": "body",
+                        "description": "vote to create",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/vote"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "vote response",
+                        "schema": {
+                            "$ref": "#/definitions/created"
+                        }
+                    },
+                    "500": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/error"
+                        }
+                    }
+                }
+            }
+        },
+        "/votes/{sessionSN}": {
+            "get": {
+                "description": "gets a single vote",
+                "operationId": "",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "X-GX-Access-Token",
+                        "in": "header",
+                        "description": "access token",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "sessionSN",
+                        "in": "path",
+                        "description": "key of the vote",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "vote a response",
+                        "schema": {
+                            "$ref": "#/definitions/vote"
+                        }
+                    },
+                    "404": {
+                        "description": "vote not found",
+                        "schema": {
+                            "$ref": "#/definitions/error"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "description": "updates a single vote",
+                "operationId": "",
+                "parameters": [
+                    {
+                        "name": "X-GX-Access-Token",
+                        "in": "header",
+                        "description": "access token",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "sessionSN",
+                        "in": "path",
+                        "description": "key of the vote",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "vote to update",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/vote"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "vote updated",
+                        "schema": {
+                            "$ref": "#/definitions/updated"
+                        }
+                    },
+                    "404": {
+                        "description": "vote not found",
+                        "schema": {
+                            "$ref": "#/definitions/error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "deletes a single vote",
+                "operationId": "",
+                "parameters": [
+                    {
+                        "name": "X-GX-Access-Token",
+                        "in": "header",
+                        "description": "access token",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "sessionSN",
+                        "in": "path",
+                        "description": "sessionSN of vote to delete",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "vote deleted",
+                        "schema": {
+                            "$ref": "#/definitions/deleted"
+                        }
+                    },
+                    "404": {
+                        "description": "vote not found",
+                        "schema": {
+                            "$ref": "#/definitions/error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "vote": {
+            "required": [
+                "sessionSN"
+            ],
+            "properties": {
+                "sessionSN": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "thumbUrl": {
+                    "type": "string"
+                },
+                "imageUrl": {
+                    "type": "string"
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "addDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "deadline": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "isCommentable": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "created": {
+            "required": [
+                "createdAt",
+                "objectID"
+            ],
+            "properties": {
+                "createdAt": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "objectID": {
+                    "type": "string"
+                }
+            }
+        },
+        "updated": {
+            "required": [
+                "updatedAt"
+            ],
+            "properties": {
+                "updatedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        },
+        "deleted": {
+            "required": [
+                "deletedAt"
+            ],
+            "properties": {
+                "deletedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        },
+        "error": {
+            "required": [
+                "status",
+                "message",
+                "code"
+            ],
+            "properties": {
+                "status": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        }
+    }
+}

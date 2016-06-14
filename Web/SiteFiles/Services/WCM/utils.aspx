@@ -1,0 +1,1 @@
+﻿<%@ Page Inherits="SiteServer.WCM.Services.Utils" %>

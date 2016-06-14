@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61A793E1-3E99-4BDC-BC20-7298CA3E1111}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteServer.WeiXin</RootNamespace>
+    <AssemblyName>SiteServer.WeiXin</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/BaiRongZhiDao/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WordPlugin, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\.settings\ref\WordPlugin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundPages\BackgroundBasePageWX.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Album\BackgroundAlbum.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Album\BackgroundAlbumAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Album\BackgroundAlbumContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Appointment\BackgroundAppointment.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Appointment\BackgroundAppointmentContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Appointment\BackgroundAppointmentItemDelete.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Appointment\BackgroundAppointmentMultipleAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Appointment\BackgroundAppointmentSingleAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\BackgroundAjaxUpload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\BackgroundConfigurationZDH.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\BackgroundConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\BackgroundCount.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\BackgroundNavFunction.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\BackgroundService.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\BackgroundNavTransaction.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\WebMenu\BackgroundWebMenu.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\WebMenu\BackgroundWebMenuAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\WebMenu\BackgroundWebMenuType.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCard.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCardExchangeLog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCardSNAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCardAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCardCreditsLog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCardRechargeLog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCardConsumeLog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCardConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCardEntitySN.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Card\BackgroundCardSN.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Collect\BackgroundCollectItem.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Conference\BackgroundConferenceContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Lottery\BackgroundFlapAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Lottery\BackgroundGoldEggAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Lottery\BackgroundLotteryWinner.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Lottery\BackgroundLottery.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Coupon\BackgroundCouponSN.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Coupon\BackgroundCoupon.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Coupon\BackgroundCouponAct.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Coupon\BackgroundCouponActAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\Keyword\BackgroundKeyword.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Lottery\BackgroundBigWheelAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Lottery\BackgroundYaoYaoAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Map\BackgroundMap.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Map\BackgroundMapAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Lottery\BackgroundScratchAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Scene\BackgroundScenceAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Search\BackgroundSearch.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Search\BackgroundSearchAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Store\BackgroundStore.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Store\BackgroundStoreAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Store\BackgroundStoreCategory.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Store\BackgroundStoreItem.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Store\BackgroundStoreItemAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\View360\BackgroundView360.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\View360\BackgroundView360Add.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Message\BackgroundMessage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Message\BackgroundMessageAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Message\BackgroundMessageContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Conference\BackgroundConference.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Conference\BackgroundConferenceAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Collect\BackgroundCollect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Collect\BackgroundCollectAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Collect\BackgroundCollectLog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Vote\BackgroundVoteLog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Vote\BackgroundVote.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Vote\BackgroundVoteAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Wifi\BackgroundWifiAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Wifi\BackgroundWifiNode.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Wifi\BackgroundWifiNodeAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Wifi\BackgroundWifiNodeClient.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Wifi\BackgroundWifiNodeReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\ConsoleAccountSync.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Album\AlbumContentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Album\AlbumContentPhotoUpload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Appointment\AppointmentContentDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Appointment\AppointmentHandle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Appointment\AppointmentItemAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Appointment\AppointmentItemPhotoUpload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Card\CardEntitySNAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Card\CardOperatorAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Card\CardEntitySNImport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Card\CardCredits.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Card\CardRecharge.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Card\CardConsume.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Card\CardSNSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Card\ExportCardSN.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Export.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ExportAppointmentContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\KeywordEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\KeywordSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ContentSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\Keyword\BackgroundKeywordNews.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\Keyword\BackgroundKeywordText.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\Keyword\BackgroundKeywordNewsAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\Keyword\BackgroundKeywordConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\Keyword\BackgroundKeywordResourceAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\Menu\BackgroundMenuAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\Menu\BackgroundMenu.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Basis\BackgroundRight.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\ConsoleAccount.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\ConsoleAccountBinding.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Coupon\CouponRelated.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Coupon\CouponSNSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Coupon\CouponSNAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Coupon\CouponAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\KeywordPreview.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\KeywordAddNews.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\KeywordAddText.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Lottery\WinnerSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\FunctionSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ImageCssClassSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Store\StoreCategoryAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Data\Album\IAlbumContentDAO.cs" />
+    <Compile Include="Core\Data\Album\IAlbumDAO.cs" />
+    <Compile Include="Core\Data\Appointment\IAppointmentContentDAO.cs" />
+    <Compile Include="Core\Data\Appointment\IAppointmentDAO.cs" />
+    <Compile Include="Core\Data\Appointment\IAppointmentItemDAO.cs" />
+    <Compile Include="Core\Data\Basis\IConfigExtendDAO.cs" />
+    <Compile Include="Core\Data\Basis\IWebMenuDAO.cs" />
+    <Compile Include="Core\Data\Card\ICardDAO.cs" />
+    <Compile Include="Core\Data\Card\ICardSNDAO.cs" />
+    <Compile Include="Core\Data\Card\ICardCashLogDAO.cs" />
+    <Compile Include="Core\Data\Card\ICardEntitySNDAO.cs" />
+    <Compile Include="Core\Data\Card\ICardSignLogDAO.cs" />
+    <Compile Include="Core\Data\Conference\IConferenceContentDAO.cs" />
+    <Compile Include="Core\Data\Lottery\ILotteryDAO.cs" />
+    <Compile Include="Core\Data\Lottery\ILotteryAwardDAO.cs" />
+    <Compile Include="Core\Data\Lottery\ILotteryWinnerDAO.cs" />
+    <Compile Include="Core\Data\Map\IMapDAO.cs" />
+    <Compile Include="Core\Data\Lottery\ILotteryLogDAO.cs" />
+    <Compile Include="Core\Data\Scence\IScenceDAO.cs" />
+    <Compile Include="Core\Data\Search\ISearchDAO.cs" />
+    <Compile Include="Core\Data\Search\ISearchNavigationDAO.cs" />
+    <Compile Include="Core\Data\Store\IStoreCategoryDAO.cs" />
+    <Compile Include="Core\Data\Store\IStoreDAO.cs" />
+    <Compile Include="Core\Data\Store\IStoreItemDAO.cs" />
+    <Compile Include="Core\Data\View360\IView360DAO.cs" />
+    <Compile Include="Core\Data\Message\IMessageDAO.cs" />
+    <Compile Include="Core\Data\Message\IMessageContentDAO.cs" />
+    <Compile Include="Core\Data\Conference\IConferenceDAO.cs" />
+    <Compile Include="Core\Data\Collect\ICollectDAO.cs" />
+    <Compile Include="Core\Data\Collect\ICollectItemDAO.cs" />
+    <Compile Include="Core\Data\Collect\ICollectLogDAO.cs" />
+    <Compile Include="Core\Data\Vote\IVoteLogDAO.cs" />
+    <Compile Include="Core\Data\Wifi\IWifiDAO.cs" />
+    <Compile Include="Core\Data\Wifi\IWifiNodeDAO.cs" />
+    <Compile Include="Core\Manager\AlbumManager.cs" />
+    <Compile Include="Core\Manager\AppointmentManager.cs" />
+    <Compile Include="Core\Manager\CardManager.cs" />
+    <Compile Include="Core\Manager\ComponentsManager.cs" />
+    <Compile Include="Core\Manager\MapManager.cs" />
+    <Compile Include="Core\Manager\LotteryManager.cs" />
+    <Compile Include="Core\Manager\SearchManager.cs" />
+    <Compile Include="Core\Manager\Store\CategoryTreeItem.cs" />
+    <Compile Include="Core\Manager\Store\StoreManager.cs" />
+    <Compile Include="Core\Manager\View360Manager.cs" />
+    <Compile Include="Core\Manager\MessageManager.cs" />
+    <Compile Include="Core\Manager\ConferenceManager.cs" />
+    <Compile Include="Core\Manager\CollectManager.cs" />
+    <Compile Include="Core\Manager\VoteManager.cs" />
+    <Compile Include="Core\Manager\WifiManager.cs" />
+    <Compile Include="Core\Manager\WeiXinManager.cs" />
+    <Compile Include="Core\Manager\CouponManager.cs" />
+    <Compile Include="Core\Manager\KeywordManager.cs" />
+    <Compile Include="Core\Data\Coupon\ICouponSNDAO.cs" />
+    <Compile Include="Core\Data\Coupon\ICouponDAO.cs" />
+    <Compile Include="Core\Data\DataProviderWX.cs" />
+    <Compile Include="Core\Data\Basis\IAccountDAO.cs" />
+    <Compile Include="Core\Data\Basis\IKeywordMatchDAO.cs" />
+    <Compile Include="Core\Data\Basis\IKeywordGroupDAO.cs" />
+    <Compile Include="Core\Data\Basis\IKeywordDAO.cs" />
+    <Compile Include="Core\Data\Basis\IKeywordResourceDAO.cs" />
+    <Compile Include="Core\Data\Basis\ICountDAO.cs" />
+    <Compile Include="Core\Data\Coupon\ICouponActDAO.cs" />
+    <Compile Include="Core\Data\Basis\IMenuDAO.cs" />
+    <Compile Include="Core\Data\Vote\IVoteItemDAO.cs" />
+    <Compile Include="Core\Data\Vote\IVoteDAO.cs" />
+    <Compile Include="Core\IO\FileUtilityWX.cs" />
+    <Compile Include="Core\IO\PageUtilityWX.cs" />
+    <Compile Include="Core\IO\PathUtilityWX.cs" />
+    <Compile Include="Core\MP\GeXiaMessageHandler.cs" />
+    <Compile Include="Core\MP\LocationService.cs" />
+    <Compile Include="Core\MP\MPUtils.cs" />
+    <Compile Include="Core\Utils\NavigationUtils.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\Custom\Custom.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\Groups\CreateGroupResult.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\Groups\GetIdResult.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\Groups\Groups.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\Groups\GroupsJson.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\Media\Media.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\Media\UploadResultJson.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\OAuth\OAuth.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\OAuth\OAuthAccessTokenResult.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\OAuth\OAuthUserInfo.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\QrCode\CreateQrCodeResult.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\QrCode\QrCode.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\User\OpenIdResultJson.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\User\User.cs" />
+    <Compile Include="Core\WeiXinMP\AdvancedAPIs\User\UserInfoJson.cs" />
+    <Compile Include="Core\WeiXinMP\Agents\MessageAgent.cs" />
+    <Compile Include="Core\WeiXinMP\CheckSignature.cs" />
+    <Compile Include="Core\WeiXinMP\CommonAPIs\AccessTokenContainer.cs" />
+    <Compile Include="Core\WeiXinMP\CommonAPIs\CommonApi.cs" />
+    <Compile Include="Core\WeiXinMP\CommonAPIs\CommonApi.Menu.cs" />
+    <Compile Include="Core\WeiXinMP\CommonAPIs\CommonJsonSend.cs" />
+    <Compile Include="Core\WeiXinMP\Context\MessageContainer.cs" />
+    <Compile Include="Core\WeiXinMP\Context\MessageContext.cs" />
+    <Compile Include="Core\WeiXinMP\Context\WeixinContext.cs" />
+    <Compile Include="Core\WeiXinMP\Context\WeixinContextRemovedEventArgs.cs" />
+    <Compile Include="Core\WeiXinMP\Cryptography.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\GoogleMap\Markers.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\JsonResult\AccessTokenResult.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\JsonResult\GetMenuResult.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\JsonResult\GetMenuResultFull.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\JsonResult\UploadMediaFileResult.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\JsonResult\WeixinUserInfoResult.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\JsonResult\WxJsonResult.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Menu\BaseButton.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Menu\ButtonGroup.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Menu\SingleButton.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Menu\SingleClickButton.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Menu\SingleViewButton.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Menu\SubButton.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\MessageBase.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageBase.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageEventBase.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageEvent_Click.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageEvent_Enter.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageEvent_Location.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageEvent_Scan.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageEvent_Subscribe.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageEvent_Unsubscribe.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageImage.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageLink.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageLocation.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageText.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageVideo.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Request\RequestMessageVoice.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\Article.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\Image.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\Music.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\ResponseMessageBase.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\ResponseMessageImage.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\ResponseMessageMusic.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\ResponseMessageNews.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\ResponseMessageText.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\ResponseMessageVideo.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\ResponseMessageVoice.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\Video.cs" />
+    <Compile Include="Core\WeiXinMP\Entities\Response\Voice.cs" />
+    <Compile Include="Core\WeiXinMP\Enums.cs" />
+    <Compile Include="Core\WeiXinMP\Exceptions\ErrorJsonResultException.cs" />
+    <Compile Include="Core\WeiXinMP\Exceptions\UnknownRequestMsgTypeException.cs" />
+    <Compile Include="Core\WeiXinMP\Exceptions\WeixinException.cs" />
+    <Compile Include="Core\WeiXinMP\Exceptions\WeixinMenuException.cs" />
+    <Compile Include="Core\WeiXinMP\Helpers\DateTimeHelper.cs" />
+    <Compile Include="Core\WeiXinMP\Helpers\EntityHelper.cs" />
+    <Compile Include="Core\WeiXinMP\Helpers\EventHelper.cs" />
+    <Compile Include="Core\WeiXinMP\Helpers\FileHelper.cs" />
+    <Compile Include="Core\WeiXinMP\Helpers\GoogleMapHelper.cs" />
+    <Compile Include="Core\WeiXinMP\Helpers\GpsHelper.cs" />
+    <Compile Include="Core\WeiXinMP\Helpers\MsgTypeHelper.cs" />
+    <Compile Include="Core\WeiXinMP\Helpers\SerializerHelper.cs" />
+    <Compile Include="Core\WeiXinMP\HttpUtility\Get.cs" />
+    <Compile Include="Core\WeiXinMP\HttpUtility\Post.cs" />
+    <Compile Include="Core\WeiXinMP\HttpUtility\RequestUtility.cs" />
+    <Compile Include="Core\WeiXinMP\MessageHandlers\MessageHandler.cs" />
+    <Compile Include="Core\WeiXinMP\RequestMessageFactory.cs" />
+    <Compile Include="Core\WeiXinMP\ResponseMessageFactory.cs" />
+    <Compile Include="Core\WeiXinMP\WXBizMsgCrypt.cs" />
+    <Compile Include="Model\AccountInfo.cs" />
+    <Compile Include="Model\Album\AlbumContentInfo.cs" />
+    <Compile Include="Model\Album\AlbumInfo.cs" />
+    <Compile Include="Model\Appointment\AppointmentContentInfo.cs" />
+    <Compile Include="Model\Appointment\AppointmentInfo.cs" />
+    <Compile Include="Model\Appointment\AppointmentItemInfo.cs" />
+    <Compile Include="Model\Card\CardInfo.cs" />
+    <Compile Include="Model\Card\CardCashMonthCountInfo.cs" />
+    <Compile Include="Model\Card\CardCashYearCountInfo.cs" />
+    <Compile Include="Model\Card\CardOperatorInfo.cs" />
+    <Compile Include="Model\Card\CardSNInfo.cs" />
+    <Compile Include="Model\Card\CardCashLogInfo.cs" />
+    <Compile Include="Model\Card\CardEntitySNInfo.cs" />
+    <Compile Include="Model\Card\CardSignLogInfo.cs" />
+    <Compile Include="Model\Conference\ConferenceGuestInfo.cs" />
+    <Compile Include="Model\Conference\ConferenceAgendaInfo.cs" />
+    <Compile Include="Model\Conference\ConferenceInfo.cs" />
+    <Compile Include="Model\Conference\ConferenceContentInfo.cs" />
+    <Compile Include="Model\ConfigExtendInfo.cs" />
+    <Compile Include="Model\Enumerations\EAppointmentStatus.cs" />
+    <Compile Include="Model\Enumerations\ECashType.cs" />
+    <Compile Include="Model\Enumerations\ELotteryType.cs" />
+    <Compile Include="Model\Enumerations\ENavigationType.cs" />
+    <Compile Include="Model\Enumerations\EConsumeType.cs" />
+    <Compile Include="Model\Enumerations\EWebMenuType.cs" />
+    <Compile Include="Model\Enumerations\EWinStatus.cs" />
+    <Compile Include="Model\Lottery\LotteryInfo.cs" />
+    <Compile Include="Model\Lottery\LotteryAwardInfo.cs" />
+    <Compile Include="Model\Lottery\LotteryWinnerInfo.cs" />
+    <Compile Include="Model\Enumerations\EVoteResultVisible.cs" />
+    <Compile Include="Model\Message\MessageInfo.cs" />
+    <Compile Include="Model\Message\MessageContentInfo.cs" />
+    <Compile Include="Model\Map\MapInfo.cs" />
+    <Compile Include="Model\Lottery\LotteryLogInfo.cs" />
+    <Compile Include="Model\Scence\ScenceInfo.cs" />
+    <Compile Include="Model\Search\SearchInfo.cs" />
+    <Compile Include="Model\Search\SearchNavigationInfo.cs" />
+    <Compile Include="Model\Store\StoreCategoryInfo.cs" />
+    <Compile Include="Model\Store\StoreInfo.cs" />
+    <Compile Include="Model\Store\StoreItemInfo.cs" />
+    <Compile Include="Model\View360\View360Info.cs" />
+    <Compile Include="Model\Collect\CollectInfo.cs" />
+    <Compile Include="Model\Collect\CollectItemInfo.cs" />
+    <Compile Include="Model\Collect\CollectLogInfo.cs" />
+    <Compile Include="Model\Vote\VoteLogInfo.cs" />
+    <Compile Include="Model\Vote\VoteItemInfo.cs" />
+    <Compile Include="Model\Vote\VoteInfo.cs" />
+    <Compile Include="Model\Coupon\CouponSNInfo.cs" />
+    <Compile Include="Model\Coupon\CouponInfo.cs" />
+    <Compile Include="Model\Enumerations\EWXAccountType.cs" />
+    <Compile Include="Model\Enumerations\EMatchType.cs" />
+    <Compile Include="Model\Enumerations\EKeywordType.cs" />
+    <Compile Include="Model\Enumerations\ECountType.cs" />
+    <Compile Include="Model\Enumerations\ECouponStatus.cs" />
+    <Compile Include="Model\Enumerations\EResourceType.cs" />
+    <Compile Include="Model\Enumerations\EMenuType.cs" />
+    <Compile Include="Model\CountInfo.cs" />
+    <Compile Include="Model\Coupon\CouponActInfo.cs" />
+    <Compile Include="Model\KeywordGroupInfo.cs" />
+    <Compile Include="Model\KeywordMatchInfo.cs" />
+    <Compile Include="Model\KeywordResourceInfo.cs" />
+    <Compile Include="Model\KeywordInfo.cs" />
+    <Compile Include="Model\MenuInfo.cs" />
+    <Compile Include="Model\WebMenuInfo.cs" />
+    <Compile Include="Model\Wifi\WifiAdditional\WifiBusinessInfo.cs" />
+    <Compile Include="Model\Wifi\WifiNodeInfo.cs" />
+    <Compile Include="Model\Wifi\WifiInfo.cs" />
+    <Compile Include="Model\Wifi\WifiAdditional\WifiNodeClientInfo.cs" />
+    <Compile Include="Model\Wifi\WifiAdditional\WifiNodeInfo.cs" />
+    <Compile Include="Model\Wifi\WifiAdditional\WifiNodeReportInfo.cs" />
+    <Compile Include="Provider\Data\SqlServer\Album\AlbumContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Album\AlbumDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Appointment\AppointmentContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Appointment\AppointmentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Appointment\AppointmentItemDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Basis\AccountDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Basis\ConfigExtendDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Basis\WebMenuDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Card\CardDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Card\CardSNDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Card\CardCashLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Card\CardEntitySNAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Card\CardSignLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Conference\ConferenceContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Lottery\LotteryDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Lottery\LotteryAwardDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Lottery\LotteryWinnerDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Map\MapDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Lottery\LotteryLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Scence\ScenceDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Search\SearchDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Search\SearchNavigationDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Store\StoreCategoryDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Store\StoreDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Store\StoreItemDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\View360\View360DAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Message\MessageDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Message\MessageContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Conference\ConferenceDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Collect\CollectDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Collect\CollectItemDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Collect\CollectLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Vote\VoteLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Vote\VoteItemDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Vote\VoteDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Coupon\CouponSNDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Coupon\CouponDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Coupon\CouponActDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Basis\KeywordMatchDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Basis\KeywordResourceDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Basis\KeywordGroupDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Basis\KeywordDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Basis\CountDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Basis\MenuDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Wifi\WifiDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Wifi\WifiNodeDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.BackgroundPages\BaiRong.BackgroundPages.csproj">
+      <Project>{64529dc0-3c8b-4d10-a921-ead9f03fdf21}</Project>
+      <Name>BaiRong.BackgroundPages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Controls\BaiRong.Controls.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b4465}</Project>
+      <Name>BaiRong.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Core\BaiRong.Core.csproj">
+      <Project>{3d8cb06b-1791-4685-ab56-965b9f41666e}</Project>
+      <Name>BaiRong.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Provider\BaiRong.Provider.csproj">
+      <Project>{f5094daf-85e0-4754-a8c4-c236b9f9dba6}</Project>
+      <Name>BaiRong.Provider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Service\BaiRong.Service.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b8899}</Project>
+      <Name>BaiRong.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiteServer.CMS\SiteServer.CMS.csproj">
+      <Project>{61a793e1-3e99-4bdc-bc20-7298ca3e0000}</Project>
+      <Name>SiteServer.CMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

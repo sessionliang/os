@@ -1,0 +1,58 @@
+<script>var $pageInfo = { publishmentSystemID : 82, channelID : 82, contentID : 0, siteUrl : "/usercenter", homeUrl : "/usercenter/center", currentUrl : "http://siteserver.cn/usercenter/SiteMessage.html", rootUrl : "http://siteserver.cn", apiUrl : "http://siteserver.cn" }</script>
+ 
+ 
+<div class="mcon">
+ 
+<div class="mcR mcRx2">
+<div class="mc4_top">
+
+<a class="mc4_a1" href="userMessage.html">系统公告</a>
+<a class="mc4_a1" href="userMessageNotice.html">系统通知</a>
+<button type="button" id="btnSendMsgOpen" class="m3hd_a1_sm"><span>发送站内信</span></button>
+</div>
+<div class="mc4List">
+<ul id="ulSiteMessage"></ul>
+<div class="clear"></div>
+</div>
+<!--<div class="mpage">
+<span class="mpage_Nonum">共118条</span>
+<a href="#" class="mpage_num">上一页</a>
+<a href="#" class="mpage_num mpage_cutnum">1</a>
+<a href="#" class="mpage_num">2</a>
+<a href="#" class="mpage_num">3</a>
+<a href="#" class="mpage_num">4</a>
+...
+<a href="#" class="mpage_num">12</a>
+<a href="#" class="mpage_num">下一页</a>
+</div>-->
+<div class="mpage" id="divPageLink">
+<span class="mpage_Nonum" id="spanTotal">共0条</span>
+<a href="#" class="mpage_num">上一页</a>
+<a href="#" class="mpage_num mpage_cutnum">1</a>
+<a href="#" class="mpage_num">下一页</a>
+</div>
+
+</div>
+<div class="clear"></div>
+</div>
+     
+ 
+
+<!--发送信息弹出层 开始-->
+<div class="mlayBg hide"></div>
+<div class="mlay_sm hide">
+<div class="mlay_t"><span class="fl">发送站内信</span><img class="mrclose" src="images/m2close.jpg" width="31" height="26" /></div>
+<div class="mlay_ul">
+<div class="nmlay_alr2"></div>
+<ul>
+<li id="tipsUserName"><span class="mlay_s1_sm">接收人</span><input class="mlay_int" placeholder="请输入接收人" id="userName" name="userName" type="text" />
+<div class="nmf_aler_sm hide"><img class="tipImg" src="images/nico2.png"><div class="nmf_st1">请输入正确的接收人！</div></div></li>
+<li id="tipsTitle"><span class="mlay_s1_sm">标题</span><input class="mlay_int" placeholder="请输入标题" id="title" name="title" type="text" />
+<div class="nmf_aler_sm hide"><img class="tipImg" src="images/nico2.png"><div class="nmf_st1">请输入标题！</div></div></li>
+<li id="tipsMsg"><span class="mlay_s1_sm">内容</span><textarea class="mlay_int mlay_int2" style=" width: 300px; height: 150px; " placeholder="" id="msg" name="msg" type="text"></textarea>
+<div class="nmf_aler_sm hide"><img class="tipImg" src="images/nico2.png"><div class="nmf_st1">请输入内容！</div></div></li>
+<li><span class="mlay_s1_sm">&nbsp;</span><button type="button" id="btnSendMsg" class="pubBtn mlay_btn"><span>发送</span></button></li>
+</ul>
+</div>
+</div>
+<script src="js/app.js" id="controllerName" data-controller-name="siteMessage"></script>

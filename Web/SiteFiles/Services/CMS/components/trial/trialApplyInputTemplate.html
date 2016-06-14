@@ -1,0 +1,26 @@
+﻿<div class="comment_box">
+    <div class="comment_title">
+        已有（{stl.template.totalNum}）人申请试用
+    </div>
+    <div id="trialapply_div">
+        <form id="trialapply_form">  
+        </form>
+    </div>
+    <div class="submit_box clearfix">
+
+        <stl:if type="isCurrent" value="isAnonymous">
+            <stl:yes>
+                <div class="fl comment_avator">
+                    <a href="javascript:;" class="login_link" onclick="userController.login();return false;">登录</a> 后参与试用
+                </div>
+            </stl:yes>
+            <stl:no>
+                <div class="fl comment_avator">
+                    <span><img class="avator_img" src="{stl.template.user.avatarSmall}">{stl.template.user.displayName}</span>
+                </div>
+            </stl:no>
+        </stl:if>
+
+        <button type="submit" class="fr comment_btn" onclick="trialApplyController.submitApply(); return false;">提交试用申请</button>
+    </div>
+</div>

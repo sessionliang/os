@@ -1,0 +1,25 @@
+﻿<div class="comment_box">
+    <div class="comment_title">
+        感谢您接受我们的有奖调查
+    </div>
+    <div id="commit_div">
+        <form id="commit_form"></form>
+    </div>
+    <div class="submit_box clearfix">
+
+        <stl:if type="isCurrent" value="isAnonymous">
+            <stl:yes>
+                <div class="fl comment_avator">
+                    <a href="javascript:;" class="login_link" onclick="userController.login();return false;">登录</a> 后参与试用
+                </div>
+            </stl:yes>
+            <stl:no>
+                <div class="fl comment_avator">
+                    <span><img class="avator_img" src="{stl.template.user.avatarSmall}">{stl.template.user.displayName}</span>
+                </div>
+            </stl:no>
+        </stl:if>
+
+        <button id="commit_but" type="submit" class="fr comment_btn" onclick="surveyController.submitSurveyQuestionnaire(); return false;">提交 </button>
+    </div>
+</div>

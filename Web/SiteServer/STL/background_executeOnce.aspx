@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" Inherits="SiteServer.STL.BackgroundPages.BackgroundExecuteOnce" %>

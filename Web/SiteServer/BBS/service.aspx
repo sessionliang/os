@@ -1,0 +1,1 @@
+﻿<%@ Page Language="c#" Inherits="SiteServer.BBS.BackgroundPages.Service" Trace="False" %>

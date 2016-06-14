@@ -1,0 +1,1 @@
+﻿<%@ Page Inherits="SiteServer.BBS.BackgroundPages.BackgroundUtils" %>

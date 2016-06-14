@@ -1,0 +1,1 @@
+﻿<%@ Page Language="c#" Inherits="SiteServer.CMS.BackgroundPages.MLib.Service.OtherService" Trace="False" %>

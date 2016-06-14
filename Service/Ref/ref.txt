@@ -1,0 +1,2 @@
+autostart:
+http://www.codeproject.com/Articles/506162/ClickOnce-application-autostart-and-clean-uninstal

@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5094DAF-85E0-4754-A8C4-C236B9F9DBA6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>BaiRong.Provider</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BaiRong.Provider</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'LiveServer|AnyCPU' ">
+    <OutputPath>bin\LiveServer\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LiveServer|x86'">
+    <OutputPath>bin\x86\LiveServer\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Data\Helper\Odbc.cs" />
+    <Compile Include="Data\Helper\OleDb.cs" />
+    <Compile Include="Data\Helper\Oracle.cs" />
+    <Compile Include="Data\Helper\SqlServer.cs" />
+    <Compile Include="Data\Oracle\AdministratorDAO.cs" />
+    <Compile Include="Data\Oracle\ContentModelDAO.cs" />
+    <Compile Include="Data\Oracle\DepartmentDAO.cs" />
+    <Compile Include="Data\Oracle\ErrorLogDAO.cs" />
+    <Compile Include="Data\Oracle\PermissionsInRolesDAO.cs" />
+    <Compile Include="Data\Oracle\RoleDAO.cs" />
+    <Compile Include="Data\Oracle\SMSMessageDAO.cs" />
+    <Compile Include="Data\Oracle\TableCollectionDAO.cs" />
+    <Compile Include="Data\Oracle\AuxiliaryTableDataDAO.cs" />
+    <Compile Include="Data\Oracle\ConfigDAO.cs" />
+    <Compile Include="Data\Oracle\CountDAO.cs" />
+    <Compile Include="Data\Oracle\DatabaseDAO.cs" />
+    <Compile Include="Data\Oracle\DbCacheDAO.cs" />
+    <Compile Include="Data\Oracle\DiggDAO.cs" />
+    <Compile Include="Data\Oracle\IP2CityDAO.cs" />
+    <Compile Include="Data\Oracle\LogDAO.cs" />
+    <Compile Include="Data\Oracle\TableMatchDAO.cs" />
+    <Compile Include="Data\Oracle\TableMetadataDAO.cs" />
+    <Compile Include="Data\Oracle\TableStructureDAO.cs" />
+    <Compile Include="Data\Oracle\TableStyleDAO.cs" />
+    <Compile Include="Data\Oracle\ContentDAO.cs" />
+    <Compile Include="Data\Oracle\TagDAO.cs" />
+    <Compile Include="Data\Oracle\AreaDAO.cs" />
+    <Compile Include="Data\Oracle\ContentCheckDAO.cs" />
+    <Compile Include="Data\Oracle\UserBindingDAO.cs" />
+    <Compile Include="Data\Oracle\UserConfigDAO.cs" />
+    <Compile Include="Data\Oracle\UserContactDAO.cs" />
+    <Compile Include="Data\Oracle\UserCreditsLogDAO.cs" />
+    <Compile Include="Data\Oracle\UserDAO.cs" />
+    <Compile Include="Data\Oracle\UserDownloadDAO.cs" />
+    <Compile Include="Data\Oracle\UserMessageDAO.cs" />
+    <Compile Include="Data\SqlServer\AdministratorDAO.cs" />
+    <Compile Include="Data\SqlServer\AjaxUrlDAO.cs" />
+    <Compile Include="Data\SqlServer\ContentCheckDAO.cs" />
+    <Compile Include="Data\SqlServer\ContentDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\ContentModelDAO.cs" />
+    <Compile Include="Data\SqlServer\LevelRuleDAO.cs" />
+    <Compile Include="Data\SqlServer\DepartmentDAO.cs" />
+    <Compile Include="Data\SqlServer\FTPStorageDAO.cs" />
+    <Compile Include="Data\SqlServer\LocalStorageDAO.cs" />
+    <Compile Include="Data\SqlServer\ErrorLogDAO.cs" />
+    <Compile Include="Data\SqlServer\SMSServerDAO.cs" />
+    <Compile Include="Data\SqlServer\CreateTaskDAO.cs" />
+    <Compile Include="Data\SqlServer\UserLogDAO.cs" />
+    <Compile Include="Data\SqlServer\PermissionsInRolesDAO.cs" />
+    <Compile Include="Data\SqlServer\RoleDAO.cs" />
+    <Compile Include="Data\SqlServer\SMSMessageDAO.cs" />
+    <Compile Include="Data\SqlServer\StorageDAO.cs" />
+    <Compile Include="Data\SqlServer\TableCollectionDAO.cs" />
+    <Compile Include="Data\SqlServer\AuxiliaryTableDataDAO.cs" />
+    <Compile Include="Data\SqlServer\ConfigDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\CountDAO.cs" />
+    <Compile Include="Data\SqlServer\DatabaseDAO.cs" />
+    <Compile Include="Data\SqlServer\DbCacheDAO.cs" />
+    <Compile Include="Data\SqlServer\LogDAO.cs" />
+    <Compile Include="Data\SqlServer\TableMatchDAO.cs" />
+    <Compile Include="Data\SqlServer\TableMetadataDAO.cs" />
+    <Compile Include="Data\SqlServer\TableStructureDAO.cs" />
+    <Compile Include="Data\SqlServer\TaskDAO.cs" />
+    <Compile Include="Data\SqlServer\TaskLogDAO.cs" />
+    <Compile Include="Data\SqlServer\TableStyleDAO.cs" />
+    <Compile Include="Data\SqlServer\DiggDAO.cs" />
+    <Compile Include="Data\SqlServer\IP2CityDAO.cs" />
+    <Compile Include="Data\SqlServer\TagDAO.cs" />
+    <Compile Include="Data\SqlServer\AreaDAO.cs" />
+    <Compile Include="Data\SqlServer\BaiRongThirdLoginDAO.cs" />
+    <Compile Include="Data\SqlServer\UserBindingDAO.cs" />
+    <Compile Include="Data\SqlServer\UserConfigDAO.cs" />
+    <Compile Include="Data\SqlServer\UserContactDAO.cs" />
+    <Compile Include="Data\SqlServer\UserCreditsLogDAO.cs" />
+    <Compile Include="Data\SqlServer\UserDAO.cs" />
+    <Compile Include="Data\SqlServer\UserDownloadDAO.cs" />
+    <Compile Include="Data\SqlServer\UserGroupDAO.cs" />
+    <Compile Include="Data\SqlServer\UserLevelDAO.cs" />
+    <Compile Include="Data\SqlServer\UserNewGroupDAO.cs" />
+    <Compile Include="Data\SqlServer\UserSecurityQuestionDAO.cs" />
+    <Compile Include="Data\SqlServer\UserNoticeTemplateDAO.cs" />
+    <Compile Include="Data\SqlServer\UserMessageDAO.cs" />
+    <Compile Include="HttpModule\SiteServerHttpModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaiRong.Core\BaiRong.Core.csproj">
+      <Project>{3d8cb06b-1791-4685-ab56-965b9f41666e}</Project>
+      <Name>BaiRong.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网站标题</title>
+    <meta name="description" content="网站描述" />
+    <meta name="keywords" content="网站关键字" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header">
+        <a class="logo" href="#"><img src="images/mnlogo.png" width="208" height="26" /></a>
+        <div class="headR">
+            <a class="cor_blue" href="#">15300242622</a> &nbsp;&nbsp; <a href="#" class="cor_blue">退出</a> | <a href="#">网站首页>></a>
+        </div>
+    </div>
+    <div class="navBg">
+        <div class="nav">
+            <ul>
+                <li><a class="nav_a" href="#">首页</a></li>
+                <li><a class="nav_a nav_cuta" href="#">帐号安全</a></li>
+                <li><a class="nav_a" href="#">帐号信息</a></li>
+                <li><a class="nav_a" href="#">消息中心</a></li>
+                <li><a class="nav_a" href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mcon">
+        <div class="mcL">
+            <ul id="accountInfoUrl">
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico1.png" width="35" height="35" /><img class="hidden" src="images/ml_ico1a.png" width="35" height="35" />我的头像</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico2.png" width="35" height="35" /><img class="hidden" src="images/ml_ico2a.png" width="35" height="35" />基本资料</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico3.png" width="35" height="35" /><img class="hidden" src="images/ml_ico3a.png" width="35" height="35" />详细资料</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico4.png" width="35" height="35" /><img class="hidden" src="images/ml_ico4a.png" width="35" height="35" />帐号绑定</a></li>
+            </ul>
+        </div>
+        <div class="mcR mcRx2">
+
+            <div class="mcr_t1" id="msgType">信息详情</div>
+
+            <div class="mcr_t1_sm_t" id="title">信息标题</div>
+            <div class="mcr_t1_sm_m" id="msg">信息内容</div>
+            <div class="mcr_t1_sm">发送人：<span id="from"></span></div>
+            <div class="mcr_t1_sm">发送时间：<span id="addDate"></span></div>
+
+            <div class="mcr_btnBox_sm">
+                <button type="button" id="btnReplyMsgOpen" class="pubBtn_sm"><span>回复</span></button>&nbsp;<button type="button" id="btnDeleteMsg" class="pubBtn"><span>删除</span></button>&nbsp;<button type="button" id="btnReturn" class="pubBtn"><span>返回</span></button>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="mfm_footer">
+        北京百容千域软件技术开发有限公司 &nbsp; 版权所有 Copyright © 2003-2015<br />
+        Powered by SiteServer CMS &nbsp; 京ICP备10013847号
+    </div>
+</body>
+</html>
+<!--发送信息弹出层 开始-->
+<div class="mlayBg hide"></div>
+<div class="mlay_sm hide">
+    <div class="mlay_t"><span class="fl">回复站内信</span><img class="mrclose" src="images/m2close.jpg" width="31" height="26" /></div>
+    <div class="mlay_ul">
+        <div class="nmlay_alr2"></div>
+        <ul>
+            <li id="tipsUserName">
+                <span class="mlay_s1_sm">接收人</span><input class="mlay_int" placeholder="请输入接收人" id="replyUserName" name="replyUserName" type="text" />
+                <div class="nmf_aler_sm hide"><img class="tipImg" src="images/nico2.png" /><div class="nmf_st1">请输入正确的接收人！</div></div>
+            </li>
+            <li id="tipsTitle">
+                <span class="mlay_s1_sm">标题</span><input class="mlay_int" placeholder="请输入标题" id="replyTitle" name="replyTitle" type="text" />
+                <div class="nmf_aler_sm hide"><img class="tipImg" src="images/nico2.png" /><div class="nmf_st1">请输入标题！</div></div>
+            </li>
+            <li id="tipsMsg">
+                <span class="mlay_s1_sm">内容</span><textarea class="mlay_int mlay_int2" style=" width: 300px; height: 150px; " placeholder="" id="replyMsg" name="replyMsg" type="text"></textarea>
+                <div class="nmf_aler_sm hide"><img class="tipImg" src="images/nico2.png" /><div class="nmf_st1">请输入内容！</div></div>
+            </li>
+            <li><span class="mlay_s1_sm">&nbsp;</span><button type="button" id="btnReplyMsg" class="pubBtn mlay_btn"><span>发送</span></button></li>
+        </ul>
+    </div>
+</div>
+<script src="assets/js/lib.js"></script>
+<script src="assets/js/app.js" id="controllerName" data-controller-name="messageDetail"></script>

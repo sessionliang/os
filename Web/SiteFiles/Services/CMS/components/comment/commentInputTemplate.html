@@ -1,0 +1,23 @@
+﻿<div class="comment_box">
+  <div class="comment_title">
+      文章评论（{stl.template.totalNum}）
+  </div>
+    <textarea class="comment_textarea" onclick="if (isLoginFirst())userController.loginFirst();" placeholder="你怎么看？"></textarea>
+    <div class="submit_box clearfix">
+        
+        <stl:if type="isCurrent" value="isAnonymous">
+            <stl:yes>
+                <div class="fl comment_avator">
+                    <a href="javascript:;" class="login_link" onclick="userController.login();return false;">登录</a> 后参与讨论
+                </div>
+            </stl:yes>
+            <stl:no>
+                <div class="fl comment_avator">
+                    <span><img class="avator_img" src="{stl.template.user.avatarSmall}">{stl.template.user.displayName}</span>
+                </div>
+            </stl:no>
+        </stl:if>
+
+        <button type="submit" class="fr comment_btn" onclick="commentController.submitComment();return false;">提交评论</button>
+    </div>
+</div>

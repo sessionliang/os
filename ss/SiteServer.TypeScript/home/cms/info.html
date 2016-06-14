@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网站标题</title>
+    <meta name="description" content="网站描述" />
+    <meta name="keywords" content="网站关键字" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header">
+        <a class="logo" href="#"><img src="images/mnlogo.png" width="208" height="26" /></a>
+        <div class="headR">
+            <a class="cor_blue" id="spanUserName" href="javascript:void(0)"></a> &nbsp;&nbsp; <a id="btnLogout" href="javascript:void(0)" class="cor_blue">退出</a> | <a href="#">网站首页>></a>
+        </div>
+    </div>
+    <div class="navBg">
+        <div class="nav">
+            <a class="nav_a" href="#">首页</a>
+            <a class="nav_a nav_cuta" href="#">个人中心</a>
+            <a class="nav_a" href="#">帮助中心</a>
+        </div>
+    </div>
+    <div class="mcon">
+        <div class="mcL mcLx1">
+            <ul id="accountInfoUrl">
+                <li><a href="mypic.html" class="m2menu_a"><img class="block" src="images/ml_ico1.png" width="35" height="35" /><img class="hidden" src="images/ml_ico1a.png" width="35" height="35" />我的头像</a></li>
+                <li><a href="info.html" class="m2menu_a"><img class="block" src="images/ml_ico2.png" width="35" height="35" /><img class="hidden" src="images/ml_ico2a.png" width="35" height="35" />基本资料</a></li>
+                <li><a href="detail.html" class="m2menu_a"><img class="block" src="images/ml_ico3.png" width="35" height="35" /><img class="hidden" src="images/ml_ico3a.png" width="35" height="35" />详细资料</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico4.png" width="35" height="35" /><img class="hidden" src="images/ml_ico4a.png" width="35" height="35" />帐号绑定</a></li>
+            </ul>
+        </div>
+        <div class="mcR">
+            <div class="mcr_t1">基本资料</div>
+            <ul>
+
+                <li><span class="mcr_s1">用户名：</span><input placeholder="用户名" class="mcr_int1 mcr_int2" name="txtUserName" id="txtUserName" type="text" disabled="disabled"/></li>
+                <!--<li><span class="mcr_s1">邮箱：</span><input placeholder="邮箱" class="mcr_int1 mcr_int2" name="txtEmail" id="txtEmail" type="text" /></li>
+                <li><span class="mcr_s1">手机：</span><input placeholder="手机" class="mcr_int1 mcr_int2" name="txtPhone" id="txtPhone" type="text" /></li>-->
+
+                <li>
+                    <span class="mcr_s1">个性签名：</span>
+                    <textarea class="mcr_area" name="txtRemark" id="txtRemark"></textarea>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+            <div class="mcr_btnBox"><button type="button" id="btnSaveUserInfo" class="pubBtn"><span>保存修改</span></button></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="mfm_footer">
+        北京百容千域软件技术开发有限公司 &nbsp; 版权所有 Copyright © 2003-2015<br />
+        Powered by SiteServer CMS &nbsp; 京ICP备10013847号
+    </div>
+    <!--提示信息弹出层 开始-->
+    <div class="mlayBg hide"></div>
+    <div class="mlay_d hide">
+        <div class="mlay_t"><span class="fl">消息提醒</span><img class="mrclose" src="images/m2close.jpg" width="31" height="26" /></div>
+        <div class="mlay_ul">
+            <ul>
+                <li class="mlay_li01"><span class="mlay_s2" id="spanTipsMessage" style="margin-left: 65px;line-height:0px;">绑定手机绑定手机绑定手机绑定手机绑定手机绑定手机绑定手机</span></li>
+                <li>
+                    <span class="mlay_s1">&nbsp;</span><button type="button" style="width:116px;left: 50px;" class="pubBtn mlay_btn" id="btnCloseTips"><span>确定</span></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--提示信息弹出层 结束-->
+</body>
+</html>
+<script src="assets/js/lib.js"></script>
+<script src="assets/js/app.js" id="controllerName" data-controller-name="userCenter"></script>

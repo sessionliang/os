@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网站标题</title>
+    <meta name="description" content="网站描述" />
+    <meta name="keywords" content="网站关键字" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="mpwd_body">
+    <div class="header">
+        <a class="logo" href="#"><img src="images/mnlogo.png" width="208" height="26" /></a>
+        <div class="headR">
+            <a class="cor_blue" href="#">15300242622</a> &nbsp;&nbsp; <a href="#" class="cor_blue">退出</a> | <a href="#">网站首页>></a>
+        </div>
+    </div>
+    <div class="navBg">
+        <div class="nav">
+            <ul>
+                <li><a class="nav_a" href="#">首页</a></li>
+                <li><a class="nav_a nav_cuta" href="#">找回密码</a></li>
+                <li><a class="nav_a" href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <input type="hidden" id="findStepKey0" />
+    <input type="hidden" id="findStepKey1" />
+    <input type="hidden" id="findStepKey2" />
+    <input type="hidden" id="findStepKey3" />
+    <div class="mpwdBox" id="findPwdStep1">
+        <div class="mpwd_t">找回密码</div>
+        <div class="spwd_setp"><img src="images/mpwd_1.jpg" width="641" height="42" /></div><br />
+        <div class="spwd_fm">
+            <ul>
+                <li><span class="spwd_s1">账户名：</span><input class="spwd_int" placeholder="用户名/邮箱/已验证手机" id="txtFindPwdUserName" name="txtFindPwdUserName" type="text" /></li>
+                <li>
+                    <span class="spwd_s1">选择验证方式：</span>
+                    <div class="nmselBox">
+                        <p id="ByPhone" style="display:none;"><input id="ckPhone" class="nrad1" name="findType" type="radio" value="1" /> <label for="ckPhone">手机验证</label></p>
+                        <p id="ByEmail" style="display:none;"><input id="ckEmail" class="nrad1" name="findType" type="radio" value="2" /> <label for="ckEmail">邮箱验证</label></p>
+                        <p id="BySCQU"><input id="ckSCQU" class="nrad1" name="findType" type="radio" value="3" /> <label for="ckSCQU">密码问题验证</label></p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <span class="spwd_s1">&nbsp;</span><button id="btnSubmitFindStep1" class="pubBtn" type="button"><span>提 交</span></button>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+    <div class="mpwdBox hide" id="findPwdStep2">
+        <div class="mpwd_t">找回密码</div>
+        <div class="spwd_setp"><img src="images/mpwd_2.jpg" width="641" height="42" /></div><br />
+        <div class="spwd_fm">
+            <ul>
+                <li>
+                    <div class="naler1">我们会向您的邮箱发送一封验证码，请注意查收。</div>
+                    <span class="spwd_s1">登陆邮箱：</span>
+                    <input class="spwd_int" placeholder="请输入您的登录邮箱" id="txtFindPwdByEmail" name="txtFindPwdByEmail" type="text" /><a href="javascript:;" style="margin-left: 5px;width: 65px;" id="btnSendEmail" class="mlay_alr2">发送</a>
+                </li>
+                <li>
+                    <span class="spwd_s1">效验码：</span>
+                    <input type="text" name="txtValidateCode" id="txtValidateCode" placeholder="请输入6位效验码" class="mlay_int mlay_int2 nmint1" />
+                    <span class="mlay_alr2" id="spanSendEmail">免费获取效验码</span>
+                </li>
+                <li>
+                    <span class="spwd_s1">&nbsp;</span><button class="pubBtn" id="btnSubmitEmail" type="button"><span>提 交</span></button>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="mpwdBox hide" id="findPwdStep3">
+        <div class="mpwd_t">找回密码</div>
+        <div class="spwd_setp"><img src="images/mpwd_2.jpg" width="641" height="42" /></div><br />
+        <div class="spwd_fm">
+            <ul>
+                <li>
+                    <span class="spwd_s1">问题一：</span>
+                    <select name="select" class="mcr_sel" id="selQuestion1">                         
+                    </select>
+                </li>
+                <li><span class="spwd_s1">答案：</span><input class="spwd_int" placeholder="最多可输入20个汉字" id="txtAnswer1" name="txtAnswer1" type="text" /></li>
+                <li>
+                    <span class="spwd_s1">问题二：</span>
+                    <select name="select2" class="mcr_sel" id="selQuestion2"></select>
+                </li>
+                <li><span class="spwd_s1">答案：</span><input class="spwd_int" placeholder="最多可输入20个汉字" id="txtAnswer2" name="txtAnswer2" type="text" /></li>
+                <li>
+                    <span class="spwd_s1">问题三：</span>
+                    <select name="select3" class="mcr_sel" id="selQuestion3"></select>
+                </li>
+                <li><span class="spwd_s1">答案：</span><input class="spwd_int" placeholder="最多可输入20个汉字" id="txtAnswer3" name="txtAnswer3" type="text" /></li>
+                <li>
+                    <span class="spwd_s1">&nbsp;</span><button class="pubBtn" id="btnSumbitQue" type="button"><span>提 交</span></button>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="mpwdBox hide" id="findPwdStep4">
+        <div class="mpwd_t">找回密码</div>
+        <div class="spwd_setp"><img src="images/mpwd_3.jpg" width="641" height="42" /></div><br />
+        <div class="spwd_fm">
+            <ul>
+                <li><span class="spwd_s1">输入新密码：</span><input class="spwd_int" id="txtNewPwd" name="txtNewPwd" type="password" /></li>
+                <li class="spwd_alr"><span class="spwd_s1">&nbsp;</span>由字母加数字或符号至少两种以上字符组成的6-20位半角字符，区分大小写。</li>
+                <li><span class="spwd_s1">确认新密码：</span><input class="spwd_int" id="txtNewConfimPwd" name="txtNewConfimPwd" type="password" /></li>
+                <li>
+                    <span class="spwd_s1">&nbsp;</span><button class="pubBtn" id="btnSumbitNewPwd" type="button"><span>提 交</span></button>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="mpwdBox hide" id="findPwdStep5">
+        <div class="mpwd_t">找回密码</div>
+        <div class="spwd_setp"><img src="images/mpwd_4.jpg" width="641" height="42" /></div><br />
+        <div class="spwd_sus">
+            <strong class="f14 cor_green">新密码设置成功！</strong><br />
+            请牢记您新设置的密码。<a href="login.html" class="cor_green">返回登录</a>
+        </div>
+        <br /><br /><br /><br /><br /><br />
+        <div class="clear"></div>
+    </div>
+    <div class="mfm_footer">
+        北京百容千域软件技术开发有限公司 &nbsp; 版权所有 Copyright © 2003-2015<br />
+        Powered by SiteServer CMS &nbsp; 京ICP备10013847号
+    </div>
+    <div class="mlayBg hide"></div>
+    <div class="mLayOk hide">
+        <span class="mLayOk_s1"><img src="images/nm_ico1.jpg" /><span style="top:0px;" id="spanTipsMessage"></span></span>
+        <span class="mLayOk_s2"></span>
+        <span class="mLayOk_s3"><a href="javascript:;" id="btnCloseTips" class="mLayOk_btn2">关闭</a></span>
+    </div>
+</body>
+</html>
+<script src="assets/js/lib.js"></script>
+<script src="assets/js/app.js" id="controllerName" data-controller-name="findpwd"></script>

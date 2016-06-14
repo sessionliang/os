@@ -1,0 +1,31 @@
+using System;
+using System.Data;
+using System.Collections;
+
+using BaiRong.Core;
+using BaiRong.Model;
+using BaiRong.Core.Data;
+using SiteServer.CMS.Model;
+using SiteServer.CMS.Core;
+
+namespace SiteServer.CMS.Provider.Data.Oracle
+{
+    public class LogDAO : SiteServer.CMS.Provider.Data.SqlServer.LogDAO
+	{
+		protected override string ADOType
+		{
+			get
+			{
+				return SqlUtils.ORACLE;
+			}
+		}
+
+		protected override EDatabaseType DataBaseType
+		{
+			get
+			{
+                return EDatabaseType.Oracle;
+			}
+		}
+	}
+}

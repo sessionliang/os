@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>认证登陆</title>
+    <link rel="stylesheet" href="../components/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../components/lib/fontawesome/css/font-awesome.min.css" />
+    <script type="text/javascript" src="../components/lib/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../components/lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        .login-auth{width:320px;margin:0 auto;padding:25px 40px;}
+        .login-auth h1{font-style:normal;font-size:24px;color:#909090;font-family:"microsoft yahei","微软雅黑","黑体";margin-bottom:20px;}
+        .login-auth .login-auth-tips{color:#909090;font-size:14px;margin:15px 0;font-family:"microsoft yahei","微软雅黑","黑体";}
+        .auth-account{background:#eeeeee;padding:10px;margin-bottom:15px;-moz-border-radius:3px;-webkit-border-radius:3px; border-radius:3px;}
+        .auth-account .auth-pwd{position:relative;}
+        .auth-account .auth-pwd .placeholder{position:absolute;top:6px;left:7px;font-size:14px;}
+        .auth-avatar{float:left;margin-right:10px;}
+        .auth-avatar img{width:50px;height:50px;}
+        .auth-info{overflow:hidden;zoom:1;padding-top:15px;color:#555555;}
+        .login-auth .auth-action .form_btn{margin-right:25px;}
+        .login-auth .auth-action a,.login-auth .auth-pwd a{color:#3399e0;}
+        .login-auth .auth-action a:hover,.login-auth .auth-pwd a:hover{color:#cc3311;text-decoration:none;}
+        .login-auth .auth-pwd{margin:15px 0;}
+        .login-auth .auth-pwd a{margin-left:20px;}
+        .login-auth .error{color:#ab0707;}
+        .login-auth .error .ico__error{margin-right:5px;} 
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="common_login_style login_box" style="padding-top:40px">
+            <div class="login-auth" id="quickLogin">
+                <h1><span id="spanSiteName"></span>欢迎您!</h1> 
+                <div class="login-auth-tips">
+                    <span class="ico__alarm"></span>
+                    正在使用<span id="spanLoginTypeName">微博</span>帐号登录<span id="spanSiteName1"></span>
+                </div>
+                <form action="/partner/qLoginForTrdUser" method="post" id="qloginForm" target="hideQLoginFrame">
+
+                    <div class="auth-account">
+                        <div class="auth-avatar">
+                            <img src="http://tp1.sinaimg.cn/5043457136/50/22869025073/1" id="imgThirdLoginUserHeadUrl">
+                        </div>
+                        <div class="auth-info">
+                            <div class="auth-username" id="divThirdLoginNickName"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="auth-action">
+                        <button type="button" style="float:left;" class="fr btn btn-primary" id="btnThirdLogin">立即登录</button>                      
+                    </div>
+
+                    <input type="hidden" id="thirdloginName" /> 
+                    <input type="hidden" id="thirdpassword" />                    
+                    <input type="hidden" id="thirdlocationUrl" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<link href="../components/lib/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+<script src="../components/lib/jquery-1.11.0.min.js" language="javascript"></script>
+<script src="../components/lib/json2.js" language="javascript"></script>
+<script src="../components/lib/toastr/toastr.min.js" language="javascript"></script>
+<script src="../components/lib/artTemplate/template.js" language="javascript"></script>
+<link href="../components/lib/iCheck/flat/red.css" rel="stylesheet" type="text/css" />
+<script src="../components/lib/iCheck/icheck.min.js" language="javascript"></script>
+
+<script src="../components/js/services/notifyService.js" language="javascript"></script>
+<script src="../components/js/services/utilService.js" language="javascript"></script>
+<script src="../components/js/services/userService.js" language="javascript"></script>
+
+<script src="../components/js/controllers/authLoginController.js"></script>

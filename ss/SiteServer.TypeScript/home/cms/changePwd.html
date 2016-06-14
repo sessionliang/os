@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网站标题</title>
+    <meta name="description" content="网站描述" />
+    <meta name="keywords" content="网站关键字" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header">
+        <a class="logo" href="#"><img src="images/mnlogo.png" width="208" height="26" /></a>
+        <div class="headR">
+            <a class="cor_blue" id="spanUserName" href="#">15300242622</a> &nbsp;&nbsp; <a href="#" class="cor_blue">退出</a> | <a href="#">网站首页>></a>
+        </div>
+    </div>
+    <div class="navBg">
+        <div class="nav">
+            <ul>
+                <li><a class="nav_a" href="#">首页</a></li>
+                <li><a class="nav_a nav_cuta" href="#">帐号安全</a></li>
+                <li><a class="nav_a" href="#">帐号信息</a></li>
+                <li><a class="nav_a" href="#">消息中心</a></li>
+                <li><a class="nav_a" href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mcon">
+        <div class="mcL mcLx1">
+            <ul id="accountInfoUrl">
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico5.png" width="35" height="35" /><img class="hidden" src="images/ml_ico5a.png" width="35" height="35" />修改密码</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico6.png" width="35" height="35" /><img class="hidden" src="images/ml_ico6a.png" width="35" height="35" />绑定手机</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico7.png" width="35" height="35" /><img class="hidden" src="images/ml_ico7a.png" width="35" height="35" />登录邮箱</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico8.png" width="35" height="35" /><img class="hidden" src="images/ml_ico8a.png" width="35" height="35" />帐号安全</a></li>
+                <li><a href="#" class="m2menu_a"><img class="block" src="images/ml_ico9.png" width="35" height="35" /><img class="hidden" src="images/ml_ico9a.png" width="35" height="35" />登录记录</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="mcR mcRx2">
+            <div class="mrpwd_t1">修改密码</div>
+            <div class="mrpwd_p1">建议使用字母、数字与标点的组合，可以大幅提升帐号安全。</div>
+            <div class="spwd_fm m3fm">
+                <ul>
+                    <li id="tipsOldPwd">
+                        <span class="spwd_s1">旧密码：</span>
+                        <input class="spwd_int" placeholder="请输入原始密码" id="txtOldPwd" name="txtOldPwd" type="password" />
+                        <div class="nmf_aler hide"><img class="tipImg" src="" /><div class="nmf_st1"><i class="nmr_i"></i></div></div>
+                    </li>
+                    <li id="tipsNesPwd">
+                        <span class="spwd_s1">新密码：</span>
+                        <input class="spwd_int" placeholder="请输入新密码" id="txtNewPwd" name="txtNewPwd" type="password" />
+                        <div class="nmf_aler hide"><img class="tipImg" src="" /><div class="nmf_st1"><i class="nmr_i"></i></div></div>
+                    </li>
+                    <li id="tipsConfimPwd">
+                        <span class="spwd_s1">确认新密码：</span>
+                        <input class="spwd_int" placeholder="请再输入一遍新密码" id="txtConfimNewPwd" name="txtConfimNewPwd" type="password" />
+                        <div class="nmf_aler hide"><img class="tipImg" src="" /><div class="nmf_st1">两次密码输入的不一致<i class="nmr_i"></i></div></div>
+                    </li>
+                    <li>
+                        <span class="spwd_s1">&nbsp;</span><button class="pubBtn m3putbtn" id="btnChangePwd" type="button"><span>提 交</span></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="mfm_footer">
+        北京百容千域软件技术开发有限公司 &nbsp; 版权所有 Copyright © 2003-2015<br />
+        Powered by SiteServer CMS &nbsp; 京ICP备10013847号
+    </div>
+    <div class="mlayBg hide"></div>
+    <div class="mLayOk hide">
+        <span class="mLayOk_s1"><img src="images/nm_ico1.jpg" /><span style="top:0px;" id="spanTipsMessage"></span></span>
+        <span class="mLayOk_s2"></span>
+        <span class="mLayOk_s3"><a href="javascript:;" id="btnCloseTips" class="mLayOk_btn2">关闭</a></span>
+    </div>
+</body>
+</html>
+<script src="assets/js/lib.js"></script>
+<script src="assets/js/app.js" id="controllerName" data-controller-name="changePwd"></script>

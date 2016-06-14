@@ -1,0 +1,30 @@
+<<<<<<< HEAD
+﻿﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+=======
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+>>>>>>> 71b312f1acd8df04484abea2e8622e274ea806be
+         DefaultTargets="Compile">
+  <ItemGroup>
+    <BuildArtifactsDir Include="C:\inetpub\dev_ci_siteserver_cn\" />
+    <SolutionFile Include="All.sln" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <BuildPlatform Condition=" '$(BuildPlatform)' == '' ">Any CPU</BuildPlatform>
+  </PropertyGroup>
+  
+  <Target Name="Clean">
+    <RemoveDir Directories="@(BuildArtifactsDir)" />
+  </Target>
+  
+  <Target Name="Init" DependsOnTargets="Clean">
+    <MakeDir Directories="@(BuildArtifactsDir)" /> 
+  </Target>
+
+  <Target Name="Compile" DependsOnTargets="Init">
+    <MSBuild Projects="@(SolutionFile)"
+             Targets="Rebuild"
+             Properties="OutDir=%(BuildArtifactsDir.FullPath);Configuration=$(Configuration);Platform=$(BuildPlatform)" />
+  </Target>
+</Project>

@@ -1,0 +1,61 @@
+.stl-drag {
+cursor: move !important;
+}
+
+.modal-header h3{
+  font-family: Microsoft Yahei;
+}
+
+.stl-highlight {
+  border: 2px dashed #006DCC;
+  height: 50px;
+  margin:2px;
+}
+
+.stl-guideline {
+  border: 1px solid #DA4F49; margin:2px;
+}
+
+/*start*/
+
+.sidebar-nav {
+  position:fixed;
+  width:200px;
+  left:0px;
+  bottom:0;
+  top:39px;
+  background:#ccc;
+  padding: 9px 0; z-index:10;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.sidebar-nav .nav-header { cursor:pointer; font-size:14px; color:#fff; text-shadow:0 1px 0 rgba(0, 0, 0, 0.3);}
+.sidebar-nav .nav-header span.label { font-size:10px; /*padding-bottom:0;*/ position:relative; top:-1px;}
+.sidebar-nav .nav-header i.icon-plus {}
+.sidebar-nav .nav-header .popover {color:#999; text-shadow:none;}
+
+.popover-info {position:relative;}
+.popover-info .popover {display:none; top: -12.5px; left:15px; }
+.popover-info:hover .popover {display:block; opacity:1; width:400px;}
+.popover-info:hover .popover .arrow {top:23px;}
+
+.sidebar-nav .accordion-group { border:none; }
+.sidebar-nav li { line-height:25px; }
+.sidebar-nav .box { line-height:25px; width:170px; height:25px; }
+.sidebar-nav .drag { cursor: move; display: block; color:#666; font-size:12px; line-height:22px;}
+.sidebar-nav .view { display: none; }
+.sidebar-nav .boxes { display:none;}
+
+.ui-draggable-dragging .view { display:block;}
+.ui-sortable-placeholder { outline: 1px dashed #ddd;visibility: visible!Important; border-radius: 4px;}
+
+.outline-element {
+  outline: 1px solid #c00;
+}
+ 
+.outline-element-clicked {
+  outline: 1px solid #0c0;
+}

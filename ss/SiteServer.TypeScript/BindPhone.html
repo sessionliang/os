@@ -1,0 +1,39 @@
+<script>var $pageInfo = { publishmentSystemID : 82, channelID : 82, contentID : 0, siteUrl : "/usercenter", homeUrl : "/usercenter/center", currentUrl : "http://siteserver.cn/usercenter/BindPhone.html", rootUrl : "http://siteserver.cn", apiUrl : "http://siteserver.cn" }</script>
+
+<div class="mcon">
+    
+    <div class="mcR mcRx2">
+        <div class="m3bd_top">
+            <div class="m3bd_st1">绑定手机</div>
+            <div class="m3hd_ss1"><span class="m3hd_tel" id="phone">您还没有绑定手机</span> &nbsp; <a class="m3hd_a1" id="btnBindPhoneOpen" href="#">现在绑定</a><a class="m3hd_a1" id="btnRemoveBindPhoneOpen" href="#" style="display:none;">解绑</a>&nbsp;<a class="m3hd_a1" id="btnReBindPhoneOpen" href="#" style="display:none;">修改</a></div>
+            绑定手机可以用来登录您的帐号与找回密码
+        </div>
+        <div class="m3hd_bom">
+            <strong class="f14">绑定手机常见问题</strong>
+            
+                <p><strong>·</strong><a href="/usercenter/contents/912/168.html">test</a></p>
+            
+            <!--<p><strong>·</strong> <a href="#">绑定手机时，为什么会提示“手机号已注册”？</a></p>
+            <p><strong>·</strong> <a href="#">绑定手机时，为什么会提示“手机号已注册”？</a></p>
+            <p><strong>·</strong> <a href="#">绑定手机时，为什么会提示“手机号已注册”？</a></p>-->
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+
+<!--绑定手机弹出框-->
+<div class="mlayBg" style="height: 847px; display: none;"></div>
+<div class="mlay hide">
+    <div class="mlay_t"><span class="fl">绑定手机</span><img class="mrclose" src="images/m2close.jpg" width="31" height="26" /></div>
+    <div class="mlay_ul">
+        <ul>
+            <li><span class="mlay_s1">手机号</span><input class="mlay_int" placeholder="请输入手机号" id="phoneNum" name="phoneNum" type="text" /><a href="#" style="margin-right:30px;" id="btnSendPhone" class="mLayOk_btn2">发送</a></li>
+            <li><span class="mlay_s1">校验码</span><input class="mlay_int mlay_int2" placeholder="请输入6位校验码" id="validateCode" name="validateCode" type="text" /></li>
+            <li><span class="mlay_s1">&nbsp;</span><button type="button" id="btnBindPhone" class="pubBtn mlay_btn"><span>提交</span></button></li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/app.js" id="controllerName" data-controller-name="bindPhone"></script>

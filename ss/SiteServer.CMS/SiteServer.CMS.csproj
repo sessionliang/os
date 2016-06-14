@@ -1,0 +1,1796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61A793E1-3E99-4BDC-BC20-7298CA3E0000}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteServer.CMS</RootNamespace>
+    <AssemblyName>SiteServer.CMS</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/BaiRongZhiDao/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WordPlugin, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\.settings\ref\WordPlugin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Comment\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundPages\BackgroundBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundInitialization.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundPreview.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundRight.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundRole.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundService.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Storage\BackgroundConfigurationStorageFile.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Storage\BackgroundConfigurationStorageSite - 复制.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Storage\BackgroundConfigurationUploadImage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Storage\BackgroundConfigurationUploadVideo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Storage\BackgroundConfigurationUploadFile.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Storage\BackgroundConfigurationStorageBackup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Storage\BackgroundConfigurationStorageSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundMain.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Adv\BackgroundAdvertisement.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Adv\BackgroundAdvertisementAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Compare\BackgroundCompare.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Compare\BackgroundCompareContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Compare\BackgroundTableStyleCompare.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Evaluation\BackgroundAnalysisEvaluation.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Evaluation\BackgroundAnalysisFilesBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Evaluation\BackgroundAnalysisFilesEvaluation.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Evaluation\BackgroundEvaluationContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Evaluation\BackgroundEvaluation.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Evaluation\BackgroundTableStyleEvaluation.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Evaluation\BackgroundTableStyleBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Files\BackgroundFileTree.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Searchword\BackgroundSearchword.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Searchword\BackgroundSearchwordSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Searchword\BackgroundSearchwordSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Subscribe\BackgroundSubscribePushRecord.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Subscribe\BackgroundSubscribeTree.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Subscribe\BackgroundSubscribe.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Subscribe\BackgroundSubscribeSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Subscribe\BackgroundSubscribeUser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Survey\BackgroundAnalysisFilesSurvey.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Survey\BackgroundSurveyQuestionnaire.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Survey\BackgroundTableStyleSurvey.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Survey\BackgroundSurveyContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Trial\BackgroundAnalysisFilesTrian.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Trial\BackgroundTrialReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Trial\BackgroundTrialApply.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Trial\BackgroundTrialReportContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Trial\BackgroundTrialApplyContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Trial\BackgroundTableStyleTrialReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Trial\BackgroundTableStyleTrialApply.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\ViewsStatistics\BackgroundViewsStatistics.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\ViewsStatistics\BackgroundViewsStatisticsSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\WebsiteMessage\BackgroundWebsiteMessageReplayTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\WebsiteMessage\BackgroundWebsiteMessageSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\WebsiteMessage\BackgroundWebsiteMessageTemplateTree.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\WebsiteMessage\BackgroundWebsiteMessageTableStyle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\WebsiteMessage\BackgroundWebsiteMessage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\WebsiteMessage\BackgroundWebsiteMessageContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\WebsiteMessage\BackgroundWebsiteMessageClassify.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\WebsiteMessage\BackgroundWebsiteMessageClassifyAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Input\BackgroundInputMainContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Input\BackgroundInputClassify.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Input\BackgroundInputClassifyAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Input\BackgroundInputTree.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Analysis\BackgroundAnalysisByDept.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Analysis\BackgroundAnalysisAdministratorImage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Analysis\BackgroundAnalysisContentHits1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Analysis\BackgroundAnalysisContentHits.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Analysis\BackgroundAnalysisContentDownloads1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Category\BackgroundChannelsGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Adv\BackgroundAdArea.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Adv\BackgroundAdAreaAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Adv\BackgroundAdMaterial.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Adv\BackgroundAdv.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Adv\BackgroundAdvAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Publish\BackgroundPublishLocal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Publish\BackgroundPublishMain.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Publish\BackgroundPublishRemote.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Create\BackgroundConfigurationCreateTrigger.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Create\BackgroundConfigurationCreateUrl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\ContentModel\BackgroundRelatedField.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\ContentModel\BackgroundContentModel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\ContentModel\BackgroundTableStyleContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\ContentModel\BackgroundRelatedFieldMain.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\ContentModel\BackgroundRelatedFieldItem.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\ContentModel\BackgroundTableStyleChannel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundTextEditorUpload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentByAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentBySelf.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentChannel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentTeleplayUpload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundVoteContentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentPhotoUpload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Category\BackgroundContentsGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Category\BackgroundContentTags.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Input\BackgroundInputMailSMS.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLibManage\BackgroundMLibManage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLibManage\BackgroundMLibManageScope.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLibManage\BackgroundMLibManageScopeSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLibManage\BackgroundMLibManageSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLibManage\BackgroundMLibManageTableStyleContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLibManage\BackgroundMLibManageTableStyleContentSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ContentReferenceSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ContentReferenceSelect1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ContentTaxis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ContentTree.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\DraftEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\DraftList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\DraftList1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\MLibBackgroundBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\MlibConfig.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ReferenceAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ReferenceLogs.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ReferenceSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ReviewAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ReviewEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ReviewList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ReviewList1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\ReviewShow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\MLib\Service\OtherService.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundChangeUserCenterUrl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserNewGroupAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserNewGroupMLibSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserNewGroupMLibManageScope.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserNewGroupUser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserCheck.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserNewGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\BackgroundUserGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\Configuration\BackgroundConfigurationUserCenter.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\Configuration\BackgroundUserConfigRegister.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\Configuration\BackgroundUserTableStyle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\Message\BackgroundUserMail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\Message\BackgroundUserMessage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\User\Message\BackgroundUserSMS.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\MLibManage\ConsoleMLibAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\OrganizationManagement\ConsoleOrganizationConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\OrganizationManagement\ConsoleOrganizationAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\OrganizationManagement\ConsoleOrganizationAreaAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\OrganizationManagement\ConsoleOrganizationArea.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\OrganizationManagement\ConsoleOrganizationClassifyAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\OrganizationManagement\ConsoleOrganizationClassify.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\OrganizationManagement\ConsoleOrganization.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\SiteManagement\ConsoleSiteDownloadAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\SiteManagement\ConsoleSiteDownloadAnalysisAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\SiteManagement\ConsoleSiteHitsAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\SiteManagement\ConsoleSiteHitsAnalysisAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\SiteManagement\ConsoleSiteAnalysis1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\SiteSettings\ConsoleKeywordClassifyAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\SiteSettings\ConsoleKeywordClassify.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\SiteSettings\ConsoleKeyword.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Resume\BackgroundResumeContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\BShare\BackgroundShareRegister.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\BShare\BackgroundShareSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\BShare\BackgroundShareStatistics.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\AuxiliaryTable\ConsoleAuxiliaryTable.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\AuxiliaryTable\ConsoleAuxiliaryTableAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\AuxiliaryTable\ConsoleTableMetadata.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundRoleAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\BackgroundRoleAddPublishmentSystemPermissions.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Task\BackgroundTask.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Channel\BackgroundChannel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Channel\BackgroundChannelAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Channel\BackgroundChannelDelete.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Channel\BackgroundChannelEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Channel\BackgroundChannelTranslate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Category\BackgroundNodeGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\BackgroundConfigurationComments.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\BackgroundConfigurationContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Create\BackgroundConfigurationCreate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\BackgroundConfigurationCrossSiteTrans.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\BackgroundConfigurationWaterMark.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\InnerLink\BackgroundConfigurationInnerLink.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\BackgroundConfigurationMail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Configuration\Site\BackgroundConfigurationSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\Log\ConsoleLogSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Console\SiteManagement\ConsoleSiteAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Comment\BackgroundComment.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Comment\BackgroundCommentContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentAddAfter.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\ContentArchive\BackgroundContentArchive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentCheck.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentDelete.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Category\BackgroundContentGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentSearch.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentTranslate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentTrash.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Content\BackgroundContentView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Files\BackgroundFileManagement.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Gather\BackgroundGatherDatabaseRule.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Gather\BackgroundGatherDatabaseRuleAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Gather\BackgroundGatherFileRule.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Gather\BackgroundGatherFileRuleAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Gather\BackgroundGatherRule.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Gather\BackgroundGatherRuleAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\InnerLink\BackgroundInnerLink.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Input\BackgroundInput.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Input\BackgroundInputContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Mail\BackgroundMailSendFormat.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Mail\BackgroundMailSendLog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Mail\BackgroundMailSubscribe.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Mail\BackgroundMailSubscribeFormat.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Restriction\BackgroundRestrictionList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Restriction\BackgroundRestrictionOptions.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\SEO\Meta\BackgroundSeoMetaList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\SEO\Meta\BackgroundSeoMetaMatch.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\SEO\SiteMap\BackgroundSeoSiteMapBaidu.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\SEO\SiteMap\BackgroundSeoSiteMapGoogle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\AjaxService\GatherService.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\AjaxService\OtherService.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\AddToGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Adv\AdMaterialAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Channel\ChannelAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Channel\ChannelEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Channel\ChannelMultipleSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Channel\ChannelSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Channel\CreateChannels.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Channel\CrossSiteTransEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Channel\NodeGroupAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\FunctionStyleAnalysisShow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\FunctionStyleValueShow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ConfigurationSignin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\CheckState.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\CommentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentArchive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentAttributes.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentCheck.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentCrossSiteTrans.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentDiggSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentGroupAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentModelAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentMultipleSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentStarSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentTagAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentTaxis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\ContentTidyUp.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\RelatedFieldAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\RelatedFieldItemAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Content\RelatedFieldItemEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\CreateDirectory.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\CuttingImage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\FileChangeName.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\FileEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\FileView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\PublishPages.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\SelectFile.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\SelectImage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\SelectVideo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\UploadFile.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\UploadImage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\UploadImageSingle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\UploadImageSingleSystem.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\UploadVideo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Files\UploadWord.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Gather\GatherDatabaseSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Gather\GatherFileSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Gather\GatherSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Gather\GatherTest.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Input\InputAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Input\InputClassifyAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Input\InputClassifyPermission.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Input\InputContentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Input\InputContentReply.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Input\InputContentTaxis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Input\InputContentView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Keyword\KeywordAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Keyword\KeywordClassifyAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Keyword\KeywordImport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\MailSubscribeAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Message.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\OrganizationManagement\OrganizationTaxis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\OrganizationManagement\OrganizationTranslate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PermissionsSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ProgressBar.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PublishmentSystemSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PublishmentSystem\ChangePublishmentSystemType.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PublishmentSystem\ChangePublishmentSystemUrl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PublishmentSystem\FilePathRule.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PublishmentSystem\InnerLinkAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PublishmentSystem\RestrictionAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PublishmentSystem\RestrictionOptions.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PublishmentSystem\UploadIndependentTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\PublishmentSystem\UploadSiteTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Publish\PublishCreateDirectory.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Publish\PublishFile.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Publish\PublishUploadFile.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Searchword\SearchwordAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Searchword\SearchwordExport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Searchword\SearchwordImport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\SeoMetaAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\SeoMetaView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\StlTagAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Subscribe\SubscribeAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Subscribe\SubscribeUserAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Subscribe\SubscribeUserAddSub.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Survey\SurveySetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Table\SelectFunctionColumns.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Table\SelectColumns.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Table\TableMetadataAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Table\TableMetadataAddBatch.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Table\TableMetadataView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Table\TableStyleUseStatisticsAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Table\TableStyleAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Table\TableStylesAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Table\TableStyleValidateAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\TaskAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\TextEditor\TextEditorImportWord.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\TextEditor\TextEditorInsertAudio.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\TextEditor\TextEditorInsertVideo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Tracker\TrackerIPView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Trial\TrialApplySetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Trial\TrialApplyChecked.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\AddToUserGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\AddToUserNewGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserExport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserGroupAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserImport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserPassword.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserSendMail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserSetMLibValidityDate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserTableMetadataView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserTableStyleAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserTableStyleValidateAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\User\UserView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\WebsiteMessage\WebsiteMessageAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\WebsiteMessage\WebsiteMessageClassifyAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\WebsiteMessage\WebsiteMessageContentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\WebsiteMessage\WebsiteMessageContentReply.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\WebsiteMessage\WebsiteMessageContentTaxis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\WebsiteMessage\WebsiteMessageContentTranslate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\WebsiteMessage\WebsiteMessageContentView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\WebsiteMessage\WebsiteMessageReplayTemplateAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Test.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\TextEditor\KindEditor\Upload.cs" />
+    <Compile Include="Controls\Background\AuxiliaryControl.cs" />
+    <Compile Include="Controls\Background\NodeFunctionTree.cs" />
+    <Compile Include="Controls\Background\Tree\TreeManager.cs" />
+    <Compile Include="Controls\Background\Tree\TreeBaseItem.cs" />
+    <Compile Include="Controls\Background\Tree\TreeItem.cs" />
+    <Compile Include="Controls\Background\Tree\Tree.cs" />
+    <Compile Include="Controls\UI\TextEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Advertisement\AdvertisementManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Advertisement\AdvManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Advertisement\FloatingScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Advertisement\OpenWindowScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Advertisement\ScreenDownScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Core\DeptLoading.cs" />
+    <Compile Include="Core\Core\RequestUtils.cs" />
+    <Compile Include="Core\Data\Adv\IAdAreaDAO.cs" />
+    <Compile Include="Core\Data\Adv\IAdMaterialDAO.cs" />
+    <Compile Include="Core\Data\Adv\IAdvDAO.cs" />
+    <Compile Include="Core\Data\Compare\ICompareContentDAO.cs" />
+    <Compile Include="Core\Data\Content\ITeleplayDAO.cs" />
+    <Compile Include="Core\Data\Evaluation\IEvaluationContentDAO.cs" />
+    <Compile Include="Core\Data\GovPublic\IGovPublicIdentifierSeqDAO.cs" />
+    <Compile Include="Core\Data\IConsoleLogDAO.cs" />
+    <Compile Include="Core\Data\IInputClassifyDAO.cs" />
+    <Compile Include="Core\Data\IFunctionTableStylesDAO.cs" />
+    <Compile Include="Core\Data\MLibManage\IMLibDraftContentDAO.cs" />
+    <Compile Include="Core\Data\MLibManage\IMLibScopeDAO.cs" />
+    <Compile Include="Core\Data\OrganizationManagement\IOrganizationAreaDAO.cs" />
+    <Compile Include="Core\Data\OrganizationManagement\IOrganizationInfoDAO.cs" />
+    <Compile Include="Core\Data\OrganizationManagement\IOrganizationClassifyDAO.cs" />
+    <Compile Include="Core\Data\Searchword\ISearchwordDAO.cs" />
+    <Compile Include="Core\Data\Searchword\ISearchwordSettingDAO.cs" />
+    <Compile Include="Core\Data\Subscribe\ISubscribeDAO.cs" />
+    <Compile Include="Core\Data\Subscribe\ISubscribePushRecordDAO.cs" />
+    <Compile Include="Core\Data\Subscribe\ISubscribeUserDAO.cs" />
+    <Compile Include="Core\Data\Subscribe\ISubscribeSetDAO.cs" />
+    <Compile Include="Core\Data\Keyword\IKeywordClassifyDAO.cs" />
+    <Compile Include="Core\Data\MLib\IMlibDAO.cs" />
+    <Compile Include="Core\Data\Surey\ISurveyQuestionnaireDAO.cs" />
+    <Compile Include="Core\Data\Template\ITemplateLogDAO.cs" />
+    <Compile Include="Core\Data\Tree\ITreeDAO.cs" />
+    <Compile Include="Core\Data\Trial\ITrialReportDAO.cs" />
+    <Compile Include="Core\Data\Trial\ITrialApplyDAO.cs" />
+    <Compile Include="Core\Data\UserGroup\IUserNewGroupDAO.cs" />
+    <Compile Include="Core\Data\ViewsStatistics\IViewsStatisticsDAO.cs" />
+    <Compile Include="Core\Data\WebsiteMessage\IWebsiteMessageContentDAO.cs" />
+    <Compile Include="Core\Data\WebsiteMessage\IWebsiteMessageDAO.cs" />
+    <Compile Include="Core\Data\WebsiteMessage\IWebsiteMessageClassifyDAO.cs" />
+    <Compile Include="Core\Data\WebsiteMessage\IWebsiteMessageReplayTemplateDAO.cs" />
+    <Compile Include="Core\Office\TxtObject.cs" />
+    <Compile Include="Core\Core\TemplateManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Core\UEditorUploader.cs" />
+    <Compile Include="Core\User\CheckManager.cs" />
+    <Compile Include="Core\Data\Content\IGovInteractContentDAO.cs" />
+    <Compile Include="Core\Data\Content\IVoteContentDAO.cs" />
+    <Compile Include="Core\Data\GovInteract\IGovInteractTypeDAO.cs" />
+    <Compile Include="Core\Data\GovInteract\IGovInteractChannelDAO.cs" />
+    <Compile Include="Core\Data\GovInteract\IGovInteractPermissionsDAO.cs" />
+    <Compile Include="Core\Data\GovPublic\IGovPublicCategoryDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Data\GovPublic\IGovPublicCategoryClassDAO.cs" />
+    <Compile Include="Core\Data\GovPublic\IGovPublicIdentifierRuleDAO.cs" />
+    <Compile Include="Core\Data\GovPublic\IGovPublicChannelDAO.cs" />
+    <Compile Include="Core\Data\GovPublic\IGovPublicApplyDAO.cs" />
+    <Compile Include="Core\Data\GovPublic\IGovPublicApplyLogDAO.cs" />
+    <Compile Include="Core\Data\GovPublic\IGovPublicApplyRemarkDAO.cs" />
+    <Compile Include="Core\Data\GovPublic\IGovPublicApplyReplyDAO.cs" />
+    <Compile Include="Core\Data\GovInteract\IGovInteractLogDAO.cs" />
+    <Compile Include="Core\Data\GovInteract\IGovInteractRemarkDAO.cs" />
+    <Compile Include="Core\Data\GovInteract\IGovInteractReplyDAO.cs" />
+    <Compile Include="Core\Data\IVoteOperationDAO.cs" />
+    <Compile Include="Core\Data\IVoteOptionDAO.cs" />
+    <Compile Include="Core\GovPublic\GovPublicCategoryTreeItem.cs" />
+    <Compile Include="Core\GovPublic\GovPublicCategoryManager.cs" />
+    <Compile Include="Core\Data\Content\IRelatedFieldDAO.cs" />
+    <Compile Include="Core\Data\Content\IRelatedFieldItemDAO.cs" />
+    <Compile Include="Core\Data\Content\IGovPublicContentDAO.cs" />
+    <Compile Include="Core\Data\Keyword\IKeywordDAO.cs" />
+    <Compile Include="Core\Data\ICommentDAO.cs" />
+    <Compile Include="Core\GovPublic\GovPublicManager.cs" />
+    <Compile Include="Core\GovPublic\GovPublicApplyManager.cs" />
+    <Compile Include="Core\Share\Analytics.cs" />
+    <Compile Include="Core\GovInteract\GovInteractApplyManager.cs" />
+    <Compile Include="Core\GovInteract\GovInteractManager.cs" />
+    <Compile Include="Model\Adv\AdAreaInfo.cs" />
+    <Compile Include="Model\Adv\AdMaterialInfo.cs" />
+    <Compile Include="Model\Adv\AdvInfo.cs" />
+    <Compile Include="Model\CommentInfo.cs" />
+    <Compile Include="Model\Compare\CompareContentInfo.cs" />
+    <Compile Include="Model\Content\BrandContentInfo.cs" />
+    <Compile Include="Model\Content\GoodsContentInfo.cs" />
+    <Compile Include="Model\Content\TeleplayInfo.cs" />
+    <Compile Include="Model\Content\PhotoInfo.cs" />
+    <Compile Include="Model\Content\RelatedFieldlInfo.cs" />
+    <Compile Include="Model\Content\RelatedFieldlItemInfo.cs" />
+    <Compile Include="Model\Content\GovPublicContentInfo.cs" />
+    <Compile Include="Model\Content\GovInteractContentInfo.cs" />
+    <Compile Include="Model\Content\VoteContentInfo.cs" />
+    <Compile Include="Model\Enumerations\Adv\EAdvType.cs" />
+    <Compile Include="Model\Enumerations\Adv\EAdvLevelType.cs" />
+    <Compile Include="Model\Enumerations\Adv\EAdvLevel.cs" />
+    <Compile Include="Model\Enumerations\Adv\EAdvRotateType.cs" />
+    <Compile Include="Model\Enumerations\Adv\EAdvWeight.cs" />
+    <Compile Include="Model\Enumerations\ERelatedFieldStyle.cs" />
+    <Compile Include="Model\Enumerations\ESigninPriority.cs" />
+    <Compile Include="Model\Enumerations\EFunctionStatusType.cs" />
+    <Compile Include="Model\Enumerations\EStatisticsInputType.cs" />
+    <Compile Include="Model\Enumerations\ESubscribeContentType.cs" />
+    <Compile Include="Model\Enumerations\ESubscribePushDateType.cs" />
+    <Compile Include="Model\Enumerations\GovPublic\EGovPublicCategoryClassType.cs" />
+    <Compile Include="Model\Enumerations\GovPublic\EGovPublicIdentifierType.cs" />
+    <Compile Include="Model\Enumerations\GovPublic\EGovPublicApplyState.cs" />
+    <Compile Include="Model\Enumerations\GovPublic\EGovPublicApplyRemarkType.cs" />
+    <Compile Include="Model\Enumerations\GovPublic\EGovPublicApplyLogType.cs" />
+    <Compile Include="Model\Enumerations\GovPublic\EGovPublicApplyLimitType.cs" />
+    <Compile Include="Model\Enumerations\GovInteract\EGovInteractLimitType.cs" />
+    <Compile Include="Model\Enumerations\GovInteract\EGovInteractLogType.cs" />
+    <Compile Include="Model\Enumerations\GovInteract\EGovInteractRemarkType.cs" />
+    <Compile Include="Model\Enumerations\GovInteract\EGovInteractState.cs" />
+    <Compile Include="Model\Enumerations\EKeywordGrade.cs" />
+    <Compile Include="Model\Enumerations\EFuncFilesType.cs" />
+    <Compile Include="Model\Enumerations\Task\ECheckType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\Task\EPublishType.cs" />
+    <Compile Include="Model\Enumerations\EStorageClassify.cs" />
+    <Compile Include="Model\Enumerations\EDesignMode.cs" />
+    <Compile Include="Model\ConsoleLogInfo.cs" />
+    <Compile Include="Model\FunctionTableStyles.cs" />
+    <Compile Include="Model\Evaluation\EvaluationContentInfo.cs" />
+    <Compile Include="Model\GovInteract\GovInteractTypeInfo.cs" />
+    <Compile Include="Model\GovInteract\GovInteractChannelInfo.cs" />
+    <Compile Include="Model\GovInteract\GovInteractPermissionsInfo.cs" />
+    <Compile Include="Model\GovPublic\GovPublicIdentifierRuleInfoExtend.cs" />
+    <Compile Include="Model\GovPublic\GovPublicIdentifierSeqInfo.cs" />
+    <Compile Include="Model\IndependentTemplateInfo.cs" />
+    <Compile Include="Model\Input\InputClissifyInfo.cs" />
+    <Compile Include="Model\Keyword\KeywordClissifyInfo.cs" />
+    <Compile Include="Model\MLibManage\MLibDraftContentInfo.cs" />
+    <Compile Include="Model\MLibManage\MLibScopeInfo.cs" />
+    <Compile Include="Model\MLib\ReferenceLog.cs" />
+    <Compile Include="Model\MLib\SubmissionInfo.cs" />
+    <Compile Include="Model\OrganizationManagement\OrganizationAreaInfo.cs" />
+    <Compile Include="Model\OrganizationManagement\OrganizationInfo.cs" />
+    <Compile Include="Model\OrganizationManagement\OrganizationClassifyInfo.cs" />
+    <Compile Include="Model\Searchword\SearchwordInfo.cs" />
+    <Compile Include="Model\Searchword\SearchwordSettingInfo.cs" />
+    <Compile Include="Model\Subscribe\SubscribeInfo.cs" />
+    <Compile Include="Model\Subscribe\SubscribeSetInfo.cs" />
+    <Compile Include="Model\Subscribe\SubscribePushRecordInfo.cs" />
+    <Compile Include="Model\Subscribe\SubscribeUserInfo.cs" />
+    <Compile Include="Model\Task\TaskCheckInfo.cs" />
+    <Compile Include="Model\Task\TaskSubscribeInfo.cs" />
+    <Compile Include="Model\Template\TemplateLogInfo.cs" />
+    <Compile Include="Model\GovPublic\GovPublicCategoryInfo.cs" />
+    <Compile Include="Model\GovPublic\GovPublicCategoryClassInfo.cs" />
+    <Compile Include="Model\GovPublic\GovPublicIdentifierRuleInfo.cs" />
+    <Compile Include="Model\GovPublic\GovPublicChannelInfo.cs" />
+    <Compile Include="Model\GovPublic\GovPublicApplyInfo.cs" />
+    <Compile Include="Model\GovPublic\GovPublicApplyLogInfo.cs" />
+    <Compile Include="Model\GovPublic\GovPublicApplyRemarkInfo.cs" />
+    <Compile Include="Model\GovPublic\GovPublicApplyReplyInfo.cs" />
+    <Compile Include="Model\Keyword\KeywordInfo.cs" />
+    <Compile Include="Model\TagStyle\TagStyleGovPublicApplyInfo.cs" />
+    <Compile Include="Model\TagStyle\TagStyleGovInteractApplyInfo.cs" />
+    <Compile Include="Model\TagStyle\ITagStyleMailSMSBaseInfo.cs" />
+    <Compile Include="Model\TagStyle\TagStyleVoteInfo.cs" />
+    <Compile Include="Model\GovInteract\GovInteractLogInfo.cs" />
+    <Compile Include="Model\GovInteract\GovInteractRemarkInfo.cs" />
+    <Compile Include="Model\GovInteract\GovInteractReplyInfo.cs" />
+    <Compile Include="Model\Survey\SurveyQuestionnaireInfo.cs" />
+    <Compile Include="Model\Trial\TrialReportInfo.cs" />
+    <Compile Include="Model\Trial\TrialApplyInfo.cs" />
+    <Compile Include="Model\UserGroup\UserNewGroupInfoExtend.cs" />
+    <Compile Include="Model\UserGroup\UserNewGroupInfo.cs" />
+    <Compile Include="Model\ViewsStatistics\ViewsStatisticsInfo.cs" />
+    <Compile Include="Model\Vote\VoteOperationInfo.cs" />
+    <Compile Include="Model\Vote\VoteOptionInfo.cs" />
+    <Compile Include="Model\WebsiteMessage\WebsiteMessageInfo.cs" />
+    <Compile Include="Model\WebsiteMessage\WebsiteMessageInfoExtend.cs" />
+    <Compile Include="Model\WebsiteMessage\WebsiteMessageContentInfo.cs" />
+    <Compile Include="Model\WebsiteMessage\WebsiteMessageClissifyInfo.cs" />
+    <Compile Include="Model\WebsiteMessage\WebsiteMessageReplayTemplateInfo.cs" />
+    <Compile Include="Pages\MLibManage\DraftContent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MLibManage\MLibAuxiliaryControl.cs" />
+    <Compile Include="Pages\MLibManage\Contents.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MLibManage\Submission.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MLibManage\SubmissionEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MLibManage\SubmissionShow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MLibManage\SystemBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mlib\AuxiliaryControl.cs" />
+    <Compile Include="Pages\Mlib\Contents.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mlib\Submission.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mlib\SubmissionEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mlib\SubmissionShow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mlib\SystemBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mlib\TextEditorImportWord.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mlib\TextEditorInsertAudio.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mlib\TextEditorInsertVideo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\Oracle\Adv\AdvDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\GovInteractContentDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\GovPublicContentDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\VoteContentDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovInteract\GovInteractChannelDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovInteract\GovInteractLogDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovInteract\GovInteractPermissionsDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovInteract\GovInteractRemarkDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovInteract\GovInteractReplyDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovInteract\GovInteractTypeDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovPublic\GovPublicApplyDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovPublic\GovPublicApplyLogDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovPublic\GovPublicApplyRemarkDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovPublic\GovPublicApplyReplyDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovPublic\GovPublicCategoryClassDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovPublic\GovPublicCategoryDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovPublic\GovPublicChannelDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\GovPublic\GovPublicIdentifierRuleDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\VoteOperationDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\VoteOptionDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Adv\AdAreaDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Adv\AdMaterialDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Adv\AdvDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Compare\CompareContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\GovInteractContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\TeleplayDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\VoteContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Evaluation\EvaluationContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\ConsoleLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovInteract\GovInteractTypeDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovInteract\GovInteractChannelDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovInteract\GovInteractPermissionsDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovPublic\GovPublicIdentifierSeqDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Input\InputClassifyDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Keyword\KeywordClassifyDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\FuctionTableStylesDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\MLibManage\MLibDraftContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\MLibManage\MLibScopeDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\MLib\MlibDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\OrganizationManagement\OrganizationInfoDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\OrganizationManagement\OrganizationAreaDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\OrganizationManagement\OrganizationClassifyDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Searchword\SearchwordDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Searchword\SearchwordSettingDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Subscribe\SubscribePushRecordDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Subscribe\SubscribeUserDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Subscribe\SubscribeSetDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Subscribe\SubscribeDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Survey\SurveyQuestionnaireDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Template\TemplateLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovPublic\GovPublicApplyLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovPublic\GovPublicApplyRemarkDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovPublic\GovPublicApplyReplyDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovInteract\GovInteractLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovInteract\GovInteractRemarkDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovInteract\GovInteractReplyDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Tree\TreeDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Trial\TrialReportDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Trial\TrialApplyDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\UserGroup\UserNewGroupDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\ViewsStatistics\ViewsStatisticsDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\VoteOperationDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\VoteOptionDAO.cs" />
+    <Compile Include="BackgroundPages\Background\Information\Analysis\BackgroundAnalysisAdministrator.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\ContentModel\BackgroundTableStyle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTracker.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerBrowser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerChannelAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerContentAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerContentRank.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerCurrentVisitors.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerDay.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Information\Analysis\BackgroundAnalysisContentDownloads.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerHour.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerMonth.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerOS.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerPageUrl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerReferrer.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Background\Function\Tracking\BackgroundTrackerYear.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Controls\BackgroundNodeControl.cs" />
+    <Compile Include="BackgroundPages\Controls\ChannelDisplayControl.cs" />
+    <Compile Include="BackgroundPages\Controls\ContentDisplayControl.cs" />
+    <Compile Include="BackgroundPages\TextEditor\CKEditor\Upload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\TextEditor\EWebEditor\Upload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FCKeditor.cs" />
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FCKeditorConfigurations.cs" />
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FCKeditorDesigner.cs" />
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FileBrowser\Config.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FileBrowser\Connector.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FileBrowser\FileWorkerBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FileBrowser\TypeConfig.cs" />
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FileBrowser\TypeConfigList.cs" />
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FileBrowser\Uploader.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\FileBrowser\XmlResponseHandler.cs" />
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\Util.cs" />
+    <Compile Include="BackgroundPages\TextEditor\FCKeditorV2\XmlUtil.cs" />
+    <Compile Include="BackgroundPages\TextEditor\XHtmlEditor\UploadImage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\WebUtils.cs" />
+    <Compile Include="Controls\Background\AuxiliarySingleControl.cs" />
+    <Compile Include="Controls\Background\ChannelAuxiliaryControl.cs" />
+    <Compile Include="Controls\Background\DirectoryTree.cs" />
+    <Compile Include="Controls\Background\NodeNaviTree.cs" />
+    <Compile Include="Controls\Background\NodeTree.cs" />
+    <Compile Include="Controls\Background\TextEditorControl.cs" />
+    <Compile Include="Controls\BaseClasses\SiteServerCompositeWebControl.cs" />
+    <Compile Include="Controls\BaseClasses\SiteServerTemplatedWebControl.cs" />
+    <Compile Include="Core\Core\ArchiveManager.cs" />
+    <Compile Include="Core\Core\ChannelLoading.cs" />
+    <Compile Include="Core\Core\ChannelUtility.cs" />
+    <Compile Include="Core\Core\Constants.cs" />
+    <Compile Include="Core\Core\ContentUtility.cs" />
+    <Compile Include="Core\Core\Converter.cs" />
+    <Compile Include="Core\Core\CreateCacheManager.cs" />
+    <Compile Include="Core\Core\CrossSiteTransUtility.cs" />
+    <Compile Include="Core\Core\GatherUtility.cs" />
+    <Compile Include="Core\Core\JsManager.cs" />
+    <Compile Include="Core\User\LevelManager.cs" />
+    <Compile Include="Core\Core\NodeNaviTreeItem.cs" />
+    <Compile Include="Core\Core\NodeTreeItem.cs" />
+    <Compile Include="Core\Office\AccessDAO.cs" />
+    <Compile Include="Core\Office\ExcelObject.cs" />
+    <Compile Include="Core\Office\WordUtils.cs" />
+    <Compile Include="Core\Office\AccessObject.cs" />
+    <Compile Include="Core\Core\RelatedIdentities.cs" />
+    <Compile Include="Core\Security\ProductAdministratorWithPermissions.cs" />
+    <Compile Include="Core\Security\AdminUtility.cs" />
+    <Compile Include="Core\Security\ProductPermissionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Core\SeoManager.cs" />
+    <Compile Include="Core\Core\SourceManager.cs" />
+    <Compile Include="Core\Core\StarsManager.cs" />
+    <Compile Include="Core\Core\StringUtility.cs" />
+    <Compile Include="Core\Core\NodeNaviTabManager.cs" />
+    <Compile Include="Core\Core\TagStyleManager.cs" />
+    <Compile Include="Core\Core\VisualInfo.cs" />
+    <Compile Include="Core\Core\ContentModelManager.cs" />
+    <Compile Include="Core\Data\Content\IContentGroupDAO.cs" />
+    <Compile Include="Core\Data\Content\IJobContentDAO.cs" />
+    <Compile Include="Core\Data\Content\IContentDAO.cs" />
+    <Compile Include="Core\Data\Content\IPhotoDAO.cs" />
+    <Compile Include="Core\Data\DataProvider.cs" />
+    <Compile Include="Core\Data\Gather\IGatherDatabaseRuleDAO.cs" />
+    <Compile Include="Core\Data\Gather\IGatherFileRuleDAO.cs" />
+    <Compile Include="Core\Data\Gather\IGatherRuleDAO.cs" />
+    <Compile Include="Core\Data\Adv\IAdvertisementDAO.cs" />
+    <Compile Include="Core\Data\IInnerLinkDAO.cs" />
+    <Compile Include="Core\Data\IInputContentDAO.cs" />
+    <Compile Include="Core\Data\IInputDAO.cs" />
+    <Compile Include="Core\Data\ILogDAO.cs" />
+    <Compile Include="Core\Data\IMailSendLogDAO.cs" />
+    <Compile Include="Core\Data\IMailSubscribeDAO.cs" />
+    <Compile Include="Core\Data\IMenuDisplayDAO.cs" />
+    <Compile Include="Core\Data\ISeoMetaDAO.cs" />
+    <Compile Include="Core\Data\IStarDAO.cs" />
+    <Compile Include="Core\Data\IStarSettingDAO.cs" />
+    <Compile Include="Core\Data\IStlTagDAO.cs" />
+    <Compile Include="Core\Data\ISystemPermissionsDAO.cs" />
+    <Compile Include="Core\Data\ITagStyleDAO.cs" />
+    <Compile Include="Core\Data\Template\ITemplateDAO.cs" />
+    <Compile Include="Core\Data\Template\ITemplateMatchDAO.cs" />
+    <Compile Include="Core\Data\ITrackingDAO.cs" />
+    <Compile Include="Core\Data\Node\INodeGroupDAO.cs" />
+    <Compile Include="Core\Data\UserRole\IPermissionsDAO.cs" />
+    <Compile Include="Core\Data\Content\IResumeContentDAO.cs" />
+    <Compile Include="Core\InputParser\InputParserUtility.cs" />
+    <Compile Include="Core\InputParser\InputTypeParser.cs" />
+    <Compile Include="Core\IO\DirectoryUtility.cs" />
+    <Compile Include="Core\IO\FileUtility.cs" />
+    <Compile Include="Core\IO\PageUtility.cs" />
+    <Compile Include="Core\IO\PathUtility.cs" />
+    <Compile Include="Model\Advertisement\AdvertisementFloatImageInfo.cs" />
+    <Compile Include="Model\Advertisement\AdvertisementInfo.cs" />
+    <Compile Include="Model\Advertisement\AdvertisementOpenWindowInfo.cs" />
+    <Compile Include="Model\Advertisement\AdvertisementScreenDownInfo.cs" />
+    <Compile Include="Model\Content\JobContentInfo.cs" />
+    <Compile Include="Model\Enumerations\EAccessControlEntry.cs" />
+    <Compile Include="Model\Enumerations\EAdvertisementType.cs" />
+    <Compile Include="Model\Enumerations\EChangedType.cs" />
+    <Compile Include="Model\Enumerations\EExceptionType.cs" />
+    <Compile Include="Model\Enumerations\EImportExportType.cs" />
+    <Compile Include="Model\Enumerations\ELayout.cs" />
+    <Compile Include="Model\Enumerations\ELoadingType.cs" />
+    <Compile Include="Model\Enumerations\EMenuDisplayType.cs" />
+    <Compile Include="Model\Enumerations\EPositionType.cs" />
+    <Compile Include="Model\Enumerations\EProgressType.cs" />
+    <Compile Include="Model\Enumerations\ERollingType.cs" />
+    <Compile Include="Model\Enumerations\ESearchEngineType.cs" />
+    <Compile Include="Model\Enumerations\ETranslateContentType.cs" />
+    <Compile Include="Model\Enumerations\ETranslateType.cs" />
+    <Compile Include="Model\Enumerations\EWriteBackMethod.cs" />
+    <Compile Include="Model\Enumerations\Task\EBackupType.cs" />
+    <Compile Include="Model\Enumerations\Task\ECreateType.cs" />
+    <Compile Include="Model\Enumerations\Task\EGatherType.cs" />
+    <Compile Include="Model\Gather\GatherDatabaseRuleInfo.cs" />
+    <Compile Include="Model\Gather\GatherFileRuleInfo.cs" />
+    <Compile Include="Model\Gather\GatherRuleInfo.cs" />
+    <Compile Include="Model\Gather\GatherRuleInfoExtend.cs" />
+    <Compile Include="Model\InnerLinkInfo.cs" />
+    <Compile Include="Model\LogInfo.cs" />
+    <Compile Include="Model\Mail\MailSendLogInfo.cs" />
+    <Compile Include="Model\Mail\MailSubscribeInfo.cs" />
+    <Compile Include="Model\Node\NodeGroupInfo.cs" />
+    <Compile Include="Model\StlTagInfo.cs" />
+    <Compile Include="Model\TagStyle\TagStyleContentInputInfo.cs" />
+    <Compile Include="Model\TagStyle\TagStyleDiggInfo.cs" />
+    <Compile Include="Model\TagStyle\TagStyleInfo.cs" />
+    <Compile Include="Model\TagStyle\TagStyleSearchInputInfo.cs" />
+    <Compile Include="Model\TagStyle\TagStyleStarInfo.cs" />
+    <Compile Include="Model\TagStyle\TagStyleResumeInfo.cs" />
+    <Compile Include="Model\Task\TaskBackupInfo.cs" />
+    <Compile Include="Model\Task\TaskCreateInfo.cs" />
+    <Compile Include="Model\Task\TaskGatherInfo.cs" />
+    <Compile Include="Model\Task\TaskPublishInfo.cs" />
+    <Compile Include="Model\Tracker\TrackingInfo.cs" />
+    <Compile Include="Core\Node\NodeManager.cs" />
+    <Compile Include="Core\Node\PublishmentSystemManager.cs" />
+    <Compile Include="Model\Content\ContentGroupInfo.cs" />
+    <Compile Include="Model\Enumerations\ELinkType.cs" />
+    <Compile Include="Model\Enumerations\ETemplateType.cs" />
+    <Compile Include="Model\Enumerations\ETrackerStyle.cs" />
+    <Compile Include="Model\Enumerations\ETrackerType.cs" />
+    <Compile Include="Model\Enumerations\EVisualType.cs" />
+    <Compile Include="Model\Input\InputContentInfo.cs" />
+    <Compile Include="Model\Input\InputInfo.cs" />
+    <Compile Include="Model\Input\InputInfoExtend.cs" />
+    <Compile Include="Model\MenuDisplayInfo.cs" />
+    <Compile Include="Model\SeoMetaInfo.cs" />
+    <Compile Include="Model\SiteTemplateInfo.cs" />
+    <Compile Include="Model\Template\TemplateInfo.cs" />
+    <Compile Include="Model\Template\TemplateMatchInfo.cs" />
+    <Compile Include="Model\UserRole\SystemPermissionsInfo.cs" />
+    <Compile Include="Core\Data\Content\IBackgroundContentDAO.cs" />
+    <Compile Include="Core\Data\Node\INodeDAO.cs" />
+    <Compile Include="Core\Data\Node\IPublishmentSystemDAO.cs" />
+    <Compile Include="Model\Content\BackgroundContentInfo.cs" />
+    <Compile Include="Model\Enumerations\ECrossSiteTransType.cs" />
+    <Compile Include="Model\Enumerations\ENodeType.cs" />
+    <Compile Include="Model\Node\NodeInfo.cs" />
+    <Compile Include="Model\Node\NodeInfoExtend.cs" />
+    <Compile Include="Model\Node\PublishmentSystemInfo.cs" />
+    <Compile Include="Model\Node\PublishmentSystemInfoExtend.cs" />
+    <Compile Include="Core\Core\ChannelManager.cs" />
+    <Compile Include="Core\Core\MessageManager.cs" />
+    <Compile Include="Model\SitePageInfo.cs" />
+    <Compile Include="Core\SystemData\BaseTable.cs" />
+    <Compile Include="Model\Content\ResumeContentInfo.cs" />
+    <Compile Include="Provider\Data\Oracle\Adv\AdvertisementDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\BackgroundContentDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\ContentGroupDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\ContentDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\JobContentDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\ResumeContentDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\PhotoDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Content\CommentDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Gather\GatherDatabaseRuleDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Gather\GatherFileRuleDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Gather\GatherRuleDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\InnerLinkDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Input\InputContentDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Input\InputDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\LogDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\MailSendLogDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\MailSubscribeDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\MenuDisplayDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Node\NodeDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Node\NodeGroupDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Node\PublishmentSystemDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\SeoMetaDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\StarDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\StarSettingDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\StlTagDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\TagStyleDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Template\TemplateDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\Template\TemplateMatchDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\TrackingDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\UserRole\PermissionsDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\UserRole\SystemPermissionsDAO.cs" />
+    <Compile Include="Provider\Data\Oracle\KeywordDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Adv\AdvertisementDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\BackgroundContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\ContentDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider\Data\SqlServer\Content\ContentGroupDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\JobContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\PhotoDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\RelatedFieldDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\RelatedFieldItemDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\CommentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\GovPublicContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Gather\GatherDatabaseRuleDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Gather\GatherFileRuleDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Gather\GatherRuleDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovPublic\GovPublicCategoryDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovPublic\GovPublicCategoryClassDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovPublic\GovPublicIdentifierRuleDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovPublic\GovPublicChannelDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\GovPublic\GovPublicApplyDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\InnerLinkDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Input\InputContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Input\InputDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Keyword\KeywordDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\LogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\MailSendLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\MailSubscribeDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\MenuDisplayDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Node\NodeDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Node\NodeGroupDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Node\PublishmentSystemDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Content\ResumeContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\SeoMetaDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\StarDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\StarSettingDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\StlTagDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\TagStyleDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Template\TemplateDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Template\TemplateMatchDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\TrackingDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\UserRole\PermissionsDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\UserRole\SystemPermissionsDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\WebsiteMessage\WebsiteMessageReplayTemplateDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\WebsiteMessage\WebsiteMessageContentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\WebsiteMessage\WebsiteMessageDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\WebsiteMessage\WebsiteMessageClassifyDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Provider\Data\Oracle\Content\RelatedFieldDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Provider\Data\Oracle\Content\RelatedFieldItemDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundPages\Background\Configuration\Storage\BackgroundConfigurationStorageImage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundPages\Background\Configuration\Storage\BackgroundConfigurationStorageVideo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Provider\Data\Oracle\Adv\AdAreaDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Provider\Data\Oracle\Adv\AdMaterialDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.BackgroundPages\BaiRong.BackgroundPages.csproj">
+      <Project>{64529dc0-3c8b-4d10-a921-ead9f03fdf21}</Project>
+      <Name>BaiRong.BackgroundPages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Controls\BaiRong.Controls.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b4465}</Project>
+      <Name>BaiRong.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Core\BaiRong.Core.csproj">
+      <Project>{3d8cb06b-1791-4685-ab56-965b9f41666e}</Project>
+      <Name>BaiRong.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Provider\BaiRong.Provider.csproj">
+      <Project>{f5094daf-85e0-4754-a8c4-c236b9f9dba6}</Project>
+      <Name>BaiRong.Provider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Service\BaiRong.Service.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b8899}</Project>
+      <Name>BaiRong.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

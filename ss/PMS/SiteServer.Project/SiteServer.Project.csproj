@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{961960F7-8627-494F-B819-5AF7C761A207}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteServer.Project</RootNamespace>
+    <AssemblyName>SiteServer.Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\.settings\ref\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundPages\BackgroundBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Application\ApplicationSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Application\ApplicationView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\AccountSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\AccountSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\AccountView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\ContractSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\FormElementAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\FormElementValidateAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\FormGroupAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\FormPageAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\InvoiceSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\LeadSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\Message.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\MobanSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\MobanSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\OrderFormSEMView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\OrderFormView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\OrderRefundSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\OrderSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\OrderSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\OrderView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\RequestSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\SendMessage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CRM\Touch.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\DepartmentSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Documents\DocTypeAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Documents\DocumentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ApplyAccept.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ApplyComment.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ApplyFlow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ApplyRedo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ApplySetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ApplySwitchTo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ApplyTranslate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ApplyView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\PaymentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ProjectAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\ProjectDocumentAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Project\TypeAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Url\ExpireAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Url\HotfixAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Url\LicenseView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Url\UrlSummaryAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\UserNameSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Application\BackgroundApplication.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Application\BackgroundApplicationHandled.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\BackgroundLeft.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\BackgroundTextEditorUpload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundAccount.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundAccountAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundAccountAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundContact.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundContactAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundContactAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundContract.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundContractAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundCRMConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundFormPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundInvoice.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundInvoiceAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundLead.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundLeadAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundLeadAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundLeadAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundMoban.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundMobanAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrder.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrderAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrderMessage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrderMessageAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrderRefund.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrderRefundAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrderService.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrderServiceAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrderSoftware.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundOrderSoftwareAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundRequest.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundRequestAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundRequestAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\CRM\BackgroundRequestAnswer.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Document\BackgroundDocType.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Document\BackgroundDocument.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Document\BackgroundDocumentAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Document\BackgroundDocumentLeft.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Document\BackgroundDocumentMy.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Payment\BackgroundPayment.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Payment\BackgroundPaymentAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Payment\BackgroundPaymentAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Payment\BackgroundPaymentCashBack.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Payment\BackgroundPaymentConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Payment\BackgroundPaymentNotPay.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Payment\BackgroundPaymentPaied.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyToAcceptDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyToAll.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyToBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyToCheckDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyToDetailBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyToDoneDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyToReplyDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundApplyToWork.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundProject.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundProjectConfiguration.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundProjectContract.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundProjectContractAnalysis.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundProjectDocument.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundProjectLeft.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Project\BackgroundType.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Services\Action.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Url\BackgroundDownload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Url\BackgroundHotfix.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Url\BackgroundLicense.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Url\BackgroundLicenseAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Url\BackgroundUrl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Url\BackgroundUrlCohort.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProjectNavigationTree.cs" />
+    <Compile Include="Controls\TextEditor.cs" />
+    <Compile Include="Core\ApplyManager.cs" />
+    <Compile Include="Core\CodeScales\Common\NameValuePair.cs" />
+    <Compile Include="Core\CodeScales\Cookies\HttpCookie.cs" />
+    <Compile Include="Core\CodeScales\Cookies\HttpCookieCollection.cs" />
+    <Compile Include="Core\CodeScales\Cookies\HttpCookieStore.cs" />
+    <Compile Include="Core\CodeScales\Entity\AbstractHttpEntity.cs" />
+    <Compile Include="Core\CodeScales\Entity\BasicHttpEntity.cs" />
+    <Compile Include="Core\CodeScales\Entity\EntityUtils.cs" />
+    <Compile Include="Core\CodeScales\Entity\HttpEntity.cs" />
+    <Compile Include="Core\CodeScales\Entity\HttpEntityEnclosingRequest.cs" />
+    <Compile Include="Core\CodeScales\Entity\Mime\Body.cs" />
+    <Compile Include="Core\CodeScales\Entity\Mime\FileBody.cs" />
+    <Compile Include="Core\CodeScales\Entity\Mime\InputStreamBody.cs" />
+    <Compile Include="Core\CodeScales\Entity\Mime\StringBody.cs" />
+    <Compile Include="Core\CodeScales\Entity\MultipartEntity.cs" />
+    <Compile Include="Core\CodeScales\Entity\UrlEncodedFormEntity.cs" />
+    <Compile Include="Core\CodeScales\HttpBehavior.cs" />
+    <Compile Include="Core\CodeScales\HttpClient.cs" />
+    <Compile Include="Core\CodeScales\Methods\HttpGet.cs" />
+    <Compile Include="Core\CodeScales\Methods\HttpMessageBase.cs" />
+    <Compile Include="Core\CodeScales\Methods\HttpPost.cs" />
+    <Compile Include="Core\CodeScales\Methods\HttpRequest.cs" />
+    <Compile Include="Core\CodeScales\Methods\HttpResponse.cs" />
+    <Compile Include="Core\CodeScales\Network\HttpConnection.cs" />
+    <Compile Include="Core\CodeScales\Network\HttpConnectionFactory.cs" />
+    <Compile Include="Core\CodeScales\Network\HttpNetworkException.cs" />
+    <Compile Include="Core\CodeScales\Network\HttpProtocol.cs" />
+    <Compile Include="Core\CodeScales\Protocol\HTTP.cs" />
+    <Compile Include="Core\ConfigurationManager.cs" />
+    <Compile Include="Core\Data\Provider\Application\IApplicationDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IAccountDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IContactDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IContractDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IFormElementDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IFormGroupDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IFormPageDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IInvoiceDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\ILeadDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IMobanDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IOrderDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IOrderFormDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IOrderFormSEMDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IOrderMessageDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IOrderRefundDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IRequestAnswerDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\IRequestDAO.cs" />
+    <Compile Include="Core\Data\Provider\CRM\ITouchDAO.cs" />
+    <Compile Include="Core\Data\Provider\DataProvider.cs" />
+    <Compile Include="Core\Data\Provider\IApplyDAO.cs" />
+    <Compile Include="Core\Data\Provider\IConfiguration.cs" />
+    <Compile Include="Core\Data\Provider\IDocTypeDAO.cs" />
+    <Compile Include="Core\Data\Provider\IDocumentDAO.cs" />
+    <Compile Include="Core\Data\Provider\IPaymentDAO.cs" />
+    <Compile Include="Core\Data\Provider\IProjectDAO.cs" />
+    <Compile Include="Core\Data\Provider\IProjectDocumentDAO.cs" />
+    <Compile Include="Core\Data\Provider\IProjectLogDAO.cs" />
+    <Compile Include="Core\Data\Provider\IRemarkDAO.cs" />
+    <Compile Include="Core\Data\Provider\IReplyDAO.cs" />
+    <Compile Include="Core\Data\Provider\ITypeDAO.cs" />
+    <Compile Include="Core\Data\Provider\Url\IDBLicenseDAO.cs" />
+    <Compile Include="Core\Data\Provider\Url\IHotfixDAO.cs" />
+    <Compile Include="Core\Data\Provider\Url\IHotfixDownloadDAO.cs" />
+    <Compile Include="Core\Data\Provider\Url\IUrlActivityDAO.cs" />
+    <Compile Include="Core\Data\Provider\Url\IUrlDAO.cs" />
+    <Compile Include="Core\DocumentManager.cs" />
+    <Compile Include="Core\FormElementParser.cs" />
+    <Compile Include="Core\HotfixManager.cs" />
+    <Compile Include="Core\MessageManager.cs" />
+    <Compile Include="Core\PaymentManager.cs" />
+    <Compile Include="Core\ProjectManager.cs" />
+    <Compile Include="Core\UEditorUploader.cs" />
+    <Compile Include="Model\Application\ApplicationInfo.cs" />
+    <Compile Include="Model\Configuration\ConfigurationInfo.cs" />
+    <Compile Include="Model\Configuration\ConfigurationInfoExtend.cs" />
+    <Compile Include="Model\CRM\AccountInfo.cs" />
+    <Compile Include="Model\CRM\ContactInfo.cs" />
+    <Compile Include="Model\CRM\ContractInfo.cs" />
+    <Compile Include="Model\CRM\EmailInfo.cs" />
+    <Compile Include="Model\CRM\FormElementInfo.cs" />
+    <Compile Include="Model\CRM\FormElementItemInfo.cs" />
+    <Compile Include="Model\CRM\FormGroupInfo.cs" />
+    <Compile Include="Model\CRM\FormPageInfo.cs" />
+    <Compile Include="Model\CRM\InvoiceInfo.cs" />
+    <Compile Include="Model\CRM\LeadInfo.cs" />
+    <Compile Include="Model\CRM\MessageTemplateInfo.cs" />
+    <Compile Include="Model\CRM\MobanInfo.cs" />
+    <Compile Include="Model\CRM\OrderFormInfo.cs" />
+    <Compile Include="Model\CRM\OrderFormSEMInfo.cs" />
+    <Compile Include="Model\CRM\OrderInfo.cs" />
+    <Compile Include="Model\CRM\OrderRefundInfo.cs" />
+    <Compile Include="Model\CRM\RequestAnswerInfo.cs" />
+    <Compile Include="Model\CRM\RequestInfo.cs" />
+    <Compile Include="Model\CRM\TouchInfo.cs" />
+    <Compile Include="Model\Documents\DocTypeInfo.cs" />
+    <Compile Include="Model\Documents\DocumentInfo.cs" />
+    <Compile Include="Model\Enumerations\CRM\EAccountStatus.cs" />
+    <Compile Include="Model\Enumerations\CRM\EAccountType.cs" />
+    <Compile Include="Model\Enumerations\CRM\EContractType.cs" />
+    <Compile Include="Model\Enumerations\CRM\EDocumentType.cs" />
+    <Compile Include="Model\Enumerations\CRM\EInvoiceType.cs" />
+    <Compile Include="Model\Enumerations\CRM\ELeadStatus.cs" />
+    <Compile Include="Model\Enumerations\CRM\EOrderStatus.cs" />
+    <Compile Include="Model\Enumerations\CRM\EOrderType.cs" />
+    <Compile Include="Model\Enumerations\CRM\ERequestStatus.cs" />
+    <Compile Include="Model\Enumerations\EApplicationType.cs" />
+    <Compile Include="Model\Enumerations\EApplyState.cs" />
+    <Compile Include="Model\Enumerations\ELimitType.cs" />
+    <Compile Include="Model\Enumerations\ELogType.cs" />
+    <Compile Include="Model\Enumerations\ERemarkType.cs" />
+    <Compile Include="Model\Projects\ApplyInfo.cs" />
+    <Compile Include="Model\Projects\PaymentInfo.cs" />
+    <Compile Include="Model\Projects\ProjectDocumentInfo.cs" />
+    <Compile Include="Model\Projects\ProjectInfo.cs" />
+    <Compile Include="Model\Projects\ProjectInfoExtend.cs" />
+    <Compile Include="Model\Projects\ProjectLogInfo.cs" />
+    <Compile Include="Model\Projects\RemarkInfo.cs" />
+    <Compile Include="Model\Projects\ReplyInfo.cs" />
+    <Compile Include="Model\Projects\TypeInfo.cs" />
+    <Compile Include="Model\Url\DBLicenseInfo.cs" />
+    <Compile Include="Model\Url\HotfixDownloadInfo.cs" />
+    <Compile Include="Model\Url\HotfixInfo.cs" />
+    <Compile Include="Model\Url\UrlActivityInfo.cs" />
+    <Compile Include="Model\Url\UrlInfo.cs" />
+    <Compile Include="Pages\Application\ApplicationPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Application\LicensePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CRM\Request.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CRM\RequestAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CRM\RequestAnswer.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CRM\RequestForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CRM\RequestNew.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CRM\RequestSEM.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Url\App.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Url\Hotfix.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Url\Tongji.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Yun\Hotfix.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Yun\Validate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\AccountDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\ContactDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\ContractDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\FormElementDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\FormGroupDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\FormPageDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\InvoiceDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\LeadDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\MobanDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\OrderDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\OrderMessageDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\OrderRefundDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\CRM\TouchDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\ApplyDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\ConfigurationDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\DocTypeDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\DocumentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\PaymentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\ProjectDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\ProjectDocumentDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\ProjectLogDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\RemarkDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\ReplyDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\PMS\TypeDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\Url\DBLicenseDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\Url\HotfixDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Local\Url\HotfixDownlaodDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Remote\Application\ApplicationDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Remote\CRM\OrderFormDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Remote\CRM\OrderFormSEMDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Remote\CRM\RequestAnswerDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Remote\CRM\RequestDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Remote\Url\UrlActivityDAO.cs" />
+    <Compile Include="Provider\Data\SqlServer\Remote\Url\UrlDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ERStudio\brs.DM1" />
+    <None Include="Resources\ERStudio\pms.DM1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\bairong\BaiRong.BackgroundPages\BaiRong.BackgroundPages.csproj">
+      <Project>{64529dc0-3c8b-4d10-a921-ead9f03fdf21}</Project>
+      <Name>BaiRong.BackgroundPages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\bairong\BaiRong.Controls\BaiRong.Controls.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b4465}</Project>
+      <Name>BaiRong.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\bairong\BaiRong.Core\BaiRong.Core.csproj">
+      <Project>{3d8cb06b-1791-4685-ab56-965b9f41666e}</Project>
+      <Name>BaiRong.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\bairong\BaiRong.Provider\BaiRong.Provider.csproj">
+      <Project>{f5094daf-85e0-4754-a8c4-c236b9f9dba6}</Project>
+      <Name>BaiRong.Provider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

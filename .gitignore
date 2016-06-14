@@ -1,0 +1,49 @@
+aspnet_client/
+packages/
+node_modules/
+bower_components/
+bin/
+obj/
+.vs/
+_publish/
+*.csproj.user
+.suo
+Service/.nuget/
+Service/Debug/
+*/*.suo
+
+# Web unnecessary files
+web/SiteFiles/Products/Apps/*/Files/
+web/SiteFiles/TemporaryFiles/
+web/SiteFiles/SiteTemplates/
+web/SiteFiles/IndependentTemplates/
+web/SiteFiles/Configuration/UrlRewrite.config
+web/SiteServer/userfiles/
+web/Home/
+Web/cms_liang/
+Web/bbs_liang/
+Web/b2c_liang/
+Web/wgw_liang/
+Web/MYZT/
+Web/bcsjdemo_liang_local/
+Web/pc_shop/
+Web/wap_shop/
+Web/Template/
+Web/MLib/
+web/Web.config
+web/robots.txt
+
+#API unecessary files
+ss/SiteServer.API/SiteFiles/TemporaryFiles/
+
+#UserCenter unnecessary files
+ss/SiteServer.TypeScript/assets/js/
+
+#JSSDK unnecessary files
+api/SiteServer.SDK.JS/**/*.js
+api/SiteServer.SDK.JS/**/*.map
+api/SiteServer.SDK.JS/**/*.css
+/Web/channels
+/Web/contents
+/ALL.v12.suo
+/Web/index.htm

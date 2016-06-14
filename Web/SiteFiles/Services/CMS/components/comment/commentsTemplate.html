@@ -1,0 +1,42 @@
+﻿<div class="comment_box">
+
+<stl:each type="template" value="comments">
+  <div class="ly_item clearfix">
+      <%if (item.isRecommend){%>
+        <div class="wonderful"></div>
+      <%}%>
+      <div class="fl user_img">
+        <img src="{stl.template.item.avatarUrl}">
+      </div>
+      <div class="fl user_content">
+          <div class="name">
+              <span>{stl.template.item.userName}</span>
+              •
+              {stl.template.item.addDate}
+          </div>
+          <div class="text">
+              <p>
+                {stl.template.=item.content}
+              </p>
+          </div>
+          <div class="zan_box">
+              <a href="javascript:;" class="icon2" onclick="commentController.good(this, {stl.template.item.commentID});return false;"><i class="fa fa-thumbs-down"></i>
+              <span>{stl.template.item.good}</span>
+              </a>
+              <a href="javascript:;" class="icon3" onclick="commentController.reference({stl.template.item.commentID});return false;"><i class="fa fa-reply"></i>
+              {stl.template.item.floor} 楼
+              </a>
+          </div>
+      </div>
+  </div>
+</stl:each>
+
+
+  <!-- <div class="page_box">
+      <span class="page_inner clearfix">
+          <a href="" >&lt; 上一页</a>
+          <a href="" class="on">下一页 &gt;</a>
+          <span>共100页</span>
+      </span>
+  </div> -->
+</div>

@@ -1,0 +1,1 @@
+<%@ Control Language="C#" EnableViewState="false" AutoEventWireup="false" Inherits="SiteServer.CMS.BackgroundPages.FredCK.FCKeditorV2.FileBrowser.Config" %>

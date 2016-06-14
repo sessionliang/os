@@ -1,0 +1,1 @@
+<%@ Page Language="C#" Inherits="SiteServer.CMS.BackgroundPages.TextEditorEWebEditor.Upload"  Trace="false"%>

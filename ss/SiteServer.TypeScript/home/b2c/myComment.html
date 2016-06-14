@@ -1,0 +1,160 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>网站标题</title>
+    <meta name="description" content="网站描述">
+    <meta name="keywords" content="网站关键字">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <!-[if lt IE 8]>
+    <script language="javascript" type="text/javascript" src="js/html5.js"></script>
+    <![endif]–>
+    <!--[if IE 6]>
+    <script src="js/ie6PNG.js" type="text/javascript"></script>
+    <script type="text/javascript">DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+</head>
+<body>
+    <header class="bmr_header">
+        <div class="bmr_headBox">
+            <a class="bmr_logo" href="#"><img src="images/bmr_logo.png" width="170" height="30"></a>
+            <span class="bmr_logoName">会员中心</span>
+            <a href="#" class="bmr_bak">返回商城首页</a>
+            <!--购物车 开始-->
+            <div class="msc_lay2">
+                <span class="msc_1s">
+                    <span>10</span>
+                </span>
+                <a href="#">购物车</a><img class="msc_sq2" src="images/sc_squer5.jpg" width="5" height="10" />
+                <div class="msc_lay2hover">
+                    <a href="#">购物车</a><img class="msc_sq2" src="images/sc_squer5a.jpg" width="5" height="10" />
+                </div>
+                <div class="msc_lay2box">
+                    <ul>
+                        <li>
+                            <a class="fl" href="#"><img src="images/sc_img6a.png" width="50" height="50" /></a>
+                            <div class="msc_lay2txt">
+                                戴尔（DELL） Vostro 3010-R1106 19.5英寸超薄一体电脑...
+                            </div>
+                            <div class="msc_layprice">
+                                <strong class="msc_red">¥3200</strong><span class="msc_999"> x1</span><br />
+                                <a class="msc_blue" href="#">删除</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="fl" href="#"><img src="images/sc_img6.png" width="50" height="50" /></a>
+                            <div class="msc_lay2txt">
+                                惠普（HP） LaserJet 黑白多功能激光一体机 （打印 复印 扫描 传真）...
+                            </div>
+                            <div class="msc_layprice">
+                                <strong class="msc_red">¥820</strong><span class="msc_999"> x1</span><br />
+                                <a class="msc_blue" href="#">删除</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                    <div class="msc_lay2bom">
+                        共<strong class="msc_red"> 2 </strong>件商品 共计<span class="msc_red">¥4000</span><br />
+                        <a href="#"><img src="images/sc_btn02.jpg" width="120" height="30" /></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!--购物车 结束-->
+        </div>
+    </header>
+    <div class="bmr_serBox">
+        <div class="bmr_serCon">
+            <span class="bmr_sname">帮助中心</span>
+            <div class="bmr_c1box"><input class="bmr_serInt" placeholder="请输入关键词" name="" type="text"><button class="bmr_submit"><span>搜索</span></button></div>
+        </div>
+    </div>
+    <div class="bmr_main">
+        <div class="bmr_m2L">
+            <dl>
+                <dt>订单中心</dt>
+                <dd><a href="#">我的订单</a></dd>
+                <dd><a href="#">我的评价</a></dd>
+                <dd><a href="#">优惠劵</a></dd>
+            </dl>
+            <dl>
+                <dt>关注中心</dt>
+                <dd><a href="#">关注的商品</a></dd>
+                <dd><a href="#">浏览历史</a></dd>
+            </dl>
+            <dl>
+                <dt>客户服务</dt>
+                <dd><a href="#">我的退换货</a></dd>
+                <dd><a href="#">意见建议</a></dd>
+                <dd><a href="#">购买咨询</a></dd>
+            </dl>
+            <dl>
+                <dt>设置管理</dt>
+                <dd><a href="#">个人信息</a></dd>
+                <dd><a href="#">邮件订阅</a></dd>
+                <dd><a href="#">发票管理</a></dd>
+            </dl>
+            <dl>
+                <dt>账户安全</dt>
+                <dd><a href="#">修改密码</a></dd>
+                <dd><a href="#">绑定手机</a></dd>
+                <dd><a href="#">登录邮箱</a></dd>
+                <dd><a href="#">账户安全</a></dd>
+                <dd><a href="#">登录记录</a></dd>
+                <dd><a href="#">密保问题</a></dd>
+            </dl>
+            <dl>
+                <dt>帮助中心</dt>
+            </dl>
+            <br>
+        </div>
+        <div class="bmr_m2R">
+            <div class="bmr_rt1">我的评价</div>
+            <div class="bmr_pub">
+                <div class="bmrp_d1"><span class="bmrp_ds1">商品信息</span><span class="bmrp_ds2">购买时间</span><span class="bmrp_ds3">评价状态</span></div>
+                <!--订单详情列表-->
+                <div id="orderItemList">
+                </div>
+                <div class="bmrp_dx1"><strong>满意度评价</strong> <span class="cor_999">评价大于100的订单可以获得20个京豆（订单完成3个月内有效）</span></div>
+                <!-- <div class="bmrp_ssd5">
+                <div class="bmrp_s5L">
+                <i></i>
+                <div class="bmrp_himg"><img src="images/m2h1.jpg" width="100" height="100"></div>
+                <div class="bmrp_htxt">
+                <strong class="f14">暂无 </strong> <img src="images/sx1.jpg" width="15" height="14"><img src="images/sx1.jpg" width="15" height="14"><img src="images/sx1.jpg" width="15" height="14"><img src="images/sx1.jpg" width="15" height="14"><img src="images/sx1.jpg" width="15" height="14"><br><br>
+                员工<br>
+                电话：暂无
+                 </div>
+                </div>
+                <div class="bmrp_s5R">
+                <div class="bmrp_s5ul">
+                 <ul>
+                  <li><span class="bmrp_sbm1"><strong class="cor_red">*</strong> 商品描述相符</span><span class="bmrp_xxBox"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"></span></li>
+                  <li><span class="bmrp_sbm1"><strong class="cor_red">*</strong> 商品描述相符</span><span class="bmrp_xxBox"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"></span></li>
+                  <li><span class="bmrp_sbm1"><strong class="cor_red">*</strong> 商品描述相符</span><span class="bmrp_xxBox"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"></span></li>
+                  <li><span class="bmrp_sbm1"><strong class="cor_red">*</strong> 商品描述相符</span><span class="bmrp_xxBox"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"><img src="images/sx2.jpg" width="15" height="14"></span></li>
+                 </ul>
+                </div>
+                <div class="bmrp_btn2"><a href="#" class="bmr_pa1 fl">保存</a></div>
+                </div>
+                </div>-->
+                <div class="bmrp_ssd6">
+                    <strong>评价说明：</strong><br>
+                    原创评价可以帮助其他用户做出购买参考，同时您也可以获得一定数量的京豆奖励。<a class="cor_red" href="#">[京豆规则]</a><br>
+                    <span class="cor_red">小京豆</span>大用处，快去看看您的京豆都能兑换什么好东西吧。<a class="cor_red" href="#">[去看看]</a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <footer class="bmr_footer">
+        北京百容千域软件技术开发有限公司 &nbsp; 版权所有 Copyright © 2003-2013<br>
+        Powered by SiteServer CMS 京ICP备10013847号
+    </footer>
+</body>
+</html>
+<script src="../../assets/js/app.js"></script>
+<script src="../../assets/js/lib.js" id="controllerName" data-controller-name="orderComment"></script>
+

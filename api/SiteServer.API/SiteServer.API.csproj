@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{868F5651-13A9-43A0-A93F-83657FFD2222}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteServer.API</RootNamespace>
+    <AssemblyName>SiteServer.API</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NetDimension.Weibo, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\.settings\ref\NetDimension.Weibo.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\.settings\ref\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QQLoginAouth2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\.settings\ref\QQLoginAouth2.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebApiContrib.Formatting.Jsonp">
+      <HintPath>..\..\.settings\ref\WebApiContrib.Formatting.Jsonp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FormatterConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\B2C\ExtController.cs" />
+    <Compile Include="Controllers\B2C\B2CController.cs" />
+    <Compile Include="Controllers\B2C\FilterController.cs" />
+    <Compile Include="Controllers\B2C\ConsultationController.cs" />
+    <Compile Include="Controllers\B2C\FollowController.cs" />
+    <Compile Include="Controllers\B2C\OrderItemCommentController.cs" />
+    <Compile Include="Controllers\B2C\OrderItemReturnController.cs" />
+    <Compile Include="Controllers\B2C\RequestController.cs" />
+    <Compile Include="Controllers\B2C\OrderController.cs" />
+    <Compile Include="Controllers\CMS\ContentCompareController.cs" />
+    <Compile Include="Controllers\CMS\SurveyController.cs" />
+    <Compile Include="Controllers\CMS\TrialController.cs" />
+    <Compile Include="Controllers\CMS\EvaluationController.cs" />
+    <Compile Include="Controllers\CMS\SearchController.cs" />
+    <Compile Include="Controllers\CMS\DynamicController.cs" />
+    <Compile Include="Controllers\CMS\CmsPageController.cs" />
+    <Compile Include="Controllers\CMS\CommentController.cs" />
+    <Compile Include="Controllers\CMS\CmsController.cs" />
+    <Compile Include="Controllers\CMS\PublishmentSystemController.cs" />
+    <Compile Include="Controllers\Platform\PlatformController.cs" />
+    <Compile Include="Controllers\Platform\OrganizationController.cs" />
+    <Compile Include="Controllers\Platform\MLibController.cs" />
+    <Compile Include="Controllers\V1\AdministratorsController.cs" />
+    <Compile Include="Controllers\V1\BooksController.cs" />
+    <Compile Include="Controllers\Platform\CacheController.cs" />
+    <Compile Include="Controllers\Platform\UserController.cs" />
+    <Compile Include="Controllers\WX\WX_CardController.cs" />
+    <Compile Include="Controllers\WX\WX_AppointmentController.cs" />
+    <Compile Include="Controllers\WX\WX_LotteryController.cs" />
+    <Compile Include="Controllers\WX\WX_AlbumController.cs" />
+    <Compile Include="Controllers\WX\WX_ConferenceController.cs" />
+    <Compile Include="Controllers\WX\WX_ScenceController.cs" />
+    <Compile Include="Controllers\WX\WX_SearchController.cs" />
+    <Compile Include="Controllers\WX\WX_StoreController.cs" />
+    <Compile Include="Controllers\WX\WX_View360Controller.cs" />
+    <Compile Include="Controllers\WX\WX_MessageController.cs" />
+    <Compile Include="Controllers\WX\WX_CollectController.cs" />
+    <Compile Include="Controllers\WX\WX_VoteController.cs" />
+    <Compile Include="Controllers\WX\WX_CouponController.cs" />
+    <Compile Include="Controllers\WX\MPController.cs" />
+    <Compile Include="Core\CorsHandler.cs" />
+    <Compile Include="Core\ContentUtils.cs" />
+    <Compile Include="Core\JWTUtils.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Model\B2C\Request\RequestFilterParameter.cs" />
+    <Compile Include="Model\B2C\Response\OrderItemCommentParameter.cs" />
+    <Compile Include="Model\B2C\Response\ConsultationParameter.cs" />
+    <Compile Include="Model\B2C\Response\OrderItemReturnParameter.cs" />
+    <Compile Include="Model\B2C\Response\PublishmentSystemParameter.cs" />
+    <Compile Include="Model\B2C\Response\OrderListParameter.cs" />
+    <Compile Include="Model\B2C\Response\OrderItemParameter.cs" />
+    <Compile Include="Model\B2C\Response\B2CParameter.cs" />
+    <Compile Include="Model\B2C\Response\Cart.cs" />
+    <Compile Include="Model\B2C\Response\FilterParameter.cs" />
+    <Compile Include="Model\B2C\Response\OrderParameter.cs" />
+    <Compile Include="Model\B2C\Response\OrderReturnParameter.cs" />
+    <Compile Include="Model\B2C\Response\OrderSuccessParameter.cs" />
+    <Compile Include="Model\B2C\Response\PageItem.cs" />
+    <Compile Include="Model\B2C\Response\OrderResponse.cs" />
+    <Compile Include="Model\B2C\Response\RequestResponse.cs" />
+    <Compile Include="Model\B2C\Response\RequestParameter.cs" />
+    <Compile Include="Model\Platform\Response\Parameter.cs" />
+    <Compile Include="Model\Platform\Response\ThirdLogin.cs" />
+    <Compile Include="Model\Platform\Response\ThirdLoginParameter.cs" />
+    <Compile Include="Model\Platform\Response\User.cs" />
+    <Compile Include="Model\Platform\Response\UserParameter.cs" />
+    <Compile Include="Model\Platform\Response\LoginParameter.cs" />
+    <Compile Include="Model\PMS\Resource\User.cs" />
+    <Compile Include="Model\WX\Response\AppointmentParameter.cs" />
+    <Compile Include="Model\WX\Response\LotteryParameter.cs" />
+    <Compile Include="Model\WX\Response\AlbumParameter.cs" />
+    <Compile Include="Model\WX\Response\Model\Coupon.cs" />
+    <Compile Include="Model\WX\Response\ConferenceParameter.cs" />
+    <Compile Include="Model\WX\Response\MessageParameter.cs" />
+    <Compile Include="Model\WX\Response\Model\SearchContentInfo.cs" />
+    <Compile Include="Model\WX\Response\SearchParameter.cs" />
+    <Compile Include="Model\WX\Response\StoreCategoryParameter.cs" />
+    <Compile Include="Model\WX\Response\StoreItemParameter.cs" />
+    <Compile Include="Model\WX\Response\VoteParameter.cs" />
+    <Compile Include="Model\WX\Response\CouponParameter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Model\WX\Request\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.BackgroundPages\BaiRong.BackgroundPages.csproj">
+      <Project>{64529dc0-3c8b-4d10-a921-ead9f03fdf21}</Project>
+      <Name>BaiRong.BackgroundPages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Controls\BaiRong.Controls.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b4465}</Project>
+      <Name>BaiRong.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Core\BaiRong.Core.csproj">
+      <Project>{3d8cb06b-1791-4685-ab56-965b9f41666e}</Project>
+      <Name>BaiRong.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Provider\BaiRong.Provider.csproj">
+      <Project>{f5094daf-85e0-4754-a8c4-c236b9f9dba6}</Project>
+      <Name>BaiRong.Provider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Service\BaiRong.Service.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b8899}</Project>
+      <Name>BaiRong.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ss\SiteServer.B2C\SiteServer.B2C.csproj">
+      <Project>{61a793e1-3e99-4bdc-bc20-7298ca3e3788}</Project>
+      <Name>SiteServer.B2C</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ss\SiteServer.CMS\SiteServer.CMS.csproj">
+      <Project>{61a793e1-3e99-4bdc-bc20-7298ca3e0000}</Project>
+      <Name>SiteServer.CMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ss\SiteServer.STL\SiteServer.STL.csproj">
+      <Project>{61a793e1-3e99-4bdc-bc20-7298ca3e8899}</Project>
+      <Name>SiteServer.STL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ss\SiteServer.WCM\SiteServer.WCM.csproj">
+      <Project>{61a793e1-3e99-4bdc-bc20-7298ca3e6957}</Project>
+      <Name>SiteServer.WCM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ss\SiteServer.WeiXin\SiteServer.WeiXin.csproj">
+      <Project>{61a793e1-3e99-4bdc-bc20-7298ca3e1111}</Project>
+      <Name>SiteServer.WeiXin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13523</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:13523/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

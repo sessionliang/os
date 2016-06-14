@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户中心</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+<script>var $pageInfo = { publishmentSystemID : 82, channelID : 82, contentID : 0, siteUrl : "/usercenter", homeUrl : "/usercenter/center", currentUrl : "http://siteserver.cn/usercenter/Register.html", rootUrl : "http://siteserver.cn", apiUrl : "http://siteserver.cn" }</script>
+</head>
+<body class="mbody mbody3">
+    <div class="mfmMain">
+        <div class="mfm_top">
+            <a class="mlogo" href="/"><img src="images/nlogo.png" width="350" height="57" /></a>
+            <div class="mfm_topR">
+                <a href="/" class="mfm_a1">网站首页</a><span class="mfm_s1">|</span>
+                <a href="login.html" class="mfm_a1">已有账号</a>
+            </div>
+        </div>
+        <div class="mfm_u1 mfm_u2">
+            <ul>
+                <li class="mfm_li01" id="tipsUserName">
+                    <span class="mfm_s2">用户名：</span><input placeholder="请输入注册用户名" class="mfm_int1" name="txtUserName" id="txtUserName" type="text" />
+                    <div class="nmf_aler hide"><img class="tipImg" src="" /><div class="nmf_st1">用户名已存在<i class="nmr_i"></i></div></div>
+                </li>
+                <li class="mfm_li01" id="tipsEmail">
+                    <span class="mfm_s2">邮箱：</span><input placeholder="请输入注册邮箱" class="mfm_int1" name="txtEmail" id="txtEmail" type="text" />
+                    <div class="nmf_aler hide"><img class="tipImg" src="" /><div class="nmf_st1">邮箱已存在<i class="nmr_i"></i></div></div>
+                </li>
+                <li class="mfm_li01" id="tipsPwd">
+                    <span class="mfm_s2">密码：</span><input placeholder="请输入注册密码" class="mfm_int1" name="txtPassword" id="txtPassword" type="password" />
+                    <div class="nmf_aler hide"><img class="tipImg" src="" /><div class="nmf_st1">两次密码输入的不一致<i class="nmr_i"></i></div></div>
+                </li>
+                <li class="mfm_li01" id="tipsPwdAgain">
+                    <span class="mfm_s2">确认密码：</span><input placeholder="请再一次确认密码" class="mfm_int1" name="txtConfimPassword" id="txtConfimPassword" type="password" />
+                    <div class="nmf_aler hide"><img class="tipImg" src="" /><div class="nmf_st1">两次密码输入的不一致<i class="nmr_i"></i></div></div>
+                </li>
+                <li class="mfm_li01 mfm_li04" id="tipsValidate">
+                    <div class="mfm_coder"><span class="mfm_s2">验证码：</span><input placeholder="验证码" class="mfm_int1 mfm_int2" name="validateCode" id="validateCode" type="text" /></div><a class="mfm_yzm" href="javascript:;"><img id="codeImg" src="/sitefiles/services/platform/validateCode.aspx?cookieName=BAIRONG.VC.LOGIN" width="63" height="22" onclick="$('#codeImg').attr('src', '/sitefiles/services/platform/validateCode.aspx?cookieName=BAIRONG.VC.LOGIN&'+Math.random())"/></a><span class="nyzm">看不清？ <a href="javascript:;" onclick="$('#codeImg').attr('src', '/sitefiles/services/platform/validateCode.aspx?cookieName=BAIRONG.VC.LOGIN&'+Math.random())" class="cor_blue">换一张</a></span>
+                    <div class="nmf_aler hide"><img class="tipImg" src="" /><div class="nmf_st1">两次密码输入的不一致<i class="nmr_i"></i></div></div>
+                </li>
+                <li class="mfm_li03"><button id="btnRegister" class="mfm_submit" type="button"><span>马上注册</span></button></li>
+                <li class="mfm_li02 mfm_li051"><input class="mfm_che" type="checkbox" checked id="ckGreen"/>我已经阅读并同意《用户服务条款》</li>
+                <li class="mfm_li06 mfm_li06a" id="thirdLoginPanel">
+                </li>
+            </ul>
+        </div>
+    </div>
+      
+</body>
+</html>
+<script src="js/lib.js"></script>
+<script src="js/app.js" id="controllerName" data-controller-name="register"></script>
+

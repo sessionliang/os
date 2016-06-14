@@ -1,0 +1,1 @@
+{"ID":0,"UserNoticeType":"BindPhone","UserName":null,"ByEmail":false,"ByPhone":true,"ByMessage":false,"EmailTitle":"手机验证","EmailTemplate":"您好，[UserName] ：\r\n您的验证码是：[ValidateCode]","PhoneTemplate":"您好，[UserName] ：\r\n您的验证码是：[ValidateCode]","MessageTitle":"注册验证","MessageTemplate":"您好，[UserName] ：\r\n您的验证码是：[ValidateCode]","IsRequired":true,"IsSignal":true,"Allow":["phone"]}

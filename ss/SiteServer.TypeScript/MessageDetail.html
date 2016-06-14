@@ -1,0 +1,42 @@
+<script>var $pageInfo = { publishmentSystemID : 82, channelID : 82, contentID : 0, siteUrl : "/usercenter", homeUrl : "/usercenter/center", currentUrl : "http://siteserver.cn/usercenter/MessageDetail.html", rootUrl : "http://siteserver.cn", apiUrl : "http://siteserver.cn" }</script>
+ 
+ 
+<div class="mcon">
+ 
+<div class="mcR mcRx2">
+
+<div class="mcr_t1" id="msgType">信息详情</div>            
+
+<div class="mcr_t1_sm_t" id="title">信息标题</div>
+<div class="mcr_t1_sm_m" id="msg">信息内容</div>
+<div class="mcr_t1_sm">发送人：<span  id="from"></span></div>
+<div class="mcr_t1_sm">发送时间：<span  id="addDate"></span></div>
+
+<div class="mcr_btnBox_sm"><button type="button" id="btnReplyMsgOpen" class="pubBtn_sm"><span>回复</span></button>&nbsp;<button type="button" id="btnDeleteMsg" class="pubBtn"><span>删除</span></button>&nbsp;<button type="button" id="btnReturn" class="pubBtn"><span>返回</span></button>
+</div>
+
+</div>
+<div class="clear"></div>
+</div>
+     
+ 
+
+<!--发送信息弹出层 开始-->
+<div class="mlayBg hide"></div>
+<div class="mlay_sm hide">
+<div class="mlay_t"><span class="fl">回复站内信</span><img class="mrclose" src="images/m2close.jpg" width="31" height="26" /></div>
+<div class="mlay_ul">
+<div class="nmlay_alr2"></div>
+<ul>
+<li id="tipsUserName"><span class="mlay_s1_sm">接收人</span><input class="mlay_int" placeholder="请输入接收人" id="replyUserName" name="replyUserName" type="text" />
+<div class="nmf_aler_sm hide"><img class="tipImg" src="images/nico2.png"><div class="nmf_st1">请输入正确的接收人！</div></div></li>
+<li id="tipsTitle"><span class="mlay_s1_sm">标题</span><input class="mlay_int" placeholder="请输入标题" id="replyTitle" name="replyTitle" type="text" />
+<div class="nmf_aler_sm hide"><img class="tipImg" src="images/nico2.png"><div class="nmf_st1">请输入标题！</div></div></li>
+<li id="tipsMsg"><span class="mlay_s1_sm">内容</span><textarea class="mlay_int mlay_int2" style=" width: 300px; height: 150px; " placeholder="" id="replyMsg" name="replyMsg" type="text"></textarea>
+<div class="nmf_aler_sm hide"><img class="tipImg" src="images/nico2.png"><div class="nmf_st1">请输入内容！</div></div></li>
+<li><span class="mlay_s1_sm">&nbsp;</span><button type="button" id="btnReplyMsg" class="pubBtn mlay_btn"><span>发送</span></button></li>
+</ul>
+</div>
+</div>
+
+<script src="js/app.js" id="controllerName" data-controller-name="messageDetail"></script>

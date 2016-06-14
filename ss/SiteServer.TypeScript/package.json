@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-cssmin": "*",
+    "gulp-ftp": "^1.0.1",
+    "gulp-less": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*",
+    "gulp-tmod": "*",
+    "jshint": "*",
+    "lodash": "^3.6.0",
+    "require-dir": "*",
+    "rimraf": "*",
+    "run-sequence": "*",
+    "vinyl-source-stream": "*"
+  }
+}

@@ -1,0 +1,188 @@
+.comment_box ol, .comment_box ul ,.comment_box li{list-style: none;}
+.comment_box i{font-style: normal;}
+.comment_box .clear{clear:both;height:0; line-height:0; font-size:0;display:block; overflow:hidden}
+.comment_box .clearfix:after {clear: both;content: ".";display: block;height: 0;visibility: hidden;font-size:0}
+.comment_box .clearfix {zoom:1}
+.comment_box .fl{float:left; display: inline;}
+.comment_box .fr{float:right; display: inline;}
+.comment_box img {border: 0; vertical-align:top;width: 100%;}
+.comment_box a:hover{text-decoration: none;}
+.comment_box a {color: #428bca;text-decoration: none;}
+.comment_box input:focus{outline: 0 none!important;}
+
+.comment_box .comment_btn {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+color: #fff;
+background-color: #5cb85c;
+border-color: #4cae4c;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.comment_box{
+	padding: 5px;
+}
+.comment_box .comment_title{
+	font-size: 16px;
+	margin-bottom: 14px;
+}
+.comment_box .comment_textarea{
+	border: 1px solid #dcdcdc;
+	border-radius: 6px;
+	width: 98%;
+	height: 122px;
+	padding: 1%;
+	margin-bottom: 10px;
+}
+.comment_box .submit_box span{
+	font-size: 14px;
+	margin-top: 5px;
+	color: #999;
+}
+
+.comment_box .comment_btn{
+	width: 20%;
+}
+.comment_box .submit_box{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e9e9e9;
+}
+.comment_box .comment_avator{
+	width: 200px;
+	overflow: hidden;
+	padding-top: 5px;
+}
+.comment_box .user_img{
+	width: 61px;
+	height: 61px;
+	margin-right: 2%;
+}
+.comment_box img.avator_img{
+	width: 30px;
+	height: 30px;
+	margin-right: 2%;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.comment_box .user_img img{
+	border-radius: 50%;
+	width: 100%;
+}
+.comment_box .user_content{
+	width: 80%;
+}
+
+.comment_box .user_content .name{
+	color: #505050;
+	margin-bottom: 12px;
+}
+.comment_box .user_content .name span{
+	color: #428bca;
+}
+.comment_box .user_content .text p{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.comment_box .user_content .zan_box{
+	margin-bottom: 10px;
+}
+.comment_box .user_content .zan_box a{
+	color: #b6bcc4;
+	margin-right: 20px;
+	font-size: 14px;
+}
+.comment_box .user_content .zan_box a i{
+	margin-right: 5px;
+}
+.comment_box .user_content .zan_box .fa-thumbs-up{
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	background: url(images/b.png) no-repeat 0 0;
+	vertical-align: -2px;
+}
+.comment_box .user_content .zan_box .fa-thumbs-down{
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	background: url(images/t.png) no-repeat 0 0;
+	vertical-align: -2px;
+}
+.comment_box .user_content .zan_box .fa-reply{
+	width: 15px;
+	height: 12px;
+	display: inline-block;
+	background: url(images/f.png) no-repeat 0 0;
+}
+.comment_box .yuantie_box{
+	background: #f0f0f0;
+	padding: 10px;
+}
+.comment_box .yuantie_box .t{
+	margin-bottom: 10px;
+}
+.comment_box .yuantie_box .t span{
+	margin-right: 30px;
+}
+.comment_box .yuantie_box .t .who_name{
+	color: #428bca;
+}
+.comment_box .yuantie_box .b{
+	font-size: 14px;
+}
+.comment_box .ly_item{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e9e9e9;
+	position: relative;
+}
+.comment_box  .ly_item .wonderful{position: absolute;width: 60px;height: 60px;top: -21px;right: 0px; background-image: url('images/wonderful.png'); background-position: top right;}
+
+.page_box{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.page_box .page_inner{
+	display: inline-block;
+}
+.page_box .page_inner a{
+	padding: 5px 10px;
+	color: #999;
+	border: 1px solid #ccc;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.page_box .page_inner a:hover{
+	text-decoration: none;
+}
+.page_box .page_inner .on{
+	color: #428bca;
+}
+.page_box .page_inner span{
+	color: #999;
+}
+
+@media all and (max-width: 500px){
+	.comment_box .comment_btn{
+		width: 38%
+	}
+	.comment_box .user_content{
+		width: 67%;
+	}
+}

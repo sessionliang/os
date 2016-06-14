@@ -1,0 +1,5 @@
+ALTER TABLE {0} ADD (
+[Tags] NVARCHAR2(255) DEFAULT ''
+)
+
+GO

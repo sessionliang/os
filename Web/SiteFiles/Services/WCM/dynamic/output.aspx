@@ -1,0 +1,1 @@
+<%@ Page language="c#" trace="false" enableViewState="false" validateRequest="false" Inherits="SiteServer.WCM.Services.DynamicOutput" %><asp:Literal ID="ltlOutput" runat="server"></asp:Literal>

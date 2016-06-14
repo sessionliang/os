@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3CC7167-E7F0-4FFF-B933-EE58B58A4ABB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteServer.Project.Web</RootNamespace>
+    <AssemblyName>SiteServer.Project.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteFiles\Products\Project\Configuration.config" />
+    <Content Include="SiteFiles\Products\Project\Menu\Cloud.config" />
+    <Content Include="SiteFiles\Products\Project\Menu\CRM.config" />
+    <Content Include="SiteFiles\Products\Project\Menu\Documents.config" />
+    <Content Include="SiteFiles\Products\Project\Menu\Permissions.config" />
+    <Content Include="SiteFiles\Products\Project\Menu\Product.config" />
+    <Content Include="SiteFiles\Products\Project\Menu\Projects.config" />
+    <Content Include="SiteFiles\Products\Project\Menu\Setting.config" />
+    <Content Include="SiteFiles\Products\Project\Menu\Top.config" />
+    <Content Include="SiteServer\Project\img\status.psd" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteFiles\Products\Project\logo.gif" />
+    <Content Include="SiteServer\Project\background_account.aspx" />
+    <Content Include="SiteServer\Project\background_account2.aspx" />
+    <Content Include="SiteServer\Project\background_accountAdd.aspx" />
+    <Content Include="SiteServer\Project\background_accountAll.aspx" />
+    <Content Include="SiteServer\Project\background_applyAdd.aspx" />
+    <Content Include="SiteServer\Project\background_applyAnalysis.aspx" />
+    <Content Include="SiteServer\Project\background_applyToAcceptDetail.aspx" />
+    <Content Include="SiteServer\Project\background_applyToAll.aspx" />
+    <Content Include="SiteServer\Project\background_applyToCheckDetail.aspx" />
+    <Content Include="SiteServer\Project\background_applyToDoneDetail.aspx" />
+    <Content Include="SiteServer\Project\background_applyToReplyDetail.aspx" />
+    <Content Include="SiteServer\Project\background_applyToWork.aspx" />
+    <Content Include="SiteServer\Project\background_blank.html" />
+    <Content Include="SiteServer\Project\background_contact.aspx" />
+    <Content Include="SiteServer\Project\background_contactAdd.aspx" />
+    <Content Include="SiteServer\Project\background_contactAll.aspx" />
+    <Content Include="SiteServer\Project\background_contract.aspx" />
+    <Content Include="SiteServer\Project\background_contractAdd.aspx" />
+    <Content Include="SiteServer\Project\background_crmConfiguration.aspx" />
+    <Content Include="SiteServer\Project\background_docType.aspx" />
+    <Content Include="SiteServer\Project\background_document.aspx" />
+    <Content Include="SiteServer\Project\background_documentAll.aspx" />
+    <Content Include="SiteServer\Project\background_documentLeft.aspx" />
+    <Content Include="SiteServer\Project\background_documentMain.aspx" />
+    <Content Include="SiteServer\Project\background_documentMy.aspx" />
+    <Content Include="SiteServer\Project\background_form.aspx" />
+    <Content Include="SiteServer\Project\background_formPage.aspx" />
+    <Content Include="SiteServer\Project\background_invoice.aspx" />
+    <Content Include="SiteServer\Project\background_invoiceAdd.aspx" />
+    <Content Include="SiteServer\Project\background_lead.aspx" />
+    <Content Include="SiteServer\Project\background_leadAdd.aspx" />
+    <Content Include="SiteServer\Project\background_leadAll.aspx" />
+    <Content Include="SiteServer\Project\background_leadAnalysis.aspx" />
+    <Content Include="SiteServer\Project\background_left.aspx" />
+    <Content Include="SiteServer\Project\background_messageLog.aspx" />
+    <Content Include="SiteServer\Project\background_moban.aspx" />
+    <Content Include="SiteServer\Project\background_mobanAdd.aspx" />
+    <Content Include="SiteServer\Project\background_mobanFormMain.aspx" />
+    <Content Include="SiteServer\Project\background_order.aspx" />
+    <Content Include="SiteServer\Project\background_orderAdd.aspx" />
+    <Content Include="SiteServer\Project\background_orderMessage.aspx" />
+    <Content Include="SiteServer\Project\background_orderMessageAdd.aspx" />
+    <Content Include="SiteServer\Project\background_orderRefund.aspx" />
+    <Content Include="SiteServer\Project\background_orderRefundAdd.aspx" />
+    <Content Include="SiteServer\Project\background_orderService.aspx" />
+    <Content Include="SiteServer\Project\background_orderServiceAdd.aspx" />
+    <Content Include="SiteServer\Project\background_orderSoftware.aspx" />
+    <Content Include="SiteServer\Project\background_orderSoftwareAdd.aspx" />
+    <Content Include="SiteServer\Project\background_payment.aspx" />
+    <Content Include="SiteServer\Project\background_paymentAll.aspx" />
+    <Content Include="SiteServer\Project\background_paymentAnalysis.aspx" />
+    <Content Include="SiteServer\Project\background_paymentCashBack.aspx" />
+    <Content Include="SiteServer\Project\background_paymentConfiguration.aspx" />
+    <Content Include="SiteServer\Project\background_paymentNotPay.aspx" />
+    <Content Include="SiteServer\Project\background_paymentPaid.aspx" />
+    <Content Include="SiteServer\Project\background_project.aspx" />
+    <Content Include="SiteServer\Project\background_projectConfiguration.aspx" />
+    <Content Include="SiteServer\Project\background_projectContract.aspx" />
+    <Content Include="SiteServer\Project\background_projectContractAnalysis.aspx" />
+    <Content Include="SiteServer\Project\background_projectDocument.aspx" />
+    <Content Include="SiteServer\Project\background_projectLeft.aspx" />
+    <Content Include="SiteServer\Project\background_projectMain.aspx" />
+    <Content Include="SiteServer\Project\background_recharge.aspx" />
+    <Content Include="SiteServer\Project\background_request.aspx" />
+    <Content Include="SiteServer\Project\background_requestAdd.aspx" />
+    <Content Include="SiteServer\Project\background_requestAll.aspx" />
+    <Content Include="SiteServer\Project\background_requestAnswer.aspx" />
+    <Content Include="SiteServer\Project\background_status.aspx" />
+    <Content Include="SiteServer\Project\background_textEditorUpload.aspx" />
+    <Content Include="SiteServer\Project\background_type.aspx" />
+    <Content Include="SiteServer\Project\css\request.css" />
+    <Content Include="SiteServer\Project\css\style.css" />
+    <Content Include="SiteServer\Project\gexia_application.aspx" />
+    <Content Include="SiteServer\Project\gexia_applicationHandled.aspx" />
+    <Content Include="SiteServer\Project\gexia_auth.aspx" />
+    <Content Include="SiteServer\Project\gexia_authAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_authAnalysis.aspx" />
+    <Content Include="SiteServer\Project\gexia_authPublishmentSystem.aspx" />
+    <Content Include="SiteServer\Project\gexia_case.aspx" />
+    <Content Include="SiteServer\Project\gexia_caseAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_cloudApp.aspx" />
+    <Content Include="SiteServer\Project\gexia_cloudAppAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_cloudServer.aspx" />
+    <Content Include="SiteServer\Project\gexia_cloudServerAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_dmTemplate.aspx" />
+    <Content Include="SiteServer\Project\gexia_dmTemplateAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_inviteCode.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_applicationSet.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_applicationView.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_authPassword.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_authPublishmentSystemAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_authSetting.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_authSettingDomain.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_authSettingPoweredBy.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_authView.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_authYearAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_cloudAppSetting.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_inviteCodeAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_inviteCodeSetting.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_message.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_oemPassword.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_oemRecharge.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_oemRecord.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_oemSetting.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_oemView.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_requestConfiguration.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_requestSetting.aspx" />
+    <Content Include="SiteServer\Project\gexia_modal_sendMessage.aspx" />
+    <Content Include="SiteServer\Project\gexia_oem.aspx" />
+    <Content Include="SiteServer\Project\gexia_oemAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_request.aspx" />
+    <Content Include="SiteServer\Project\gexia_requestAdd.aspx" />
+    <Content Include="SiteServer\Project\gexia_requestAnswer.aspx" />
+    <Content Include="SiteServer\Project\img\1342210_523143985.png" />
+    <Content Include="SiteServer\Project\img\1624822_1084294223.png" />
+    <Content Include="SiteServer\Project\img\1624993_1084294223.png" />
+    <Content Include="SiteServer\Project\img\1624997_1084294223 - 副本.png" />
+    <Content Include="SiteServer\Project\img\1625170_1084294223.png" />
+    <Content Include="SiteServer\Project\img\1634553_1084294223.png" />
+    <Content Include="SiteServer\Project\img\1643135_1084294223.png" />
+    <Content Include="SiteServer\Project\img\1679445_1724804860.png" />
+    <Content Include="SiteServer\Project\img\1679446_1724804860.gif" />
+    <Content Include="SiteServer\Project\img\1701055_1084294223.png" />
+    <Content Include="SiteServer\Project\img\476633_1084294223.png" />
+    <Content Include="SiteServer\Project\img\aliareaBg.jpg" />
+    <Content Include="SiteServer\Project\img\alihome.jpg" />
+    <Content Include="SiteServer\Project\img\aliLogo.jpg" />
+    <Content Include="SiteServer\Project\img\alimg1.jpg" />
+    <Content Include="SiteServer\Project\img\alimg2.jpg" />
+    <Content Include="SiteServer\Project\img\alimg3.jpg" />
+    <Content Include="SiteServer\Project\img\alimg4.jpg" />
+    <Content Include="SiteServer\Project\img\alimg5.jpg" />
+    <Content Include="SiteServer\Project\img\alimg6.jpg" />
+    <Content Include="SiteServer\Project\img\aliTop.jpg" />
+    <Content Include="SiteServer\Project\img\ali_btn1.jpg" />
+    <Content Include="SiteServer\Project\img\ali_int1.jpg" />
+    <Content Include="SiteServer\Project\img\ali_ok.jpg" />
+    <Content Include="SiteServer\Project\img\ali_pos.jpg" />
+    <Content Include="SiteServer\Project\img\ali_pos2.jpg" />
+    <Content Include="SiteServer\Project\img\ali_pos3.jpg" />
+    <Content Include="SiteServer\Project\img\ali_pos4.jpg" />
+    <Content Include="SiteServer\Project\img\flag_new_red.png" />
+    <Content Include="SiteServer\Project\img\status_form.png" />
+    <Content Include="SiteServer\Project\img\status_new.png" />
+    <Content Include="SiteServer\Project\img\status_sem.png" />
+    <Content Include="SiteServer\Project\js\ie6PNG.js" />
+    <Content Include="SiteServer\Project\js\jquery.easing.1.3.js" />
+    <Content Include="SiteServer\Project\js\jquery.js" />
+    <Content Include="SiteServer\Project\js\jquery.provincesCity.js" />
+    <Content Include="SiteServer\Project\js\jquery.sliderkit.1.6.min.js" />
+    <Content Include="SiteServer\Project\js\pms_app\app.js" />
+    <Content Include="SiteServer\Project\js\pms_app\controllers\touchController.js" />
+    <Content Include="SiteServer\Project\js\pms_app\services\notifyService.js" />
+    <Content Include="SiteServer\Project\js\pms_app\services\touchService.js" />
+    <Content Include="SiteServer\Project\js\provincesdata.js" />
+    <Content Include="SiteServer\Project\js\public.js" />
+    <Content Include="SiteServer\Project\js\rollImg.js" />
+    <Content Include="SiteServer\Project\js\seamlessRoll.js" />
+    <Content Include="SiteServer\Project\lib\angular\angular-resource.min.js" />
+    <Content Include="SiteServer\Project\lib\angular\angular.min.js" />
+    <Content Include="SiteServer\Project\lib\changeImg.js" />
+    <Content Include="SiteServer\Project\lib\cloud-zoom\cloud-zoom.1.0.2.js" />
+    <Content Include="SiteServer\Project\lib\cloud-zoom\cloud-zoom.1.0.2.min.js" />
+    <Content Include="SiteServer\Project\lib\cloud-zoom\cloud-zoom.css" />
+    <Content Include="SiteServer\Project\lib\cloudzoom.js" />
+    <Content Include="SiteServer\Project\lib\ie6PNG.js" />
+    <Content Include="SiteServer\Project\lib\jquery.js" />
+    <Content Include="SiteServer\Project\lib\jquery\jquery-2.0.3.min.js" />
+    <Content Include="SiteServer\Project\lib\toastr\toastr.min.css" />
+    <Content Include="SiteServer\Project\lib\toastr\toastr.min.js" />
+    <Content Include="SiteServer\Project\modal_accountAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_accountSelect.aspx" />
+    <Content Include="SiteServer\Project\modal_accountSetting.aspx" />
+    <Content Include="SiteServer\Project\modal_accountView.aspx" />
+    <Content Include="SiteServer\Project\modal_applyAccept.aspx" />
+    <Content Include="SiteServer\Project\modal_applyComment.aspx" />
+    <Content Include="SiteServer\Project\modal_applyFlow.aspx" />
+    <Content Include="SiteServer\Project\modal_applyRedo.aspx" />
+    <Content Include="SiteServer\Project\modal_applySetting.aspx" />
+    <Content Include="SiteServer\Project\modal_applySwitchTo.aspx" />
+    <Content Include="SiteServer\Project\modal_applyTranslate.aspx" />
+    <Content Include="SiteServer\Project\modal_applyView.aspx" />
+    <Content Include="SiteServer\Project\modal_contractSetting.aspx" />
+    <Content Include="SiteServer\Project\modal_departmentSelect.aspx" />
+    <Content Include="SiteServer\Project\modal_docTypeAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_documentAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_formElementAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_formElementValidateAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_formGroupAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_formPageAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_invoiceSetting.aspx" />
+    <Content Include="SiteServer\Project\modal_leadSetting.aspx" />
+    <Content Include="SiteServer\Project\modal_message.aspx" />
+    <Content Include="SiteServer\Project\modal_mobanSelect.aspx" />
+    <Content Include="SiteServer\Project\modal_mobanSetting.aspx" />
+    <Content Include="SiteServer\Project\modal_orderFormSEMView.aspx" />
+    <Content Include="SiteServer\Project\modal_orderFormView.aspx" />
+    <Content Include="SiteServer\Project\modal_orderRefundSetting.aspx" />
+    <Content Include="SiteServer\Project\modal_orderSelect.aspx" />
+    <Content Include="SiteServer\Project\modal_orderSetting.aspx" />
+    <Content Include="SiteServer\Project\modal_orderView.aspx" />
+    <Content Include="SiteServer\Project\modal_paymentAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_product_applicationSet.aspx" />
+    <Content Include="SiteServer\Project\modal_product_applicationView.aspx" />
+    <Content Include="SiteServer\Project\modal_product_expireAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_product_hotfixAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_product_licenseView.aspx" />
+    <Content Include="SiteServer\Project\modal_projectAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_projectDocumentAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_rechargeAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_sendMessage.aspx" />
+    <Content Include="SiteServer\Project\modal_touch.aspx" />
+    <Content Include="SiteServer\Project\modal_typeAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_urlSummaryAdd.aspx" />
+    <Content Include="SiteServer\Project\modal_userNameSelect.aspx" />
+    <Content Include="SiteServer\Project\product_application.aspx" />
+    <Content Include="SiteServer\Project\product_applicationHandled.aspx" />
+    <Content Include="SiteServer\Project\product_download.aspx" />
+    <Content Include="SiteServer\Project\product_hotfix.aspx" />
+    <Content Include="SiteServer\Project\product_license.aspx" />
+    <Content Include="SiteServer\Project\product_licenseAdd.aspx" />
+    <Content Include="SiteServer\Project\product_url.aspx" />
+    <Content Include="SiteServer\Project\product_urlAdd.aspx" />
+    <Content Include="SiteServer\Project\product_urlAnalysis.aspx" />
+    <Content Include="SiteServer\Project\product_urlCohort.aspx" />
+    <Content Include="SiteServer\Project\request.aspx" />
+    <Content Include="SiteServer\Project\request.html" />
+    <Content Include="SiteServer\Project\requestAdd.aspx" />
+    <Content Include="SiteServer\Project\requestAnswer.aspx" />
+    <Content Include="SiteServer\Project\request_form.aspx" />
+    <Content Include="SiteServer\Project\request_new.aspx" />
+    <Content Include="SiteServer\Project\request_sem.aspx" />
+    <Content Include="SiteServer\Project\Services\action.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\bairong\BaiRong.BackgroundPages\BaiRong.BackgroundPages.csproj">
+      <Project>{64529dc0-3c8b-4d10-a921-ead9f03fdf21}</Project>
+      <Name>BaiRong.BackgroundPages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\bairong\BaiRong.Controls\BaiRong.Controls.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b4465}</Project>
+      <Name>BaiRong.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\bairong\BaiRong.Core\BaiRong.Core.csproj">
+      <Project>{3d8cb06b-1791-4685-ab56-965b9f41666e}</Project>
+      <Name>BaiRong.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\bairong\BaiRong.Provider\BaiRong.Provider.csproj">
+      <Project>{f5094daf-85e0-4754-a8c4-c236b9f9dba6}</Project>
+      <Name>BaiRong.Provider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiteServer.Project\SiteServer.Project.csproj">
+      <Project>{961960f7-8627-494f-b819-5af7c761a207}</Project>
+      <Name>SiteServer.Project</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11881</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://pms.com</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

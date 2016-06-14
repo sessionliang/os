@@ -1,0 +1,196 @@
+﻿@charset "utf-8";
+body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea,p {margin:0; padding:0;}
+ol, ul ,li{list-style: none;}
+i{font-style: normal;}
+.clear{clear:both;height:0; line-height:0; font-size:0;display:block; overflow:hidden}
+.clearfix:after {clear: both;content: ".";display: block;height: 0;visibility: hidden;font-size:0}
+.clearfix {zoom:1}
+.fl{float:left; display: inline;}
+.fr{float:right; display: inline;}
+img {border: 0; vertical-align:top;width: 100%;}
+a:hover{
+	text-decoration: none;
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+input:focus{
+	outline: 0 none!important;
+}
+
+/*公共模块*/
+
+.common_login_style{
+	max-width: 410px;
+	margin: 40px auto 0;
+	padding-top: 10px;
+	font-size: 14px;
+
+}
+.common_login_style .p_title{
+	text-align: center;
+	font-size: 16px;
+}
+.common_login_style .other_login a{
+	width: 48%;
+}
+
+.common_login_style .input-group-addon{
+	background: none;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	border: 0 none;
+}
+.common_login_style .input-group{
+	display: block;
+}
+.common_login_style .input_text{
+	padding: 6px 38px;
+	height: 38px;
+	border-radius: 4px!important;	
+}
+.common_login_style .input-group-addon i{
+	font-size: 18px;
+	color: #aaa;
+	margin-top: 2px;
+}
+.common_login_style .other_login .btn{
+	padding: 9px 12px;
+	font-size: 16px;
+    margin-top:7px;
+    margin-left:4px;
+}
+.common_login_style .other_login .btn i{
+	margin-right: 5px;
+}
+.common_login_style .btn_box .forget_btn{
+	margin-top: 10px;
+}
+.common_login_style .btn_box .btn-primary{
+	width: 35%;
+	padding: 9px 12px;
+	font-size: 16px;
+}
+.common_login_style .form-group{
+	margin-bottom: 20px;
+}
+.common_login_style .form-horizontal .form-group{
+	margin-left: 0;
+	margin-right: 0;
+}
+.common_login_style .form-group-wrap label{
+	margin-bottom: 20px;
+	color: #666;
+}
+.common_login_style .form-group-wrap label i{
+	color: #666;
+}
+.common_login_style .form-group-wrap input{
+	height: 40px;
+}
+.common_login_style .form-group, .common_login_style .input-group, .form-horizontal{width: 100%;}
+.common_login_style .input_text{display: block;width: 100%;}
+
+.comment_box{
+	padding: 5px;
+}
+.comment_box .comment_title{
+	font-size: 16px;
+	margin-bottom: 14px;
+}
+.comment_box .textarea{
+	border: 1px solid #dcdcdc;
+	border-radius: 6px;
+	width: 100%;
+	height: 122px;
+	padding: 1%;
+	margin-bottom: 10px;
+}
+.comment_box .submit_box span{
+	font-size: 14px;
+	margin-top: 5px;
+	color: #999;
+}
+
+.comment_box .btn-success{
+	width: 20%;
+}
+.comment_box .submit_box{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e9e9e9;
+}
+.comment_box .user_img{
+	width: 61px;
+	height: 61px;
+	margin-right: 2%;
+}
+.comment_box .user_img img{
+	border-radius: 50%;
+	width: 100%;
+}
+.comment_box .user_content{
+	width: 80%;
+}
+
+.comment_box .user_content .name{
+	color: #505050;
+	margin-bottom: 12px;
+}
+.comment_box .user_content .name span{
+	color: #428bca;
+}
+.comment_box .user_content .text p{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.comment_box .user_content .zan_box{
+	margin-bottom: 10px;
+}
+.comment_box .user_content .zan_box a{
+	color: #b6bcc4;
+	margin-right: 20px;
+	font-size: 14px;
+}
+.comment_box .user_content .zan_box a i{
+	margin-right: 5px;
+}
+.comment_box .yuantie_box{
+	background: #f0f0f0;
+	padding: 10px;
+}
+.comment_box .yuantie_box .t{
+	margin-bottom: 10px;
+}
+.comment_box .yuantie_box .t span{
+	margin-right: 30px;
+}
+.comment_box .yuantie_box .t .who_name{
+	color: #428bca;
+}
+.comment_box .yuantie_box .b{
+	font-size: 14px;
+}
+.liuyan_box .ly_item{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+
+@media all and (max-width: 500px){
+	.main{
+		padding: 5px;
+	}
+	.common_login_style{
+		margin-top: 10px;
+	}
+	.comment_box .btn-success{
+		width: 38%
+	}
+	.comment_box .user_content{
+		width: 67%;
+	}
+}

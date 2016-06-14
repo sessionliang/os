@@ -1,0 +1,514 @@
+<div class="spec_mleft stl-left" ng-controller="stlLeftCtrl">
+  <div class="spec_mlTop">
+
+    <div id="spec_left_module" class="spec_mlCon">
+      <div class="spec_mlmod">
+
+        <div class="spec_mimt">常用模块</div>
+        <div class="spec_mim_tools">
+          <ul>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalChannels}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_list"></div>
+              <div class="spec_mim_icoName">栏目列表</div>
+              <div class="spec_view spec_hidden">
+                <stl:channels>
+                  <stl:a>
+                    <stl:content type="Title"></stl:content>
+                  </stl:a>
+                  <br>
+                </stl:channels>
+              </div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalContents}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_list"></div>
+              <div class="spec_mim_icoName">内容列表</div>
+              <div class="spec_view spec_hidden">
+                <stl:contents>
+                  <stl:a target="_blank">
+                    <stl:content type="Title"></stl:content>
+                  </stl:a>
+                  <br>
+                </stl:contents>
+              </div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalFocusViewer}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_focusViewer"></div>
+              <div class="spec_mim_icoName">滚动焦点图</div>
+              <div class="spec_view spec_hidden"></div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalImage}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_image"></div>
+              <div class="spec_mim_icoName">图片</div>
+              <div class="spec_view spec_hidden"></div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalPlayer}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_video"></div>
+              <div class="spec_mim_icoName">播放视频</div>
+              <div class="spec_view spec_hidden"></div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalAudio}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_audio"></div>
+              <div class="spec_mim_icoName">播放音频</div>
+              <div class="spec_view spec_hidden"></div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalContents}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_marquee"></div>
+              <div class="spec_mim_icoName">间隔滚动</div>
+              <div class="spec_view spec_hidden">
+                
+              </div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalFile}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_file"></div>
+              <div class="spec_mim_icoName">附件</div>
+              <div class="spec_view spec_hidden"></div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalInclude}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_include"></div>
+              <div class="spec_mim_icoName">包含文件</div>
+              <div class="spec_view spec_hidden"></div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="true" stl-modal="{{left.modalStlInsert}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico">
+                <div class="spec_fs1" aria-hidden="true" data-icon="&#xf068;"></div>
+              </div>
+              <div class="spec_mim_icoName">自定义代码</div>
+              <div class="spec_view spec_hidden"></div>
+            </div>
+            </li>
+
+          </ul>
+          <div class="spec_clear"></div>
+        </div>
+
+        <div class="spec_mimt">内容元素</div>
+        <div class="spec_mim_tools">
+          <ul>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalContent}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_content"></div>
+              <div class="spec_mim_icoName">内容值</div>
+              <div class="spec_view spec_hidden"></div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_slide"></div>
+              <div class="spec_mim_icoName">图片幻灯片</div>
+              <div class="spec_view spec_hidden">
+                <stl:slide></stl:slide>
+              </div>
+            </div>
+            </li>
+
+            <!-- <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalContents}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_photoContents"></div>
+              <div class="spec_mim_icoName">内容图片列表</div>
+              <div class="spec_view spec_hidden">
+                
+              </div>
+            </div>
+            </li> -->
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_vote"></div>
+              <div class="spec_mim_icoName">投票</div>
+              <div class="spec_view spec_hidden">
+                <stl:vote></stl:vote>
+              </div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_comments"></div>
+              <div class="spec_mim_icoName">评论列表</div>
+              <div class="spec_view spec_hidden">
+                <stl:comments isDynamic="true"></stl:comments>
+              </div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_input"></div>
+              <div class="spec_mim_icoName">评论提交</div>
+              <div class="spec_view spec_hidden">
+                <stl:commentInput commentName="评论"></stl:commentInput>
+              </div>
+            </div>
+            </li>
+
+          </ul>
+          <div class="spec_clear"></div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="spec_left_layout" class="spec_mlCon spec_hidden">
+      <div class="spec_mlmod">
+        <div class="spec_mimt">页面布局</div>
+        <div class="spec_mim_tools">
+          <ul>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_layout1">
+                </div>
+                <div class="spec_mim_icoName">1</div>  
+              </div>
+              
+              <div class="spec_view spec_hidden">
+                <stl:layout>
+                  <stl:container></stl:container>
+                </stl:layout>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_layout11">
+                </div>
+                <div class="spec_mim_icoName">1：1</div>  
+              </div>
+              
+              <div class="spec_view spec_hidden">
+                <stl:layout cols="50%,50%">
+                  <stl:container></stl:container>
+                  <stl:container></stl:container>
+                </stl:layout>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_layout12">
+                </div>
+                <div class="spec_mim_icoName">1：2</div>  
+              </div>
+              
+              <div class="spec_view spec_hidden">
+                <stl:layout cols="34%,66%">
+                  <stl:container></stl:container>
+                  <stl:container></stl:container>
+                </stl:layout>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_layout21">
+                </div>
+                <div class="spec_mim_icoName">2：1</div>  
+              </div>
+              
+              <div class="spec_view spec_hidden">
+                <stl:layout cols="66%,34%">
+                  <stl:container></stl:container>
+                  <stl:container></stl:container>
+                </stl:layout>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_layout111">
+                </div>
+                <div class="spec_mim_icoName">1：1：1</div>  
+              </div>
+              
+              <div class="spec_view spec_hidden">
+                <stl:layout cols="33%,33%,33%">
+                  <stl:container></stl:container>
+                  <stl:container></stl:container>
+                  <stl:container></stl:container>
+                </stl:layout>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalLayout}}">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_layout"></div>
+                <div class="spec_mim_icoName">自定义</div>  
+              </div>
+              
+              <div class="spec_view spec_hidden">
+                <stl:layout cols="33%,33%,33%">
+                  <stl:container></stl:container>
+                  <stl:container></stl:container>
+                  <stl:container></stl:container>
+                </stl:layout>
+              </div>
+            </li>
+          </ul>
+          <div class="spec_clear"></div>
+        </div>
+        
+      </div>
+
+      <div class="spec_mlmod">
+        <div class="spec_mimt">页面导航</div>
+        <div class="spec_mim_tools">
+          <ul>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_pageItems"></div>
+              <div class="spec_mim_icoName">翻页按钮</div>
+              <div class="spec_view spec_hidden">
+                <stl:pageItems>
+                  <table width="95%" align="center">
+                    <tr><td align="left">  
+                      <stl:pageItem type="FirstPage" text="首页"></stl:pageItem> |    
+                      <stl:pageItem type="PreviousPage" text="上一页"></stl:pageItem> |    
+                      <stl:pageItem type="NextPage" text="下一页"></stl:pageItem> |    
+                      <stl:pageItem type="LastPage" text="末页"></stl:pageItem>  
+                    </td><td align="right">  
+                      <stl:pageItem type="CurrentPageIndex" text="当前页："></stl:pageItem>      
+                      <stl:pageItem type="PageNavigation"></stl:pageItem>  
+                    </td></tr>
+                  </table>
+                </stl:pageItems>
+              </div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_location"></div>
+                <div class="spec_mim_icoName">当前位置</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+              <stl:location separator=" &gt; "></stl:location>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_navigation"></div>
+                <div class="spec_mim_icoName">页面导航</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+                <table cellpadding="0" width="95%" cellspacing="0" height="40" align="center">
+                  <tr>
+                    <td align="left" width="50%">
+                     <stl:navigation tipText="上一篇:" emptyText="无" type="PreviousContent"></stl:navigation>
+                    </td>
+                    <td width="50%">
+                     <stl:navigation tipText="下一篇:" emptyText="无" type="NextContent"></stl:navigation>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalLayout}}">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_tags"></div>
+                <div class="spec_mim_icoName">标签</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_searchInput"></div>
+                <div class="spec_mim_icoName">搜索提交框</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+                <stl:searchInput searchUrl="@/utils/search.html">
+                    关键字：  <input type="text" id="word" />
+                    <INPUT id="submit" type="button" value="搜 索" />
+                </stl:searchInput>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_list"></div>
+                <div class="spec_mim_icoName">搜索结果</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+              <stl:searchOutput pageNum="25"></stl:searchOutput>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_tree"></div>
+                <div class="spec_mim_icoName">树状导航</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+              <stl:tree topLevel="0"></stl:tree>
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_menu"></div>
+                <div class="spec_mim_icoName">下拉菜单</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+                <stl:menu channelIndex="首页">
+                    <stl:a channelIndex="首页"></stl:a>
+                </stl:menu>
+              </div>
+            </li>
+
+          </ul>
+          <div class="spec_clear"></div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="spec_left_advanced" class="spec_mlCon spec_hidden">
+      <div class="spec_mlmod">
+        <div class="spec_mimt">高级标签</div>
+        <div class="spec_mim_tools">
+          <ul>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_database">
+                </div>
+                <div class="spec_mim_icoName">数据库列表</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false" stl-modal="{{left.modalContents}}">
+            <div class="stl-drag">
+              <div class="spec_mim_ico spec_icon_sites"></div>
+              <div class="spec_mim_icoName">站点列表</div>
+              <div class="spec_view spec_hidden">
+                
+              </div>
+            </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_input">
+                </div>
+                <div class="spec_mim_icoName">内容投稿</div>
+              </div>
+              <div class="spec_view spec_hidden">
+
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_input">
+                </div>
+                <div class="spec_mim_icoName">提交表单</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_list">
+                </div>
+                <div class="spec_mim_icoName">提交表单列表</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+
+              </div>
+            </li>
+            
+          </ul>
+          <div class="spec_clear"></div>
+        </div>
+        
+      </div>
+
+      <div class="spec_mlmod">
+        <div class="spec_mimt">用户标签</div>
+        <div class="spec_mim_tools">
+          <ul>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_login">
+                </div>
+                <div class="spec_mim_icoName">用户登录</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_register">
+                </div>
+                <div class="spec_mim_icoName">用户注册</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+
+              </div>
+            </li>
+
+            <li class="stl-element" stl-sequence="-1" stl-index="-1" stl-is-container="false">
+              <div class="stl-drag">
+                <div class="spec_mim_ico spec_icon_visible">
+                </div>
+                <div class="spec_mim_icoName">区域是否可视</div>  
+              </div>
+              <div class="spec_view spec_hidden">
+
+              </div>
+            </li>
+
+          </ul>
+          <div class="spec_clear"></div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  <div class="spec_mlBom"><div class="spec_imgBg13 spec_mlBomBtn"></div></div>
+</div>

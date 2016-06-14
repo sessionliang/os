@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61A793E1-3E99-4BDC-BC20-7298CA3E3756}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteServer.BBS</RootNamespace>
+    <AssemblyName>SiteServer.BBS</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/BaiRongZhiDao/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundPages\BackgroundBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\Configuration\AttachmentTypeAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ForumAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\KeywordsCategoryAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\KeywordsFilterAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\KeywordsFilterAddFromTxt.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\LinkAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\LookupTheKeywordsPost.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\RestrictionAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\SelectImage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ThreadDigest.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ThreadEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ThreadTopLevel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ThreadTranslate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ProgressBar.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\FilePathRuleSet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\FilePathRuleMake.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\FaceAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\ModeratorAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\UploadImageSingle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CreditEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CreditCalculate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\CreditRule.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\NavigationAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\BackgroundProgressBar.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundAccessControl .cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundNavigation.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundConfigurationCredit1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundConfigurationCredit2.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundAttachmentType.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundConfigurationHandle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Create\BackgroundCreateFile.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Create\BackgroundCreateForum.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundAd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundAdAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundAdSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundAnnouncement.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\AnnouncementAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundBBSInfo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Forum\BackgroundForum.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Forum\BackgroundForumClassEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Forum\BackgroundForumEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Forum\BackgroundForumTranslate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundIdentify.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Modal\IdentifyAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundKeywordsCategory.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundKeywordsFilting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundLink.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Content\BackgroundSusceptivityPost.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Content\BackgroundSusceptivityPostPassed.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Content\BackgroundPost.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Content\BackgroundPostTrash.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Content\BackgroundReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundRestrictionList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundRestrictionOptions.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundFace.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundTemplateEdit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundFilePathRule.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Content\BackgroundThread.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Forum\BackgroundThreadCategory.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Forum\BackgroundThreadCategoryAdd.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Template\BackgroundTemplateList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundConfigurationTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\BackgroundUtils.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Settings\BackgroundConfigurationDisplay.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\Content\BackgroundThreadTrash.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Pages\User\BackgroundPermission.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackgroundPages\Service.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SqlPager\PagerStyle.cs" />
+    <Compile Include="Controls\SqlPager\PagingMode.cs" />
+    <Compile Include="Controls\SqlPager\SortMode.cs" />
+    <Compile Include="Controls\SqlPager\SqlPager.cs" />
+    <Compile Include="Controls\SqlPager\VirtualRecordCount.cs" />
+    <Compile Include="Core\AdManager.cs" />
+    <Compile Include="Core\ConfigurationManager.cs" />
+    <Compile Include="Core\IO\FileSystemObject.cs" />
+    <Compile Include="Core\IO\CreateCacheManager.cs" />
+    <Compile Include="Core\IO\FileUtilityBBS.cs" />
+    <Compile Include="Core\OnlineManager.cs" />
+    <Compile Include="Core\User\BBSUserManager.cs" />
+    <Compile Include="Data\IOnlineDAO.cs" />
+    <Compile Include="Data\IBBSUserDAO.cs" />
+    <Compile Include="Model\Enumerations\EAdType.cs" />
+    <Compile Include="Model\Enumerations\EBBSTaxisType.cs" />
+    <Compile Include="Model\Enumerations\ECreditRule.cs" />
+    <Compile Include="Model\Enumerations\ECreditType.cs" />
+    <Compile Include="Model\Enumerations\EnumHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\OnlineInfo.cs" />
+    <Compile Include="Core\DZNTUBBUtils.cs" />
+    <Compile Include="Core\IdentifyManager.cs" />
+    <Compile Include="Core\UBBUtility.cs" />
+    <Compile Include="Data\IIdentifyDAO.cs" />
+    <Compile Include="Data\IKeywordsCategoryDAO.cs" />
+    <Compile Include="Data\IKeywordsFilterDAO.cs" />
+    <Compile Include="Data\INavigationDAO.cs" />
+    <Compile Include="Data\IReportDAO.cs" />
+    <Compile Include="Model\Attribute\ReportAttribute.cs" />
+    <Compile Include="Model\Enumerations\ENavType.cs" />
+    <Compile Include="Model\IdentifyInfo.cs" />
+    <Compile Include="Model\KeywordsCategoryInfo.cs" />
+    <Compile Include="Model\KeywordsFilterInfo.cs" />
+    <Compile Include="Model\NavigationInfo.cs" />
+    <Compile Include="Model\ReportInfo.cs" />
+    <Compile Include="Core\Permission\AccessManager.cs" />
+    <Compile Include="Core\Permission\PermissionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\AttachManager.cs" />
+    <Compile Include="Data\IPermissionsDAO.cs" />
+    <Compile Include="Data\IAttachmentDAO.cs" />
+    <Compile Include="Data\IAttachmentTypeDAO.cs" />
+    <Compile Include="Model\Enumerations\EPermission.cs" />
+    <Compile Include="Model\PermissionsInfo.cs" />
+    <Compile Include="Model\AttachmentInfo.cs" />
+    <Compile Include="Model\AttachmentTypeInfo.cs" />
+    <Compile Include="Model\BBSUserInfo.cs" />
+    <Compile Include="Pages\Ajax\Upload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Forget.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Manager\Ban.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Manager\DisabledUsers.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Manager\Identify.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Post.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Register.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LogoutPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\My\MyPost.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\My\ProfilePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\My\PermissionPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RedirectPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AccessPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RegisterSucess.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SearchPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UserListPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RssPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\OnlinePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HandlePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UserPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageUtils\ForumUtils.cs" />
+    <Compile Include="Core\PageUtilityBBS.cs" />
+    <Compile Include="PageUtils\UserUtils.cs" />
+    <Compile Include="Core\TemplateParser\Element\A.cs" />
+    <Compile Include="Core\TemplateParser\Element\ContentsItem.cs" />
+    <Compile Include="Core\TemplateParser\Element\Dynamic.cs" />
+    <Compile Include="Core\TemplateParser\Element\Forum.cs" />
+    <Compile Include="Core\TemplateParser\Element\If.cs" />
+    <Compile Include="Core\TemplateParser\Element\Navigation.cs" />
+    <Compile Include="Core\TemplateParser\Element\Run.cs" />
+    <Compile Include="Core\TemplateParser\Element\Location.cs" />
+    <Compile Include="Core\TemplateParser\Element\Thread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\TemplateParser\Element\Threads.cs" />
+    <Compile Include="Core\TemplateParser\Element\Posts.cs" />
+    <Compile Include="Core\TemplateParser\Element\Post.cs" />
+    <Compile Include="Core\TemplateParser\Element\Value.cs" />
+    <Compile Include="Core\TemplateParser\Element\SqlContent.cs" />
+    <Compile Include="Core\TemplateParser\Element\SqlContents.cs" />
+    <Compile Include="Core\TemplateParser\Element\QueryString.cs" />
+    <Compile Include="Core\TemplateParser\EntityParser.cs" />
+    <Compile Include="Core\TemplateParser\Entity\BBSEntities.cs" />
+    <Compile Include="Core\TemplateParser\Entity\ForumEntities.cs" />
+    <Compile Include="Core\TemplateParser\Entity\ThreadEntities.cs" />
+    <Compile Include="Core\TemplateParser\Entity\SqlEntities.cs" />
+    <Compile Include="Core\TemplateParser\Entity\PostEntities.cs" />
+    <Compile Include="Core\TemplateParser\ListTemplate\DataListTemplate.cs" />
+    <Compile Include="Core\TemplateParser\ListTemplate\RepeaterTemplate.cs" />
+    <Compile Include="Core\TemplateParser\ListTemplate\SeparatorTemplate.cs" />
+    <Compile Include="Core\TemplateParser\ListTemplate\TemplateUtility.cs" />
+    <Compile Include="Core\TemplateParser\Model\ContextInfo.cs" />
+    <Compile Include="Core\TemplateParser\ElementParser.cs" />
+    <Compile Include="Core\TemplateParser\Element\Include.cs" />
+    <Compile Include="Core\TemplateParser\Element\Forums.cs" />
+    <Compile Include="Core\TemplateParser\Model\ContentsDisplayInfo.cs" />
+    <Compile Include="Core\TemplateParser\Model\DbItemContainer.cs" />
+    <Compile Include="Core\TemplateParser\Model\DbItemInfo.cs" />
+    <Compile Include="Core\TemplateParser\Model\EContextType.cs" />
+    <Compile Include="Core\TemplateParser\Model\EntityType.cs" />
+    <Compile Include="Core\TemplateParser\Model\ELayout.cs" />
+    <Compile Include="Core\TemplateParser\Model\ETestType.cs" />
+    <Compile Include="Core\TemplateParser\Model\PageInfo.cs" />
+    <Compile Include="Core\TemplateParser\Model\ParsedDataList.cs" />
+    <Compile Include="Core\TemplateParser\ParserManager.cs" />
+    <Compile Include="Core\TemplateParser\ParserUtility.cs" />
+    <Compile Include="Core\TemplateParser\DataUtility.cs" />
+    <Compile Include="Core\PathUtilityBBS.cs" />
+    <Compile Include="Core\StringUtilityBBS.cs" />
+    <Compile Include="Core\ThreadCategoryManager.cs" />
+    <Compile Include="Core\ThreadManager.cs" />
+    <Compile Include="Core\ForumManager.cs" />
+    <Compile Include="Core\NodeTreeItem.cs" />
+    <Compile Include="Core\IO\TemplateManager.cs" />
+    <Compile Include="Core\DialogUtility.cs" />
+    <Compile Include="Core\CreditRuleManager.cs" />
+    <Compile Include="Data\DataProvider.cs" />
+    <Compile Include="Data\IAdDAO.cs" />
+    <Compile Include="Data\IAnnouncementDAO.cs" />
+    <Compile Include="Data\IConfigurationDAO.cs" />
+    <Compile Include="Data\IForumDAO.cs" />
+    <Compile Include="Data\ILinkDAO.cs" />
+    <Compile Include="Data\IBBSLogDAO.cs" />
+    <Compile Include="Data\IPostDAO.cs" />
+    <Compile Include="Data\IThreadCategoryDAO.cs" />
+    <Compile Include="Data\IThreadDAO.cs" />
+    <Compile Include="Data\IFaceDAO.cs" />
+    <Compile Include="Data\ICreditRuleDAO.cs" />
+    <Compile Include="Data\ICreditRuleLogDAO.cs" />
+    <Compile Include="Data\IPollDAO.cs" />
+    <Compile Include="Model\AdInfo.cs" />
+    <Compile Include="Model\AnnouncementInfo.cs" />
+    <Compile Include="Model\Attribute\ForumAttribute.cs" />
+    <Compile Include="Model\Attribute\ThreadAttribute.cs" />
+    <Compile Include="Model\Attribute\PostAttribute.cs" />
+    <Compile Include="Model\ConfigurationInfo.cs" />
+    <Compile Include="Model\ConfigurationInfoExtend.cs" />
+    <Compile Include="Model\CreditRuleLogInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Enumerations\EAdLocation.cs" />
+    <Compile Include="Model\Enumerations\EForumSummaryType.cs" />
+    <Compile Include="Model\Enumerations\EThreadOrderType.cs" />
+    <Compile Include="Model\Enumerations\ETemplateType.cs" />
+    <Compile Include="Model\Enumerations\EPeriodType.cs" />
+    <Compile Include="Model\Enumerations\EThreadType.cs" />
+    <Compile Include="Model\Enumerations\EPollRestrictType.cs" />
+    <Compile Include="Model\ForumInfo.cs" />
+    <Compile Include="Model\ForumInfoExtend.cs" />
+    <Compile Include="Model\LinkInfo.cs" />
+    <Compile Include="Model\BBSLogInfo.cs" />
+    <Compile Include="Model\NotDB\PagerInfo.cs" />
+    <Compile Include="Model\PostInfo.cs" />
+    <Compile Include="Model\ThreadCategoryInfo.cs" />
+    <Compile Include="Model\ThreadInfo.cs" />
+    <Compile Include="Model\TemplateInfo.cs" />
+    <Compile Include="Model\FaceInfo.cs" />
+    <Compile Include="Model\CreditRuleInfo.cs" />
+    <Compile Include="Model\Poll\PollInfo.cs" />
+    <Compile Include="Model\Poll\PollUserInfo.cs" />
+    <Compile Include="Model\Poll\PollItemInfo.cs" />
+    <Compile Include="Pages\Ajax\Face.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ajax\Config.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Message.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Login.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Manager\Highlight.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Manager\Delete.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Manager\Translate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Manager\Category.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Manager\UpDown.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\Manager\Lock.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Editor\Upload.cs" />
+    <Compile Include="Pages\My\AvatarPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ajax\Form.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ForumPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\My\CreditsPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\My\PasswordPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ThreadPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoginPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DefaultPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PostPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Provider\SqlServer\AdDAO.cs" />
+    <Compile Include="Provider\SqlServer\AnnouncementDAO.cs" />
+    <Compile Include="Provider\SqlServer\ConfigurationDAO.cs" />
+    <Compile Include="Provider\SqlServer\ForumDAO.cs" />
+    <Compile Include="Provider\SqlServer\IdentifyDAO.cs" />
+    <Compile Include="Provider\SqlServer\KeywordsCategoryDAO.cs" />
+    <Compile Include="Provider\SqlServer\KeywordsFilterDAO.cs" />
+    <Compile Include="Provider\SqlServer\LinkDAO.cs" />
+    <Compile Include="Provider\SqlServer\BBSLogDAO.cs" />
+    <Compile Include="Provider\SqlServer\PostDAO.cs" />
+    <Compile Include="Provider\SqlServer\ReportDAO.cs" />
+    <Compile Include="Provider\SqlServer\ThreadCategoryDAO.cs" />
+    <Compile Include="Provider\SqlServer\ThreadDAO.cs" />
+    <Compile Include="Provider\SqlServer\FaceDAO.cs" />
+    <Compile Include="Provider\SqlServer\CreditRuleDAO.cs" />
+    <Compile Include="Provider\SqlServer\CreditRuleLogDAO.cs" />
+    <Compile Include="Provider\SqlServer\PollDAO.cs" />
+    <Compile Include="Provider\SqlServer\PermissionsDAO.cs" />
+    <Compile Include="Provider\SqlServer\AttachmentDAO.cs" />
+    <Compile Include="Provider\SqlServer\AttachmentTypeDAO.cs" />
+    <Compile Include="Provider\SqlServer\NavigationDAO.cs" />
+    <Compile Include="Provider\SqlServer\OnlineDAO.cs" />
+    <Compile Include="Provider\SqlServer\BBSUserDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.BackgroundPages\BaiRong.BackgroundPages.csproj">
+      <Project>{64529dc0-3c8b-4d10-a921-ead9f03fdf21}</Project>
+      <Name>BaiRong.BackgroundPages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Controls\BaiRong.Controls.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b4465}</Project>
+      <Name>BaiRong.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Core\BaiRong.Core.csproj">
+      <Project>{3d8cb06b-1791-4685-ab56-965b9f41666e}</Project>
+      <Name>BaiRong.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Provider\BaiRong.Provider.csproj">
+      <Project>{f5094daf-85e0-4754-a8c4-c236b9f9dba6}</Project>
+      <Name>BaiRong.Provider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaiRong\BaiRong.Service\BaiRong.Service.csproj">
+      <Project>{a5b5f7c3-da46-4cf0-a351-d35db07b8899}</Project>
+      <Name>BaiRong.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiteServer.CMS\SiteServer.CMS.csproj">
+      <Project>{61a793e1-3e99-4bdc-bc20-7298ca3e0000}</Project>
+      <Name>SiteServer.CMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

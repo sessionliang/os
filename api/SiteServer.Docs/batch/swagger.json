@@ -1,0 +1,94 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Batch",
+    "description": "To reduce the amount of time spent on network round trips, you can create, update, or delete up to 50 objects in one call, using the batch endpoint.Each command in a batch has method, path, and body parameters that specify the HTTP command that would normally be used for that command. The commands are run in the order they are given."
+  },
+  "host": "127.0.0.1:3001",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/batch": {
+      "post": {
+        "description": "The response from batch will be a list with the same number of elements as the input list. Each item in the list with be a dictionary with either the success or error field set. The value of success will be the normal response to the equivalent REST command:",
+        "operationId": "post",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "requests to batch operation",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/requests"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "response",
+            "schema": {
+              "$ref": "#/definitions/responses"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "responses": {
+      "type": "array",
+        "items": {
+          "$ref": "#/definitions/response"
+        }
+    },
+    "response": {
+      "required": [
+        "success",
+        "error"
+      ],
+      "properties": {
+        "success": {
+          "type": "object"
+        },
+        "error": {
+          "type": "object"
+        }
+      }
+    },
+    "requests": {
+      "type": "array",
+          "items": {
+            "$ref": "#/definitions/request"
+          }
+    },
+    "request": {
+      "required": [
+        "method",
+        "path"
+      ],
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "body": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}
